@@ -7,6 +7,12 @@ a{
 img{
   max-width: 100%;
 }
+label{
+  font-weight: 300;
+}
+.row{
+  margin: 0;
+}
 .navbar-default{
   background-color: #FFFFFF;
   height:70px;
@@ -69,7 +75,9 @@ img{
   background: linear-gradient(#00C9FD,#0092F7);
   color:#fff;
 }
-
+.checkbox>label:first-child{
+  padding-left: 0;
+}
 /**************我的课程*************/
 .main-box-course{
   width: 90%;
@@ -119,4 +127,81 @@ img{
 .pager li > a{
   padding:3px 10px;
   margin: 0 5px;
+}
+/************修改地址*************/
+.form-inline{
+  padding: 20px 0 15px 40px;
+}
+#distpicker1 select{
+  height: 32px;
+  border-radius: 5px;
+  margin:0 6px;
+}
+.delete{
+  padding-left: 10px;
+  background: #fff;
+  border: 0;
+}
+.font-address{
+  letter-spacing:0.5px;
+}
+
+/***********个人信息*********/
+.my-message{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  line-height: 35px;
+  height:150px;
+}
+.my-message .font-interval{
+  margin-right: -27px;
+}
+.default-address{
+  background: #0091F4;
+  color: #fff;
+  padding: 2px 4px;
+  margin-left: 20px;
+}
+.my-address{
+  margin:  30px 0;
+  line-height: 30px;
+  height: 100px;
+  border-bottom: 1px solid #EAEAEA;
+}
+.my-invitation{
+  height: 50px;
+  margin:30px 0 50px 0;
+}
+.my-invitation div input{
+  width: 60%;
+  height: 39px;
+  padding-left:10px;
+  background-color: #FCFCFC;
+  border: 1px solid #DFDFDF;
+}
+.my-invitation div button{
+  height: 39px;
+  border: 1px solid #DFDFDF;
+  background-color: #fff;
+  color: #656565;
+  width: 100px;
+}
+.my-invitation div p{
+  margin: 10px 0;
+}
+.my-news{
+  margin: 20px 0;
+  height: 60px;
+  border-bottom: 1px solid #D7D7D7;
+}
+.my-news img{
+  width: 40px;
+  border-radius: 40px;
+}
+.glyphicon-plus-sign{
+  padding-right:10px;
+  color: #008FF5;
+}
+.more{
+  margin-bottom:20px;
 }
