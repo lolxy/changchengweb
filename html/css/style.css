@@ -10,6 +10,12 @@ img{
 label{
   font-weight: 300;
 }
+.font-sm{
+  font-size: 12px;
+}
+.font-xs{
+  font-size: 10px;
+}
 .row{
   margin: 0;
 }
@@ -70,7 +76,7 @@ label{
 .prompt{
   font-size: 10px;
 }
-.jy-main>.container>.col-xs-9 form .btn{
+.jy-main>.container>.col-xs-9 .main-box>form .btn{
   padding: 3px 20px;
   background: linear-gradient(#00C9FD,#0092F7);
   color:#fff;
@@ -84,7 +90,7 @@ label{
   margin: 0 auto;
 
 }
-.main-box-course div{
+.main-box-course .live>div{
   padding: 0;
 }
 .main-box-course .live{
@@ -204,4 +210,113 @@ label{
 }
 .more{
   margin-bottom:20px;
+}
+
+/*********我的优惠券**********/
+.coupon-list>li{
+  float: left;
+  padding:0 30px 20px 20px; 
+}
+.coupon-list>li>img{
+  max-width: 200px;
+  max-height: 125px;
+}
+
+/**********导师********/
+.tutor-header{
+  height: 60px;
+  line-height: 30px;
+  margin: 40px 0;
+}
+.tutor-header-img{
+  width: 70px;
+  border-radius: 70px;
+}
+.course-box{
+ margin-left: 20px;
+}
+.course-list>li{
+  float: left;
+  max-width: 330px;
+  margin: 10px 40px 30px 0;
+}
+.course-list>li>img{
+  max-width: 330px;
+  max-height: 168px;
+}
+.course-list>li>div{
+  height: 50px;
+  background: #F6F6F6;
+  padding-top: 15px;
+  border:1px solid #F0F0F0;
+  border-top: 0; 
+}
+
+/********我的协议************/
+.table-bordered{
+  margin: 20px 0;
+}
+.table-bordered>thead>tr>th{
+  border:0;
+  background: #FAFAFA;
+}
+.my-protocol>thead>tr>th:first-child,.my-protocol>tbody>tr>td:first-child{
+width:25%;
+}
+.table-bordered>tbody>tr>td:first-child{
+  text-align: left;
+}
+/************我的学习卡*************/
+.my-card{
+  padding-top: 20px;
+  min-height: 830px;
+}
+.my-card>div{
+  margin-bottom: 50px;
+}
+.my-card .form-inline .form-control{
+  width:300px;
+}
+.my-card>div>form .btn{
+  background: linear-gradient(#00C9FD,#0092F7);
+  color:#fff;
+}
+
+/************我的收藏***************/
+.my-collect{
+  padding: 20px 0 10px 0;
+  line-height: 30px;
+  border-bottom: 1px solid #E6E6E6;
+}
+.my-collect>.col-xs-2{
+  padding-left: 0; 
+  line-height: 35px;
+}
+.my-collect>.col-xs-8{
+overflow: hidden;
+text-overflow:ellipsis;
+white-space: nowrap;
+}
+
+/***************我的笔记***********/
+.my-note{
+  padding: 20px 0 10px 0;
+  border-bottom: 1px solid #F4F4F4;
+  line-height: 30px;
+}
+.my-note>.col-xs-10{
+  padding-left: 0;
+  
+}
+.my-note>.col-xs-10>p{
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+
+/**************我的订单*************/
+.table>tbody>tr>td:first-child{
+  width:10%;
+  }
+.table-center{
 }
