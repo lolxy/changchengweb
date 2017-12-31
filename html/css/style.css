@@ -25,7 +25,7 @@ label{
   line-height: 70px;
 }
 .navbar{
-  margin-bottom: 0; 
+  margin-bottom: 0;
 }
 .navbar-nav{
   padding-top:10px;
@@ -43,8 +43,8 @@ label{
   padding:15px;
 }
 .header-img{
-  max-width:160px;
-  height: 160px;
+  max-width:100%;
+  /*height: 160px;*/
 }
 .jy-main>.container>.col-xs-2,.jy-main>.container>.col-xs-9{
   background-color: #fff;
@@ -215,7 +215,7 @@ label{
 /*********我的优惠券**********/
 .coupon-list>li{
   float: left;
-  padding:0 30px 20px 20px; 
+  padding:0 30px 20px 20px;
 }
 .coupon-list>li>img{
   max-width: 200px;
@@ -249,7 +249,7 @@ label{
   background: #F6F6F6;
   padding-top: 15px;
   border:1px solid #F0F0F0;
-  border-top: 0; 
+  border-top: 0;
 }
 
 /********我的协议************/
@@ -289,7 +289,7 @@ width:25%;
   border-bottom: 1px solid #E6E6E6;
 }
 .my-collect>.col-xs-2{
-  padding-left: 0; 
+  padding-left: 0;
   line-height: 35px;
 }
 .my-collect>.col-xs-8{
@@ -306,7 +306,7 @@ white-space: nowrap;
 }
 .my-note>.col-xs-10{
   padding-left: 0;
-  
+
 }
 .my-note>.col-xs-10>p{
   overflow: hidden;
