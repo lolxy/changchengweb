@@ -27,6 +27,9 @@ label{
 .font-xs{
   font-size: 10px;
 }
+.font-gray{
+  color:#747474;
+}
 .row{
   margin: 0;
 }
@@ -36,7 +39,7 @@ label{
   line-height: 70px;
 }
 .navbar{
-  margin-bottom: 0; 
+  margin-bottom: 0;
 }
 .navbar-nav{
   padding-top:10px;
@@ -54,8 +57,8 @@ label{
   padding:15px;
 }
 .header-img{
-  max-width:160px;
-  height: 160px;
+  max-width:100%;
+  /*height: 160px;*/
 }
 .jy-main>.container>.col-xs-2,.jy-main>.container>.col-xs-9{
   background-color: #fff;
@@ -220,7 +223,7 @@ label{
 /*********我的优惠券**********/
 .coupon-list>li{
   float: left;
-  padding:0 30px 20px 20px; 
+  padding:0 30px 20px 20px;
 }
 .coupon-list>li>img{
   max-width: 200px;
@@ -269,7 +272,7 @@ label{
   background: #F6F6F6;
   padding-top: 15px;
   border:1px solid #F0F0F0;
-  border-top: 0; 
+  border-top: 0;
 }
 .sidebar-tutor-r{
   position: fixed;
@@ -334,7 +337,7 @@ width:25%;
   border-bottom: 1px solid #E6E6E6;
 }
 .my-collect>.col-xs-2{
-  padding-left: 0; 
+  padding-left: 0;
   line-height: 35px;
 }
 .my-collect>.col-xs-8{
@@ -351,7 +354,7 @@ white-space: nowrap;
 }
 .my-note>.col-xs-10{
   padding-left: 0;
-  
+
 }
 .my-note>.col-xs-10>p{
   overflow: hidden;
@@ -435,3 +438,101 @@ border-bottom: 1px solid #DFDFDF;
 .login-mode{
   margin: 0 10px;
 }
+
+/************视屏*****************/
+.video-bg{
+  background: #111111;
+  color: #fff;
+}
+.video a{
+  color:#fff;
+}
+.video a:hover{
+  color:#fff;
+}
+.video-list-bg{
+  background:#1B1B1B;
+}
+.video-header>.col-xs-10>.glyphicon,.video-header>.col-xs-2>.glyphicon{
+  top:2px;
+}
+.video-header{
+  height: 45px;
+  line-height: 45px;
+}
+.video-header-img{
+  width: 20px;
+  border-radius: 20px;
+  margin-bottom: 3px;
+  margin-right: 20px;
+}
+.video-share{
+  padding-right: 20px;
+}
+.video-list-header{
+  height:40px;
+  line-height: 40px;
+  position: relative;
+}
+.video-list-header>span{
+  position: absolute;
+  top:12px;
+  left:10px;
+}
+.video-list-header input{
+  border:0;
+  padding-left:25px;
+}
+.video-main{
+  height:750px;
+}
+.video-main>.col-xs-3{
+  border-top:1px solid #2A2A2A;
+  padding:0;
+  position: relative;
+  height:100%;
+}
+.video-main>.col-xs-3 button{
+  position: absolute;
+  right:20px;
+  bottom:20px;
+}
+.video-list,.video-list-r{
+  padding:4px 20px 0 20px;
+}
+.video-list ul>li{
+  height:30px;
+  position: relative;
+}
+.video-list ul>li>span{
+  position: absolute;
+  top:10px;
+  left: 0;
+  color:#fff;
+}
+.video-list ul>li>a{
+  position: absolute;
+  top:10px;
+  left: 30px;
+  font-size:10px;
+  color:#747474;
+}
+.video-main>.col-xs-6,.video-main>.col-xs-9{
+  background: #333333;
+  height:100%;
+}
+.video-header-active{
+  color: #0289E6 !important;
+  border-bottom: 1px solid #0289E6;
+}
+.video-list-r{
+  padding-top:10px;
+  width:100%;
+  height:400px;
+  overflow: hidden;
+}
+.video-list-r li{
+  line-height: 19px;
+  margin-bottom: 10px;
+}
+
