@@ -4,11 +4,22 @@
 a{
   color: #787878;
 }
+a:hover{
+  text-decoration: none;
+}
+body{
+  background: #F2F1F6;
+}
 img{
   max-width: 100%;
 }
 label{
   font-weight: 300;
+}
+.form-btn{
+  padding: 3px 20px;
+  background: linear-gradient(#00C9FD,#0092F7);
+  color:#fff;
 }
 .font-sm{
   font-size: 12px;
@@ -35,8 +46,8 @@ label{
 }
 /********主体内容***********/
 .jy-main{
-  background: #F2F1F6;
   padding:20px 0;
+  
 }
 /********左侧列表**********/
 .img-box{
@@ -76,11 +87,6 @@ label{
 .prompt{
   font-size: 10px;
 }
-.jy-main>.container>.col-xs-9 .main-box>form .btn{
-  padding: 3px 20px;
-  background: linear-gradient(#00C9FD,#0092F7);
-  color:#fff;
-}
 .checkbox>label:first-child{
   padding-left: 0;
 }
@@ -88,7 +94,6 @@ label{
 .main-box-course{
   width: 90%;
   margin: 0 auto;
-
 }
 .main-box-course .live>div{
   padding: 0;
@@ -141,7 +146,7 @@ label{
 #distpicker1 select{
   height: 32px;
   border-radius: 5px;
-  margin:0 6px;
+  margin:0 19px;
 }
 .delete{
   padding-left: 10px;
@@ -221,12 +226,27 @@ label{
   max-width: 200px;
   max-height: 125px;
 }
-
+.sidebar-r{
+  position: fixed;
+  top: 20%;
+  right: 0;
+  bottom: 0;
+  width: 25px;
+  background-color: #000;
+  color: #fff;
+}
+.sidebar-r ul>li{
+  padding:0 5px;
+}
+.sidebar-r ul>li>a{
+  color: #fff;
+}
 /**********导师********/
 .tutor-header{
-  height: 60px;
+  height: 160px;
   line-height: 30px;
-  margin: 40px 0;
+  padding: 40px 0;
+  background: #fff;
 }
 .tutor-header-img{
   width: 70px;
@@ -251,9 +271,34 @@ label{
   border:1px solid #F0F0F0;
   border-top: 0; 
 }
+.sidebar-tutor-r{
+  position: fixed;
+  top: 40%;
+  right: 0;
+  bottom: 0;
+}
+.sidebar-tutor-r ul>li:first-child{
+  background: #0096F7;
+  width: 75px;
+  padding: 3px 8px;
+}
+.sidebar-tutor-r ul>li{
+  padding:4px 0;
+}
+.sidebar-tutor-r ul>li:first-child a{
+  color:#fff;
+}
+.sidebar-tutor-r ul>li:not(:first-child){
+  margin:5px 0;
+}
+.sidebar-tutor-r ul>li:not(:first-child) a{
+  background: #fff;
+  color:#7F7F7F;
+  padding:7px;
+}
 
 /********我的协议************/
-.table-bordered{
+.table-bordered,.my-shop{
   margin: 20px 0;
 }
 .table-bordered>thead>tr>th{
@@ -319,4 +364,74 @@ white-space: nowrap;
   width:10%;
   }
 .table-center{
+}
+.my-Order>tbody>tr>td{
+
+}
+/********我的购物车********/
+.my-shop{
+border-bottom: 1px solid #DFDFDF;
+}
+/* .my-shop>tbody>tr>td:not(:nth-child(2)){
+  padding-top: 30px;
+} */
+.my-shop>tbody>tr>td:nth-child(2){
+  width:40%;
+}
+.color-red{
+  color:#FE0000;
+}
+.shop-submit{
+  border:1px solid #E1E1E1;
+  height:30px;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+.shop-submit button{
+  height:28px;
+  padding: 0px 15px;
+  color: #fff;
+  background: #FE0000;
+  border:0;
+}
+.shop-submit .col-xs-2{
+  padding-right:0;
+}
+
+/************注册页**********/
+.jy-form{
+  width: 360px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 20px 40px;
+  box-shadow: 0px 0px  15px 10px #E8EBF2;
+}
+.jy-form>.form-group{
+  margin-bottom: 20px;
+  position: relative;
+}
+.jy-form>.form-group>input{
+  background: #F2F1F6;
+  border: none;
+}
+.jy-form>.form-group>.form-get{
+  position: absolute;
+  top:8px;
+  right:10px;
+}
+.register{
+  width: 100%;
+  background: linear-gradient(#00C9FD,#0092F7);
+  color:#fff;
+  margin-bottom: 10px;  
+}
+.register>span{
+  letter-spacing: 10px;
+}
+.register:hover{
+  color:#fff;
+}
+/************登录页*************/
+.login-mode{
+  margin: 0 10px;
 }
