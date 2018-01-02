@@ -1,7 +1,8 @@
 ﻿/*css reset code */
 
 /****  文字大小初始化,使1em=10px *****/
-body { font-size: 62.5%;}
+html{height:100%;}
+body{min-height:100%;font-size: 62.5%;margin:0;padding:0;position:relative;}
 /* for IE/Win */
 html > body { font-size: 14px; font-family: 'Microsoft YaHei';background-color:#f2f2f5;color:#333;}
 /* for everything else */
@@ -45,13 +46,13 @@ a:hover{color:#0091f4;}
 .index_menu .user a:hover{color:#0091f4;}
 .index_menu ul li.hover a{color:#0091f4;}
 /*尾部样式*/
-.index_footer{width:100%;background-color:#000;height:50px;line-height:50px;color:#a1a1a1;}
+.index_footer{width:100%;background-color:#000;height:50px;line-height:50px;color:#a1a1a1;position:absolute;bottom:0;width:100%;}
 .index_footer li{float:left;margin-right:20px;}
 .index_footer li .fenxiang{display:inline-block;vertical-align:middle;margin-right:10px;}
 .index_footer .copyright{font-size:12px;}
 .index_footer .copyright a{color:#a1a1a1;}
 /*分页样式*/
-.pagination{ width: 288px;margin:0px auto; padding-top: 80px;clear: both;height:26px;margin-bottom:60px;}
+.pagination{ width: 288px;margin:0px auto; padding-top: 80px;clear: both;height:86px;padding-bottom:60px;overflow: hidden;}
 .pagination .pageUp,.pagination .pageDown,.pagination div ul li{font-size:12px;color: #666;float:left;margin-right:20px;text-align:center;padding:5px 10px;border-radius: 5px;background-color: #fff;cursor:pointer;}
 .pagination .pageDown{margin-right:0;}
 .pagination div ul li.on{ color:#fff; background-color: #0091f4;}

@@ -1,0 +1,30 @@
+/* 导师页个人信息 */
+.tutor-header{background-color: #fff;height: 215px;overflow: hidden;}
+.tutor-header .w11{position:relative;height: 120px;margin-top: 45px;}
+.tutor-header .tutor-thumb{position: absolute;top: 0;left: 10px;}
+.tutor-header .tutor-thumb .tutor-photo{width: 120px;height: 120px;border-radius: 50%;background-repeat: no-repeat;background-position: center center;background-size: cover;overflow: hidden;}
+.tutor-header .tutor-info{margin-left: 150px;margin-top: 45px;overflow: hidden;}
+.tutor-header .tutor-info h2{font-size: 18px;line-height: 30px;color:#333333;margin: 18px 0;}
+.tutor-header .tutor-info p{font-size: 14px;color:#666666;display: -webkit-box; display: -moz-box;line-height: 24px; overflow: hidden; text-overflow: ellipsis; word-break: break-all; -webkit-box-orient: vertical; -webkit-line-clamp:2;}
+
+/*课程列表*/
+.kecheng_list li{width:332px;height:226px;background-color: #ffffff;box-shadow: 0px 5px 9px 0px rgba(80, 131, 207, 0.06);border-radius: 4px;border: solid 1px #e8e8e8;float:left;margin-top:30px;margin-right:49px;position:relative;overflow:hidden;}
+.kecheng_list li:nth-child(3n){margin-right:0;}
+.kecheng_list .ke_top{height:168px;width:306px;padding:0 13px;}
+.kecheng_list .ke_cont{width:152px;overflow:hidden;}
+.kecheng_list .ke_cont h1{font-size:18px;margin-top:20px;line-height:25px;}
+.kecheng_list .ke_cont time,.kecheng_list .ke_cont .keshi{color:#999;font-size:12px;}
+.kecheng_list .ke_cont time{padding:10px 0;display:block;}
+.kecheng_list li .teacher{width:154px;height:168px;position:relative;overflow:hidden;}
+.kecheng_list li .teacher img{transition: all .3s ease;}
+.kecheng_list li:hover .teacher img{-webkit-transform: scale(1.1);transform: scale(1.1);}
+
+.kecheng_list .ke_bottom{width:306px;padding:0 13px;height:58px;background-color:#f6f6f6;}
+.kecheng_list .ke_bottom .price{line-height:58px;font-size:18px;}
+.kecheng_list .ke_bottom .people,.kecheng_list .ke_bottom .zhekou{line-height:20px;font-size:12px;}
+.kecheng_list .ke_bottom .zhekou{color:#0091f5;}
+.kecheng_list .ke_bottom .people{color:#999;margin-top:9px;}
+.kecheng_list li:hover .ke_bottom2{position:absolute;bottom:0;display:block;}
+.kecheng_list .ke_bottom2 .btn{width:226px;margin:15px auto;height:28px;}
+.kecheng_list .xiangqing{width: 80px;height: 26px;border-radius: 4px;border: solid 1px #cacaca;line-height:26px;text-align:center;color:#cacaca;}
+.kecheng_list .goumai{width:81px;height:28px;background-size:81px 28px;background-repeat:no-repeat;background-image:url("../images/index/goumai_bg.jpg");line-height:28px;text-align:center;color:#fff;}
