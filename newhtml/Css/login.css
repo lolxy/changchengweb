@@ -1,7 +1,7 @@
 /* 登录框 */
 body{padding-bottom: 112px;}
 .bg-white{background-color: #fff;}
-.login-wrapper{width: 322px;margin: 112px auto;background-color: #fff;box-shadow: 12px 12px 28px #f5f8fc,-12px -12px 28px #f5f8fc,-12px 12px 28px #f7f9fd,12px -12px 28px #f7f9fd;
+.login-wrapper{width: 322px;margin: 112px auto;background-color: #fff;box-shadow: 0px 0px 46px rgba(80,131,207,0.13);
 border: 1px solid #f4f7fc;border-radius: 5px;padding: 63px 63px 30px;}
 .login-wrapper h2{line-height: 36px;font-size: 24px;color:#333333;text-align: center;margin-bottom: 25px;}
 .form-group{padding: 15px;position:relative;}

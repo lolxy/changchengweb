@@ -57,3 +57,17 @@ body{padding-bottom: 30px;}
 .bj-list .bjbox .bj-right{position: absolute;top: 0;right: 0;}
 .bj-list .bjbox .bj-right a{font-size: 14px;color:#999999;}
 .bj-list .bjbox .bj-right a:hover{color:#787878;}
+/* 我的信息 */
+.my-info-box{padding: 0 20px;}
+.my-info-box .form-group{margin-bottom: 25px;position: relative;height: 40px;}
+.my-info-box .form-group label{display: block;width: 90px;height: 40px;position:absolute;left: 0;top: 0;font-size: 16px;color:#333333;line-height: 40px;}
+.my-info-box .form-group label span{letter-spacing: 32px;margin-right: -32px;}
+.my-info-box .form-group .input-group{margin-left: 90px;line-height: 40px;}
+.my-info-box .form-group .input-group .radio-inline{float: left;vertical-align: top;margin-right: 15px;}
+.my-info-box .form-group .input-group .radio-inline input{vertical-align: top;margin-top: 13px;margin-right: 15px;}
+.my-info-box .form-group .input-group .input-control{width: 230px;height: 40px;font-size: 14px;color:#999999;padding: 0 10px;line-height: 40px;border: 1px solid #eaeaea;outline: none;}
+.my-info-box .form-group .input-group .tip{font-size: 10px;color:#999999;margin-left: -55px;margin-top: 10px;}
+.my-info-box .form-group select{border: 1px solid #eaeaea;outline: none;height: 40px;padding: 0 15px;color:#333333;font-size: 14px;}
+.my-info-box .btn-group{margin-top: 70px;margin-left: 90px;}
+.my-info-box .btn-group .btn-submit{font-size: 16px;color:#ffffff;background: url(../images/user/xinxixiugaibaocun.png) center center no-repeat;background-size: cover;border: none;outline: none;width: 81px;height: 27px;line-height: 25px;cursor: pointer;}
+.my-info-box .btn-group .btn-submit:hover{opacity:0.85}
