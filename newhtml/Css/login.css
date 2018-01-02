@@ -1,30 +1,32 @@
-/* 导师页个人信息 */
-.tutor-header{background-color: #fff;height: 215px;overflow: hidden;}
-.tutor-header .w11{position:relative;height: 120px;margin-top: 45px;}
-.tutor-header .tutor-thumb{position: absolute;top: 0;left: 10px;}
-.tutor-header .tutor-thumb .tutor-photo{width: 120px;height: 120px;border-radius: 50%;background-repeat: no-repeat;background-position: center center;background-size: cover;overflow: hidden;}
-.tutor-header .tutor-info{margin-left: 150px;margin-top: 45px;overflow: hidden;}
-.tutor-header .tutor-info h2{font-size: 18px;line-height: 30px;color:#333333;margin: 18px 0;}
-.tutor-header .tutor-info p{font-size: 14px;color:#666666;display: -webkit-box; display: -moz-box;line-height: 24px; overflow: hidden; text-overflow: ellipsis; word-break: break-all; -webkit-box-orient: vertical; -webkit-line-clamp:2;}
+/* 登录框 */
+body{padding-bottom: 112px;}
+.bg-white{background-color: #fff;}
+.login-wrapper{width: 322px;margin: 112px auto;background-color: #fff;box-shadow: 12px 12px 28px #f5f8fc,-12px -12px 28px #f5f8fc,-12px 12px 28px #f7f9fd,12px -12px 28px #f7f9fd;
+border: 1px solid #f4f7fc;border-radius: 5px;padding: 63px 63px 30px;}
+.login-wrapper h2{line-height: 36px;font-size: 24px;color:#333333;text-align: center;margin-bottom: 25px;}
+.form-group{padding: 15px;position:relative;}
+.input-css{width: 294px;height: 40px;line-height: 40px;padding:0 15px;background-color: #f2f2f5;font-size: 14px;color:#666666;border: none;outline: none;border-radius: 5px;box-sizing: border-box;}
+.tipbox{margin-top: -8px;font-size: 12px;color:#666666;text-align:right;margin-right: 15px;}
+.btn-group{padding: 15px;}
+.btn-group .btn-login{width: 294px;height: 40px;line-height: 38px;border: none;outline: none;cursor: pointer;background:url(../images/login/login_bg.png);background-size: cover;font-size: 16px;color:#ffffff;opacity:1;transition:opacity ease-in-out .5s;}
+.btn-group .btn-login:hover{opacity:0.85;}
+.btn-group .btn-login span{letter-spacing: 40px;margin-left: 40px;}
+.btn-group p{font-size: 12px;color:#666666;text-align: center;line-height: 30px;}
+.btn-group p a{color:rgba(0,145,244,1);}
+.btn-group p a:hover{color:rgba(0,145,244,0.85);}
+.login-type{width: 240px;height: 40px;overflow: hidden;margin: 5px auto;}
+.login-type a{display: block;width: 40px;height: 40px;float: left;margin: 0 20px;background-position: center center;background-repeat: no-repeat;background-size: contain;transition: all ease-in-out .5s;}
+.login-type a.weixin-login{background-image: url(../images/login/weixin.png)}
+.login-type a.qq-login{background-image: url(../images/login/qq.png)}
+.login-type a.weibo-login{background-image: url(../images/login/weibo.png)}
+.login-type a.weixin-login:hover{background-image: url(../images/login/weixin_active.png)}
+.login-type a.qq-login:hover{background-image: url(../images/login/qq_active.png)}
+.login-type a.weibo-login:hover{background-image: url(../images/login/weibo_active.png)}
 
-/*课程列表*/
-.kecheng_list li{width:332px;height:226px;background-color: #ffffff;box-shadow: 0px 5px 9px 0px rgba(80, 131, 207, 0.06);border-radius: 4px;border: solid 1px #e8e8e8;float:left;margin-top:30px;margin-right:49px;position:relative;overflow:hidden;}
-.kecheng_list li:nth-child(3n){margin-right:0;}
-.kecheng_list .ke_top{height:168px;width:306px;padding:0 13px;}
-.kecheng_list .ke_cont{width:152px;overflow:hidden;}
-.kecheng_list .ke_cont h1{font-size:18px;margin-top:20px;line-height:25px;}
-.kecheng_list .ke_cont time,.kecheng_list .ke_cont .keshi{color:#999;font-size:12px;}
-.kecheng_list .ke_cont time{padding:10px 0;display:block;}
-.kecheng_list li .teacher{width:154px;height:168px;position:relative;overflow:hidden;}
-.kecheng_list li .teacher img{transition: all .3s ease;}
-.kecheng_list li:hover .teacher img{-webkit-transform: scale(1.1);transform: scale(1.1);}
+/* 注册框 */
+.getyzm{position: absolute;right: 15px;top: 15px;height: 40px;line-height: 40px;font-size: 14px;color:#666666;padding: 0 10px;}
+.view_icon{position: absolute;right: 15px;top: 15px;width: 40px;height: 40px;background:url(../images/login/view_icon.png) center center no-repeat;background-size: contain;display: block;}
 
-.kecheng_list .ke_bottom{width:306px;padding:0 13px;height:58px;background-color:#f6f6f6;}
-.kecheng_list .ke_bottom .price{line-height:58px;font-size:18px;}
-.kecheng_list .ke_bottom .people,.kecheng_list .ke_bottom .zhekou{line-height:20px;font-size:12px;}
-.kecheng_list .ke_bottom .zhekou{color:#0091f5;}
-.kecheng_list .ke_bottom .people{color:#999;margin-top:9px;}
-.kecheng_list li:hover .ke_bottom2{position:absolute;bottom:0;display:block;}
-.kecheng_list .ke_bottom2 .btn{width:226px;margin:15px auto;height:28px;}
-.kecheng_list .xiangqing{width: 80px;height: 26px;border-radius: 4px;border: solid 1px #cacaca;line-height:26px;text-align:center;color:#cacaca;}
-.kecheng_list .goumai{width:81px;height:28px;background-size:81px 28px;background-repeat:no-repeat;background-image:url("../images/index/goumai_bg.jpg");line-height:28px;text-align:center;color:#fff;}
+/* 注册成功 */
+.success-icon{width: 92px;height: 92px;margin: 30px auto 15px;}
+.success-tip{color:#666666;text-align: center;font-size: 18px;line-height: 30px;margin-bottom: 15px;}

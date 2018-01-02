@@ -33,6 +33,7 @@ a:hover{color:#0091f4;}
 .none{display:none;}
 .red{color:red;}
 .yellow{color:#ff9901;}
+.text-ellipsis{white-space: nowrap;overflow: hidden;word-wrap: break-word;text-overflow: ellipsis;display: block;}
 /* 图片样式 */
 .img-responsive{max-width: 100%;vertical-align: top;height: auto;}
 .img-circle{border-radius: 50%;}
@@ -56,3 +57,17 @@ a:hover{color:#0091f4;}
 .pagination .pageUp,.pagination .pageDown,.pagination div ul li{font-size:12px;color: #666;float:left;margin-right:20px;text-align:center;padding:5px 10px;border-radius: 5px;background-color: #fff;cursor:pointer;}
 .pagination .pageDown{margin-right:0;}
 .pagination div ul li.on{ color:#fff; background-color: #0091f4;}
+/* 个人中心公共部分 */
+.user-center-wrapper{margin-top: 30px;margin-bottom: 100px;overflow: hidden;}
+.user-center-wrapper .left-menu{width: 210px;float: left;overflow: hidden;background-color: #fff;border: 1px solid #dfdfdf;}
+.user-center-wrapper .left-menu .photo-thumb{width: 166px;height: 166px;padding: 22px;}
+.menu-list li{border-top: 1px solid #dfdfdf;margin-top: -1px;}
+.menu-list li>a{display: block;width: 100%;height: 50px;background-color: #fafafa;font-size: 16px;color:#333333;line-height: 50px;text-align: center;border-bottom: 1px solid #dfdfdf;}
+.menu-list li>a:hover,.menu-list li>a.active,.menu-list li dd a:hover,.menu-list li dd a.active{color:#0091f4;}
+.menu-list li dd{width: 100%;display: block;}
+.menu-list li dd a{display:block;height: 40px;width: 100%;line-height: 40px;font-size: 14px;color:#666666;text-align: center;}
+/* 公共面板 */
+.right-content{float: left;margin-left: 30px;width: 858px;}
+.panel{border: 1px solid #dfdfdf;}
+.panel .panel-heading{font-size: 18px;color:#333333;padding-left: 30px;background-color: #fafafa;height: 60px;line-height: 60px;border-bottom: 1px solid #dfdfdf;}
+.panel .panel-body{padding: 32px;background-color: #fff;}

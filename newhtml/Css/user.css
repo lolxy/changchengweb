@@ -1,0 +1,59 @@
+/* 登录框 */
+body{padding-bottom: 30px;}
+/* 我的学习卡 */
+.list-box{overflow: hidden;}
+.list-box li{padding:0 32px 32px;float: left;}
+.list-box li .card{width: 176px;height: 100px;background:url(../images/user/xuexika.png) center center no-repeat;background-size: contain;overflow: hidden;color:#ffffff;padding: 12px;border-radius: 6px;}
+.list-box li .card p{font-size: 16px;line-height: 24px;}
+.list-box li .card span{display: block;font-size: 16px;line-height: 24px;text-align: center;}
+.list-box li .card small{font-size: 10px;}
+
+.user-card{width: 426px;height: 40px;margin: 50px auto 100px;overflow: hidden;}
+.user-card .input-box{width: 316px;height: 38px;float: left;border: 1px solid #eaeaea;padding: 0 10px;}
+.user-card .input-box input{width: 100%;border: none;outline: none;height: 100%;color:#999999;font-size: 14px;}
+.user-card .btn-box{width: 81px;height: 40px;float: right;}
+.user-card .btn-box input{background:url(../images/user/xuexikaqueren.png) center center no-repeat;width: 100%;height: 100%;border: none;outline: none;cursor: pointer;font-size: 18px;color:#ffffff;line-height: 38px;}
+
+/* 我的优惠券 */
+.list-box li .coupon{width: 176px;height: 100px;background:url(../images/user/youhuiquan.png) center center no-repeat;background-size: cover;overflow: hidden;color:#ffffff;padding: 12px;border-radius: 6px;}
+.list-box li .coupon.disabled{background:url(../images/user/end_time.png) center center no-repeat #c5c5c5;background-size: cover;}
+.list-box li .coupon p{font-size: 30px;line-height: 50px;}
+.list-box li .coupon p b{font-size: 43px;font-weight: 400;}
+.list-box li .coupon span{display: block;font-size: 14px;line-height: 24px;}
+.list-box li .coupon small{font-size: 10px;}
+
+/* 分页 */
+.pagination {padding-top: 30px;height: 26px;padding-bottom: 0px;}
+/* 我的收藏 */
+.fav-list{padding: 0 18px;margin-top: -30px;}
+.fav-list li{padding-top: 25px;padding-bottom: 20px;border-bottom: 1px solid #dfdfdf;}
+.fav-list li:last-child{border-bottom: none;}
+.fav-list .favbox{position: relative;overflow: hidden;height: 50px;}
+.fav-list .photo{position: absolute;left: 0;top: 0;width: 90px;height: 50px;}
+.fav-list .content{margin-left: 120px;margin-right: 225px;}
+.fav-list .content a{font-size: 18px;color:#666666;margin-bottom: 10px;}
+.fav-list .content p{color:#666666;font-size: 10px;}
+.fav-list .rightbox{position:absolute;right: 0;top: 0;width: 150px;height: 50px;}
+.fav-list .rightbox a,.fav-list .rightbox span{font-size: 10px;text-align: right;display: block;color:#666666;}
+.fav-list .rightbox a{margin-bottom: 16px;color:#333333;}
+/* 我的订单 */
+.order-box{padding: 0 20px;}
+.order-box table{width: 100%;border:1px solid #dfdfdf;font-size: 12px;color:#666666;}
+.order-box table th,.order-box table td{border: 1px solid #dfdfdf;}
+.order-box table th{text-align: center;height: 35px;background-color: #fafafa;padding: 0 10px;}
+.order-box table td{padding: 15px;line-height: 22px;text-align: center;}
+.order-box table td .view{color:#999999;font-size: 12px;display: block;}
+.order-box table td .del{color:#666666;}
+.order-box table td .del:hover{color:#777777;}
+/* 我的笔记 */
+.bj-list{padding: 0 18px;margin-top: -30px;}
+.bj-list li{padding-top:15px;padding-bottom: 12px;border-bottom: 1px solid #dfdfdf;}
+.bj-list li:last-child{border-bottom: none;}
+.bj-list .bjbox{position: relative;overflow: hidden;height: 50px;}
+.bj-list .bjbox .bj-left{margin-right: 125px;}
+.bj-list .bjbox .bj-left a{font-size: 18px;color:#333333;}
+.bj-list .bjbox .bj-left a:hover{color:#0091f4;}
+.bj-list .bjbox .bj-left span{font-size: 14px;color:#999999;display: block;line-height: 35px;}
+.bj-list .bjbox .bj-right{position: absolute;top: 0;right: 0;}
+.bj-list .bjbox .bj-right a{font-size: 14px;color:#999999;}
+.bj-list .bjbox .bj-right a:hover{color:#787878;}
