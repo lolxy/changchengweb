@@ -1,0 +1,54 @@
+﻿/*css reset code */
+
+/****  文字大小初始化,使1em=10px *****/
+body { font-size: 62.5%;}
+/* for IE/Win */
+html > body { font-size: 14px; font-family: 'Microsoft YaHei';background-color:#f2f2f5;color:#333;}
+/* for everything else */
+
+/*字体边框等初始化*/
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td ,menu{ padding: 0; margin: 0; }
+table { border-collapse: collapse; border-spacing: 0; }
+fieldset, img { border: 0; }
+img { display: block; }
+address, caption, cite, code, dfn, th, var { font-weight: normal; font-style: normal; }
+ol, ul { list-style: none; }
+caption, th { text-align: left; }
+h1, h2, h3, h4, h5, h6 { font-weight: normal; font-size: 100%; }
+q:before, q:after { content: ''; }
+abbr, acronym { border: 0; }
+a{text-decoration: none; color:#333; }
+a:hover{color:#0091f4;}
+.clear { clear: both; }
+.w11{ width: 1100px; margin: 0 auto; }
+.fl{float:left!important;}
+.fr{float:right!important;}
+.mgr{margin-right:0!important;}
+.mg0{margin:0 auto!important;display:block;}
+.tc{text-align:center!important;}
+.tl{text-align:left!important;}
+.tr{text-align:right!important;}
+.hidden{overflow:hidden;}
+.none{display:none;}
+.red{color:red;}
+.yellow{color:#ff9901;}
+/*头部样式*/
+.index_menu{width:100%;height:100px;line-height:100px;background-color:#fff;box-shadow: 0px 1px 0px 0px rgba(80, 131, 207, 0.07);border-bottom: solid 1px #dfdfdf;}
+.index_menu ul li{float:left;margin-right: 39px;}
+.index_menu img{padding-top:20px;margin-right:70px;}
+.index_menu .user{font-size:12px;}
+.index_menu .user span{padding: 0 8px;}
+.index_menu .user a{color:#666;}
+.index_menu .user a:hover{color:#0091f4;}
+.index_menu ul li.hover a{color:#0091f4;}
+/*尾部样式*/
+.index_footer{width:100%;background-color:#000;height:50px;line-height:50px;color:#a1a1a1;}
+.index_footer li{float:left;margin-right:20px;}
+.index_footer li .fenxiang{display:inline-block;vertical-align:middle;margin-right:10px;}
+.index_footer .copyright{font-size:12px;}
+.index_footer .copyright a{color:#a1a1a1;}
+/*分页样式*/
+.pagination{ width: 288px;margin:0px auto; padding-top: 80px;clear: both;height:26px;margin-bottom:60px;}
+.pagination .pageUp,.pagination .pageDown,.pagination div ul li{font-size:12px;color: #666;float:left;margin-right:20px;text-align:center;padding:5px 10px;border-radius: 5px;background-color: #fff;cursor:pointer;}
+.pagination .pageDown{margin-right:0;}
+.pagination div ul li.on{ color:#fff; background-color: #0091f4;}

@@ -1,0 +1,34 @@
+﻿/*课程分类导航*/
+.kecheng_menu{height:76px;line-height:76px;}
+.kecheng_menu li{float:left;margin-right:48px;}
+.kecheng_menu li.hover a{color:#0091f4;}
+/*banner轮播图*/
+.focus{height:360px;position:relative; overflow:hidden;}
+.focus .bd{ position:relative; z-index:0; }
+.focus .bd li img{ width:100%; height:360px;}
+.focus .hd{display:none;}
+/*课程列表*/
+.kecheng_list li{width:332px;height:226px;background-color: #ffffff;box-shadow: 0px 5px 9px 0px rgba(80, 131, 207, 0.06);border-radius: 4px;border: solid 1px #e8e8e8;float:left;margin-top:30px;margin-right:49px;position:relative;overflow:hidden;}
+.kecheng_list li:nth-child(3n){margin-right:0;}
+.kecheng_list .ke_top{height:168px;width:306px;padding:0 13px;}
+.kecheng_list .ke_cont{width:152px;overflow:hidden;}
+.kecheng_list .ke_cont h1{font-size:18px;margin-top:20px;line-height:25px;}
+.kecheng_list .ke_cont time,.kecheng_list .ke_cont .keshi{color:#999;font-size:12px;}
+.kecheng_list .ke_cont time{padding:10px 0;display:block;}
+.kecheng_list li .teacher{width:154px;height:168px;position:relative;overflow:hidden;}
+.kecheng_list li .teacher img{transition: all .3s ease;}
+.kecheng_list li:hover .teacher img{-webkit-transform: scale(1.1);transform: scale(1.1);}
+
+.kecheng_list .ke_bottom{width:306px;padding:0 13px;height:58px;background-color:#f6f6f6;}
+.kecheng_list .ke_bottom .price{line-height:58px;font-size:18px;}
+.kecheng_list .ke_bottom .people,.kecheng_list .ke_bottom .zhekou{line-height:20px;font-size:12px;}
+.kecheng_list .ke_bottom .zhekou{color:#0091f5;}
+.kecheng_list .ke_bottom .people{color:#999;margin-top:9px;}
+.kecheng_list li:hover .ke_bottom2{position:absolute;bottom:0;display:block;}
+.kecheng_list .ke_bottom2 .btn{width:226px;margin:15px auto;height:28px;}
+.kecheng_list .xiangqing{width: 80px;height: 26px;border-radius: 4px;border: solid 1px #cacaca;line-height:26px;text-align:center;color:#cacaca;}
+.kecheng_list .goumai{width:81px;height:28px;background-size:81px 28px;background-repeat:no-repeat;background-image:url("../images/index/goumai_bg.jpg");line-height:28px;text-align:center;color:#fff;}
+
+
+
+

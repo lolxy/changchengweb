@@ -1,0 +1,74 @@
+﻿/*课程详情*/
+.panel-1{width:100%;background-color:#fff;height:238px;padding-top:50px;padding-bottom:70px;border-bottom:1px solid #eaeaea;}
+.ke_detail{width:980px;margin:0 auto;height:238px;}
+.ke_detail .ke_cont{width:452px;height:238px;}
+.ke_detail .ke_cont h1{font-size:18px;line-height:30px;}
+.ke_detail .ke_cont .jianjie{width: 432px;height: 57px;background-color: #ffe99e;border-radius: 3px;margin-top:10px;font-size:12px;padding:5px 10px;line-height:20px;color:#666;}
+.ke_detail .ke_cont .ls_jieshao{font-size:12px;color:#666;margin-top:15px;}
+.ke_detail .ke_cont time{font-size:12px;color:#0091f4;margin-top:15px;display:inline-block;}
+.ke_detail .ke_cont .price{height:40px;line-height:40px;}
+.ke_detail .ke_cont .yellow{margin-left:20px;}
+.ke_detail .btn .huiyuan{color:#FE0000;height:26px;line-height:26px;text-align:center;border-radius: 4px;border: solid 1px #ff0000;display:inline-block;width:79px;margin-right:20px;}
+.ke_detail .btn .goumai{width:81px;height:28px;background-size:81px 28px;background-repeat:no-repeat;background-image:url("../images/index/goumai_bg.jpg");line-height:28px;text-align:center;color:#fff;display:inline-block;margin-right:20px;}
+.ke_detail .btn span{color:#999;font-size:12px;vertical-align:bottom;}
+/*套餐推荐*/
+.panel-2{width:100%;height:368px;background-color:#fff;}
+.panel-2 h2{font-size:18px;padding-top:25px;margin-bottom:20px;}
+.panel-2 .TabTitle1 {height:45px; }
+.panel-2 .TabTitle1 li{ float: left;border-right:2px solid #fff; background-color: #f2f2f5; text-align: center; height: 45px; line-height: 45px; cursor: pointer;padding: 0 10px;width:250px;}
+.panel-2 .TabTitle1 li.active{ border-top: 2px solid #0091f4; background-color: #fff; height: 43px; line-height: 43px;}
+.panel-2 .TabContent1{ width: 1000px; margin-top: 50px; overflow:hidden;}
+.panel-2 .taocan li{float:left;width:200px;position:relative;}
+.panel-2 .taocan li img{height:98px;width:149px;}
+.panel-2 .taocan li h3{font-size:12px;width:135px;margin-left:7px;text-align:center;margin-top:10px;}
+.panel-2 .taocan li p{text-align:center;margin-top:10px;width:149px;}
+.panel-2 .taocan li em{width:19px;height:19px;background-repeat:no-repeat;background-size:19px 19px;background-image:url("../images/detail/jia.png");position:absolute;right:16px;top:39.5px;}
+.panel-2 .taocan li:last-child em{background-image:url("../images/detail/dengyu.png");height:11px;top:43.5px;background-size:19px 11px;}
+.panel-2 .zongjia{min-width:84px;float:left;}
+.panel-2 .zongjia p{color: #ff0000;font-size: 18px;text-align: center;}
+.panel-2 .zongjia del{font-size: 12px;color: #999;text-align: center;display: inherit;margin-top: 5px;margin-bottom: 5px;}
+.panel-2 .zongjia .price{width: 74px;height: 20px;line-height: 20px;border: 1px solid #ff2626;text-align:center;font-size: 12px;background-color: #f6c6c6;margin: 0 auto;}
+.panel-2 .zongjia .goumai{width: 84px;height:28px;line-height:28px;text-align:center;color:white;background-color: #ff0000;display:block;box-shadow: 0px 0px 16px 0px    rgba(27, 86, 126, 0.15);margin: 0 auto;margin-top: 5px;}
+/*课程详情*/
+.panel-3{margin-top:30px;}
+.panel-3 .course{border:1px solid #DFDFDF;background-color:#fff;}
+.panel-3 .course{width:748px;}
+.panel-3 .tabs{height:44px;}
+.panel-3 .anchor {position: relative;top: -44px;}
+.panel-3 .laoshi{width:312px;height:300px;}
+.panel-3 .course .fixed_pc {display: block;position: fixed;top: 0;width:748px;}
+.panel-3 .course .tab{width:187px;height:44px;float:left;background-color:#fafafa;font-size:16px;line-height:44px;text-align:center;}
+.panel-3 .course .tab.active{height:42px;line-height:42px;border-top:2px solid #0091f4;background-color:#fff;}
+.panel-3 .course_content_section{padding:0 15px;}
+.panel-3 .course_content_section .content_node{padding:30px 0;clear: both;}
+.panel-3 .course_content_section .content_node .title{height: 22px; line-height: 22px; border-left: 4px solid #0091f4; padding-left: 10px;font-size: 18px;}
+.panel-3 .course img{width:100%;height:auto;}
+.panel-3 .lesson_catelog_hd h2{text-align:center;font-size:16px;margin-bottom:30px;}
+.panel-3 .lesson_catelog_hd>ul>li{margin-bottom:20px;}
+.panel-3 .lesson_catelog_hd .inactive{height:40px;line-height:40px;background-color:#eaeaea;color:#666;padding-left:20px;display:block;margin-bottom:10px;}
+.panel-3 .lesson_catelog_hd .list li{width:660px;margin:0 auto;height:40px;line-height:40px;border-bottom:1px solid #eaeaea;}
+.panel-3 .lesson_catelog_hd h3{color:#666;}
+.panel-3 .lesson_catelog_hd span{color:#999;}
+.panel-3 .course_class_notes{padding-bottom:50px;}
+.panel-3 .class_notes_con{width:670px;margin:0 auto;}
+.panel-3 .class_notes_con li{padding:20px 0;border-bottom:1px solid #d7d7d7;min-height:30px;width:100%;float:left;}
+.panel-3 .class_notes_con li.second-btn{clear:both;text-align:center;font-size:16px;line-height:30px;}
+.panel-3 .class_notes_con .touxiang{width:30px;height:30px;background-color:#d7d7d7;border-radius:100%;}
+.panel-3 .class_notes_con .content{width:620px;}
+.panel-3 .class_notes_con .top{width:100%;color:#999;font-size:12px;}
+.panel-3 .class_notes_con p{line-height:20px;padding-top:5px;}
+.panel-3 .class_notes_con .more{padding:24px 0;text-align: center;}
+.panel-3 .class_notes_con .more a{background-image:url("../images/detail/yuanjia2.png");background-repeat:no-repeat;line-height:16px;display: inline-block;padding-left: 25px;}
+
+
+.panel-3 .laoshi li{padding:20px 50px 40px 50px;border:1px solid #dfdfdf;border-radius:5px;background-color:#fff;margin-bottom:15px;}
+.panel-3 .laoshi li .teacher{margin:0 auto;width:72px;}
+.panel-3 .laoshi li .teacher img{border-radius:100%;}
+.panel-3 .laoshi li .jiangshi{color:#666;text-align:center;margin:10px 0;}
+.panel-3 .laoshi li .jianjie{font-size:12px;text-indent:2em;color:#666;line-height:25px;}
+.panel-3 .laoshi li .more{padding:9px 0;text-align: center;background-color:#f2f2f5;margin-top:15px;}
+.panel-3 .laoshi li .more a{background-image:url("../images/detail/yuanjia.png");background-repeat:no-repeat;line-height:12px;display: inline-block;padding-left: 22px;}
+.panel-3 .laoshi li .more:hover{background-color:#0091f4;}
+.panel-3 .laoshi li .more:hover a{color:#fff;background-image:none;padding:0;}
+
+.height80{height:100%;clear:both;height:80px;}
