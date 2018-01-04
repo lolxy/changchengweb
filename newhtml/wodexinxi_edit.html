@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width"/>
-    <title>我的订单</title>
+    <title>我的信息</title>
     <!--共用样式-->
     <link href="Css/Share.css" rel="stylesheet" />
     <!--登录样式-->
@@ -29,7 +29,7 @@
         </div>
     </nav>
 
-    <!-- 我的订单 -->
+    <!-- 我的信息 -->
     <section class="user-center-wrapper">
       <div class="w11">
         <!-- 左侧公共菜单部分 -->
@@ -114,60 +114,99 @@
             </ul>
           </nav>
         </aslide>
-        <!-- 右侧我的订单-->
+        <!-- 右侧我的信息-->
         <div class="right-content">
           <div class="panel">
-            <div class="panel-heading">我的订单</div>
+            <div class="panel-heading">我的信息</div>
             <div class="panel-body">
-              <div class="order-box">
-                <table>
-                  <thead>
-                    <tr>
-                      <th width="80">订单号</th>
-                      <th colspan="2">商品信息</th>
-                      <th width="100">金额</th>
-                      <th width="60">状态</th>
-                      <th width="50">操作</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>B17121916181240Z</td>
-                      <td>2018考研英语作文点睛班（适用英语一、二）</td>
-                      <td>&times;1</td>
-                      <td>总额：￥11888.00</td>
-                      <td>已完成</td>
-                      <td><a href="#" class="del">删除</a></td>
-                    </tr>
-                    <tr>
-                      <td>B17121916181240Z</td>
-                      <td>2018考研英语作文点睛班（适用英语一、二）</td>
-                      <td>&times;1</td>
-                      <td>总额：￥11888.00</td>
-                      <td>已完成</td>
-                      <td><a href="#" class="del">删除</a></td>
-                    </tr>
-                    <tr>
-                      <td>B17121916181240Z</td>
-                      <td>2018考研英语作文点睛班（适用英语一、二）</td>
-                      <td>&times;1</td>
-                      <td>总额：￥11888.00</td>
-                      <td>运输中<a class="view" href="#" target="_blank">查看物流</a></td>
-                      <td><a href="#" class="del">删除</a></td>
-                    </tr>
-                    <tr>
-                      <td>B17121916181240Z</td>
-                      <td>2018考研英语作文点睛班（适用英语一、二）</td>
-                      <td>&times;1</td>
-                      <td>总额：￥11888.00</td>
-                      <td>已完成</td>
-                      <td><a href="#" class="del">删除</a></td>
-                    </tr>
-                  </tbody>
-                </table>
+              <div class="my-info-box">
+              <form action="">
+                <div class="form-group">
+                  <label for=""><span>昵称</span>：</label>
+                  <div class="input-group">
+                    <input type="text" class="input-control" value="" placeholder="请输入昵称"/>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for=""><span>性别</span>：</label>
+                  <div class="input-group">
+                    <div class="radio-inline">
+                      <input type="radio" name="sex" value="0" checked/>男
+                    </div>
+                    <div class="radio-inline">
+                      <input type="radio" name="sex" value="1"/>女
+                    </div>
+                    <div class="radio-inline">
+                      <input type="radio" name="sex" value="2"/>保密
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for=""><span>手机</span>：</label>
+                  <div class="input-group">
+                    <input type="text" class="input-control" value="" placeholder="请输入手机号"/>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for=""><span>邮箱</span>：</label>
+                  <div class="input-group">
+                    <input type="text" class="input-control" value="" placeholder="请输入邮箱号"/>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="">考研时间：</label>
+                  <div class="input-group">
+                    <select name="">
+                      <option value="2019" selected>2019</option>
+                      <option value="2018">2018</option>
+                      <option value="2017">2017</option>
+                      <option value="2016">2016</option>
+                      <option value="2015">2015</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="">本科院校：</label>
+                  <div class="input-group">
+                    <input type="text" class="input-control" value="" placeholder="请输入院校"/>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="">本科专业：</label>
+                  <div class="input-group">
+                    <input type="text" class="input-control" value="" placeholder="请输入专业"/>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="">意向院校：</label>
+                  <div class="input-group">
+                    <input type="text" class="input-control" value="" placeholder="请输入院校"/>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="">意向专业：</label>
+                  <div class="input-group">
+                    <input type="text" class="input-control" value="" placeholder="请输入专业"/>
+                    <div class="tip">提示：您所填的信息越全面有利于我们更好的推送该专业相应的内容</div>
+                  </div>
+                </div>
+
+                <div class="btn-group">
+                  <button type="submit" name="" class="btn-submit">保存</button>
+                </div>
+              </form>
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </section>

@@ -41,8 +41,8 @@
           <a href="#" class="getyzm">获取验证码</a>
         </div>
         <div class="form-group">
-          <input type="password" placeholder="密码" value="" class="input-css"/>
-          <span class="view_icon"></span>
+          <input type="text" placeholder="密码" value="" class="input-css"/>
+          <span class="view_icon isShow"></span>
         </div>
         <div class="form-group">
           <input type="password" placeholder="确认密码" value="" class="input-css"/>
@@ -69,6 +69,20 @@
             <p class="copyright fr">Powered by <a href="/">http://www.jylearning.com/</a> ©2012-2017</p>
         </div>
     </footer>
+    
+    <!--切换密码是否可见 JS部分-->
+    <script src="js/Index/jquery-1.8.3.min.js"></script>
+    <script>
+    	$(".view_icon").click(function(){
+			if($(this).hasClass("isShow")){
+				$(this).removeClass("isShow");	
+				$(this).siblings("input").prop("type","password");
+			}else{
+				$(this).addClass("isShow");	
+				$(this).siblings("input").prop("type","text");
+			}
+		});
+    </script>
 
 </body>
 </html>
