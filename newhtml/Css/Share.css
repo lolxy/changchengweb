@@ -53,8 +53,11 @@ a:hover{color:#0091f4;}
 .index_footer .copyright{font-size:12px;}
 .index_footer .copyright a{color:#a1a1a1;}
 /*分页样式*/
-.pagination{ width: 288px;margin:0px auto; padding-top: 80px;clear: both;height:86px;padding-bottom:60px;overflow: hidden;}
+.pagination{text-align: center;margin:0px auto; padding-top: 80px;clear: both;height:86px;padding-bottom:60px;overflow: hidden;}
+.pagination-wrap{display: inline-block;}
+.pagination-wrap .pageList{overflow: hidden;float: left;}
 .pagination .pageUp,.pagination .pageDown,.pagination div ul li{font-size:12px;color: #666;float:left;margin-right:20px;text-align:center;padding:5px 10px;border-radius: 5px;background-color: #fff;cursor:pointer;}
+.pagination .pageUp.disabled,.pagination .pageDown.disabled{color:#b2b2b2;cursor: default;}
 .pagination .pageDown{margin-right:0;}
 .pagination div ul li.on{ color:#fff; background-color: #0091f4;}
 /* 个人中心公共部分 */
