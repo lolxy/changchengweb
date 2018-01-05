@@ -37,14 +37,28 @@
           <div class="photo-thumb" style="background-image:url(images/common/default_thumb.png)"></div>
           <nav class="menu-list">
             <ul>
-              <li>
-                <a href="#" target="_blank">个人信息</a>
-              </li>
-              <li>
-                <a href="#" target="_blank" class="active">我的课程</a>
+              <li class="current">
+                <h2 class="on">个人信息</h2>
                 <dl>
                   <dd>
-                    <a href="#" target="_blank" class="active">我购买的课程</a>
+                    <a href="#" target="_blank" class="active">我的信息</a>
+                  </dd>
+                  <dd>
+                    <a href="#" target="_blank">我的收货地址</a>
+                  </dd>
+                  <dd>
+                    <a href="#" target="_blank">我的消息</a>
+                  </dd>
+                  <dd>
+                    <a href="#" target="_blank">修改密码</a>
+                  </dd>
+                </dl>
+              </li>
+              <li>
+                <h2>我的课程</h2>
+                <dl>
+                  <dd>
+                    <a href="#" target="_blank">我购买的课程</a>
                   </dd>
                   <dd>
                     <a href="#" target="_blank">我的直播</a>
@@ -61,7 +75,7 @@
                 </dl>
               </li>
               <li>
-                <a href="#" target="_blank">订单中心</a>
+                <h2>订单中心</h2>
                 <dl>
                   <dd>
                     <a href="#" target="_blank">我的订单</a>
@@ -81,7 +95,7 @@
                 </dl>
               </li>
               <li>
-                <a href="#" target="_blank">代理管理</a>
+                <h2>代理管理</h2>
                 <dl>
                   <dd>
                     <a href="#" target="_blank">我的成绩</a>
@@ -150,6 +164,17 @@
                     </div>
                   </li>
                 </ul>
+                <!--分页-->
+                <div id="pageGro" class="pagination">
+                    <div class="pageUp">上一页</div>
+                    <div class="pageList">
+                        <ul>
+                            <li>1</li>
+                            <li>2</li>
+                        </ul>
+                    </div>
+                    <div class="pageDown">下一页</div>
+                </div>
               </div>
             </div>
           </div>
@@ -171,6 +196,10 @@
             <p class="copyright fr">Powered by <a href="/">http://www.jylearning.com/</a> ©2012-2017</p>
         </div>
     </footer>
+
+    <script src="js/Index/jquery-1.8.3.min.js"></script>
+    <script src="js/Index/pageGroup.js"></script>
+    <script src="js/user/leftmenu.js"></script>
 
 </body>
 </html>
