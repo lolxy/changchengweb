@@ -77,3 +77,19 @@ a:hover{color:#0091f4;}
 .panel:first-child{margin-top: 0;}
 .panel .panel-heading{font-size: 18px;color:#333333;padding-left: 30px;background-color: #fafafa;height: 60px;line-height: 60px;border-bottom: 1px solid #dfdfdf;}
 .panel .panel-body{padding: 32px;background-color: #fff;}
+/* 公共侧边栏 */
+.right_fixed_slide{position: fixed;width: 40px;height: 100%;background-color: #000000;top: 0;right: 0;}
+.right_fixed_slide ul{height: 300px;width: 100%;position: absolute;top: 50%;margin-top: -150px;}
+.right_fixed_slide ul a{color:#ffffff;}
+.right_fixed_slide ul a:hover{color:#f9f9f9}
+.right_fixed_slide li{font-size: 16px;text-align: center;}
+.right_fixed_slide li:before{content: "";width: 60%;display: block;height: 1px;background-color: #fff;margin: 10px auto;}
+.right_fixed_slide li:last-child:before{display: none;}
+.right_fixed_slide li i{display: block;width: 40px;height: 40px;}
+.right_fixed_slide li i.chat{background:url(../images/common/chat_icon.png);}
+.right_fixed_slide li i.cart{background:url(../images/common/cart_icon.png);}
+.right_fixed_slide li i.tell{background:url(../images/common/tell_icon.png);cursor: pointer;}
+.right_fixed_slide li i.erweima{background:url(../images/common/ewm_icon.png);cursor: pointer;}
+.right_fixed_slide .r-tell{position: absolute;right: -195px;top: 50%;margin-top:95px;width: 155px;height: 44px;transition: all ease-in-out .5s;}
+.right_fixed_slide .r-weixin{position: absolute;right: -284px;top: 50%;margin-top:136px;width: 244px;height: 112px;overflow: hidden;padding: 10px 0 10px 10px;background-color: #fff;transition: all ease-in-out .5s;}
+.right_fixed_slide .r-weixin .wbox{float: left;width: 112px;height: 112px;margin-right: 10px;}

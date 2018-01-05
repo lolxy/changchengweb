@@ -197,8 +197,8 @@
                   <input type="checkbox" class="selectAll"/>全选
                 </div>
                 <div class="check-info">
-                  <span class="num">共选择3件商品</span>
-                  <span class="total">总价：￥<em>696.00</em></span>
+                  <span class="num">共选择<em>0</em>件商品</span>
+                  <span class="total">总价：￥<em>0.00</em></span>
                   <a href="#" class="btn-jiesuan">提交订单</a>
                 </div>
               </div>
@@ -223,8 +223,38 @@
         </div>
     </footer>
 
-    <!--分页-->
+    <!-- 侧边公共栏 -->
+    <div class="right_fixed_slide">
+      <ul>
+        <li>
+          <a href="#"><i class="chat"></i>咨<br/>询</a>
+        </li>
+        <li>
+          <a href="#"><i class="cart"></i>购<br/>物<br/>车</a>
+        </li>
+        <li class="tellbox">
+          <i class="tell"></i>
+          <div class="r-tell">
+            <img src="images/common/tell.png" alt="" class="img-responsive"/>
+          </div>
+        </li>
+        <li class="ewmbox">
+          <i class="erweima"></i>
+          <div class="r-weixin">
+            <div class="wbox">
+              <img src="images/common/ewm01.png" alt="" class="img-responsive"/>
+            </div>
+            <div class="wbox">
+              <img src="images/common/ewm02.png" alt="" class="img-responsive"/>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
     <script src="js/user/leftmenu.js"></script>
+    <script src="js/Index/common.js"></script>
+
     <script>
     $(document).ready(function(){
       $('input').iCheck({
@@ -232,7 +262,50 @@
         radioClass: 'iradio_square',
         increaseArea: '20%' // optional
       });
+
+      //全选或者全不选
+      $(".allcheck ins").click(function(){
+        var allPrice = 0;
+        var selectNum = 0;
+        if($(this).parent().hasClass("checked")){
+          $(".table .icheckbox_square").addClass("checked");
+          $(".table .check").prop("checked",true);
+        }else{
+          $(".table .icheckbox_square").removeClass("checked");
+          $(".table .check").prop("checked",false);
+        }
+        GetCount();
+      });
+
+      //单个处理
+      $('.table .iCheck-helper').click(function(){
+        GetCount();
+        var currentNum = parseInt($(".check-info .num em").text());
+        if(currentNum == 3){
+          $(".allcheck .icheckbox_square").addClass("checked");
+          $(".allcheck .selectAll").prop("checked",true);
+        }else{
+          $(".allcheck .icheckbox_square").removeClass("checked");
+          $(".allcheck .selectAll").prop("checked",false);
+        }
+      });
+
     });
+
+    //获取当前价格及数量
+    function GetCount() {
+      var allPrice = 0;
+      var selectNum = 0;
+      $(".table tbody tr").each(function () {
+        // var dd = $(this).find(".icheckbox_square").hasClass("checked");
+        if ($(this).find(".icheckbox_square").hasClass("checked")) {
+          allPrice = allPrice + parseFloat($(this).find(".unitprice").text());
+          selectNum = selectNum + 1;
+        }
+      });
+      $(".check-info .num em").text(selectNum);
+      $(".check-info .total em").text(allPrice.toFixed(2));
+    }
     </script>
     <!--分页end-->
 

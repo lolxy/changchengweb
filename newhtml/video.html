@@ -1,113 +1,51 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
-    <meta name="viewport" content="width=device-width" />
-    <title>视屏直播</title>
+    <meta name="viewport" content="width=device-width"/>
+    <title>视频</title>
     <!--共用样式-->
     <link href="Css/Share.css" rel="stylesheet" />
-    <!--导师页样式-->
+    <!--登录样式-->
     <link href="Css/video.css" rel="stylesheet" />
 </head>
 <body>
-    <!--视屏 头部-->
-    <nav class="video-header">
-      <div class="header-left fl">
-        <span class="header-menu">目录</span>|
-        <span>聚英考研网9月份直播讲座集锦（点击目录听课）</span>
-      </div>
-      <div class="header-right fr">
-        <a href="">分享</a>
-        <a href="">
-          <img src="images/user/smallphoto.png" alt="" class="header-img">
-        </a> 
-        </div>
-    </nav>
-    <!-- 视屏页详情 -->
-    <section class="video-main">
-      <div class="main-left">
-        <div class="main-header main-header-left">
-          <p class="text-ellipsis">聚英考研网9月份直播讲座集锦（点击目录听课）</p>
-        </div>
-        <div class="main-left-list">
-          <ul>
-            <li>
-              <a href="" class="text-ellipsis">
-                <i></i>
-                <span>聚英考研网9月份直播讲座集锦（点击目录听课）</span>
-              </a>
-            </li>
-            <li>
-              <a href="" class="text-ellipsis">
-                <i></i>
-                <span>聚英考研网9月份直播讲座集锦（点击目录听课）</span>
-              </a>
-            </li>
-            <li>
-              <a href="" class="text-ellipsis">
-                <i></i>
-                <span>聚英考研网9月份直播讲座集锦（点击目录听课）</span>
-              </a>
-            </li>
-            <li>
-              <a href="" class="text-ellipsis">
-                <i></i>
-                <span>聚英考研网9月份直播讲座集锦（点击目录听课）</span>
-              </a>
-            </li>
-            <li>
-              <a href="" class="text-ellipsis">
-                <i></i>
-                <span>聚英考研网9月份直播讲座集锦（点击目录听课）</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="main-center">
-        <video src=""></video>
-      </div>
-      <div class="main-right">
-        <div class="main-header main-header-right">
-          <span class="text-active tc">讨论区</span>
-          <span class="tc">学员</span>
-        </div>
-        <div class="main-right-list">
-          <dl>心沉
-            <dd>聚英考研网9月份直播讲座集锦</dd>
-          </dl>
-          <dl>心沉
-            <dd>聚英考研网9月份直播讲座集锦聚英考研网9月份直播讲座集锦聚英考研网9月份直播讲座集锦聚英考研网9月份直播讲座集锦聚英考研网9月份直播讲座集锦</dd>
-          </dl>
-        </div>
-        <div class="main-right-box">
-          <div class="main-header">
-            <i></i>
-          </div>
-          <textarea name="" id="" cols="30" rows="10"></textarea>
-          <button class="btn">发送</button>
-        </div>
-      </div>
-    </section>
+<div class="video-wrapper">
+  <header>
+    <div class="mulubtn">
+      <i class="ml_icon"></i>目录
+    </div>
+    <div class="currentTitle">聚英考研网9月份直播讲座集锦（点击目录听课）</div>
+    <div class="sharebox">
+      <span>分享：</span>
+      <a href="#"><img src="images/video/share_icon.png" alt="" class="img-responsive"/></a>
+    </div>
+  </header>
 
-    <!--js 开始-->
+  <section class="video-container">
+    <div class="leftmenu">
+      <h2 class="text-ellipsis">《聚英考研网9月份直播讲座集锦（点击目录听课）》</h2>
+      <div class="list">
+        <a href="#" class="text-ellipsis active">聚英考研网9月份直播讲座集锦（点击目录听课）</a>
+        <a href="#" class="text-ellipsis">【9月1日】2019考研，你不得不知道的几件事</a>
+        <a href="#" class="text-ellipsis">【9月1日】2019考研，你不得不知道的几件事</a>
+        <a href="#" class="text-ellipsis">【9月1日】2019考研，你不得不知道的几件事</a>
+        <a href="#" class="text-ellipsis">【9月1日】2019考研，你不得不知道的几件事</a>
+        <a href="#" class="text-ellipsis">【9月1日】2019考研，你不得不知道的几件事</a>
+        <a href="#" class="text-ellipsis">【9月1日】2019考研，你不得不知道的几件事</a>
+        <a href="#" class="text-ellipsis">【9月1日】2019考研，你不得不知道的几件事</a>
+      </div>
+    </div>
+    <video src="" class="videocss"></video>
+  </section>
+</div>
 
-    <script src="js/Index/jquery-1.8.3.min.js"></script>
-    <script src="js/Index/pageGroup.js"></script>
-    <!--分页end-->
+<script src="js/Index/jquery-1.8.3.min.js"></script>
 <script>
-  // 点击目录收起列表
-    $(".header-menu").toggle(function(){
-      $(".main-left").hide();
-      $(".main-center").css({"left":"0"});
-    },function(){
-      $(".main-left").show();
-      $(".main-center").css({"left":"25%"});
-    });
-  // 获取输入焦点
-  $(".main-header>i").click(function(){
-    $(".main-right-box textarea").focus();
+  $(".mulubtn").toggle(function(){
+    $(".leftmenu").css("left","-25%");
+  },function(){
+    $(".leftmenu").css("left","0");
   });
 </script>
-
 </body>
 </html>

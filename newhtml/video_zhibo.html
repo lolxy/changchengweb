@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width"/>
+    <title>视频</title>
+    <!--共用样式-->
+    <link href="Css/Share.css" rel="stylesheet" />
+    <!--登录样式-->
+    <link href="Css/video.css" rel="stylesheet" />
+</head>
+<body>
+<div class="video-wrapper">
+  <header>
+    <div class="mulubtn">
+      <i class="ml_icon"></i>目录
+    </div>
+    <div class="currentTitle">聚英考研网9月份直播讲座集锦（点击目录听课）</div>
+    <div class="sharebox">
+      <span>分享：</span>
+      <a href="#"><img src="images/video/share_icon.png" alt="" class="img-responsive"/></a>
+    </div>
+  </header>
+
+  <section class="video-container">
+    <div class="leftmenu">
+      <h2 class="text-ellipsis">《聚英考研网9月份直播讲座集锦（点击目录听课）》</h2>
+      <div class="list">
+        <a href="#" class="text-ellipsis active">聚英考研网9月份直播讲座集锦（点击目录听课）</a>
+        <a href="#" class="text-ellipsis">【9月1日】2019考研，你不得不知道的几件事</a>
+        <a href="#" class="text-ellipsis">【9月1日】2019考研，你不得不知道的几件事</a>
+        <a href="#" class="text-ellipsis">【9月1日】2019考研，你不得不知道的几件事</a>
+        <a href="#" class="text-ellipsis">【9月1日】2019考研，你不得不知道的几件事</a>
+        <a href="#" class="text-ellipsis">【9月1日】2019考研，你不得不知道的几件事</a>
+        <a href="#" class="text-ellipsis">【9月1日】2019考研，你不得不知道的几件事</a>
+        <a href="#" class="text-ellipsis">【9月1日】2019考研，你不得不知道的几件事</a>
+      </div>
+    </div>
+    <div class="rightbox">
+      <div class="soujin"></div>
+      <div class="tabbox">
+        <ul>
+          <li class="on">讨论区</li>
+          <li>学员</li>
+        </ul>
+        <div class="content">
+          <div class="box" style="display:block">
+            <dl>
+              <dd>
+                <h3>心沉</h3>
+                <p>聚英考研网9月份直播讲座集锦</p>
+              </dd>
+              <dd>
+                <h3>心沉</h3>
+                <p>聚英考研网9月份直播讲座集锦聚英考研网9月份直播讲座集锦聚英考研网9月份直播讲座集锦聚英考研网9月份直播讲座集锦聚英考研网9月份直播讲座集锦</p>
+              </dd>
+            </dl>
+          </div>
+          <div class="box">
+            <a href="#">
+              <img src="images/video/touxiang.png" alt="" class="img-responsive"/>心沉
+            </a>
+            <a href="#">
+              <img src="images/video/touxiang.png" alt="" class="img-responsive"/>心沉
+            </a>
+            <a href="#">
+              <img src="images/video/touxiang.png" alt="" class="img-responsive"/>心沉
+            </a>
+            <a href="#">
+              <img src="images/video/touxiang.png" alt="" class="img-responsive"/>心沉
+            </a>
+            <a href="#">
+              <img src="images/video/touxiang.png" alt="" class="img-responsive"/>心沉
+            </a>
+            <a href="#">
+              <img src="images/video/touxiang.png" alt="" class="img-responsive"/>心沉
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="formbox">
+        <div class="form-header">
+          <i class="edit"></i>
+        </div>
+        <form action="">
+          <div class="form-area">
+            <textarea name="name" rows="8" cols="80"></textarea>
+          </div>
+          <div class="btn-box">
+            <button type="submit" class="btn-fasong">发送</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <video src="" class="videocss"></video>
+  </section>
+</div>
+
+<script src="js/Index/jquery-1.8.3.min.js"></script>
+<script>
+  $(".mulubtn").toggle(function(){
+    $(".leftmenu").css("left","-25%");
+  },function(){
+    $(".leftmenu").css("left","0");
+  });
+
+  $(".tabbox li").click(function(){
+    var index = $(this).index();
+    $(this).addClass("on").siblings().removeClass("on");
+    $(".content .box").eq(index).show().siblings().hide();
+  });
+
+  $(".edit").click(function(){
+    $("textarea").focus();
+  });
+
+  $(".soujin").toggle(function(){
+    $(".rightbox").css("right","-24%");
+  },function(){
+    $(".rightbox").css("right","0");
+  });
+</script>
+</body>
+</html>
