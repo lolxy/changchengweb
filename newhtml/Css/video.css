@@ -1,0 +1,31 @@
+/* 视屏直播页样式 */
+html>body{height:100%;padding:0;margin:0;}
+.video-header{height:35px;line-height: 35px; background-color: #111111; color:#fff; padding:5px 20px 5px 15px;}
+.video-header .header-left .header-menu{color:#fff; padding:0 20px 7px 35px; background: url(../images/user/hbb.png) 0 -1px no-repeat;cursor:pointer;}
+.video-header .header-left span{padding-left:5px;}
+.video-header .header-right{width:100px; position: relative;}
+.video-header .header-right a{color:#fff;}
+.video-header .header-right img{width: 25px; border-radius: 25px;position: absolute;top:5px; right:20px;}
+.video-main{position: absolute;background-color: #1B1B1B;top:45px;bottom:0;width:100%;}
+.video-main .main-left,.main-right{width:25%;background-color: #1B1B1B;border-top:1px solid #333333;}
+.video-main .main-left{position: absolute;left:0;bottom:0;top:0;}
+.video-main .main-right{position: absolute;right:0;bottom:0;top:0;}
+.main-center{position: absolute;left:25%;right:25%;top:0;bottom:0;background-color: #333333;}
+.main-center video{width:100%;height:100%;}
+.main-header{color:#fff;height:45px;line-height: 45px;background-color: #111111;font-size: 12px;}
+.main-header-left,.main-left-list{padding:0 16px;}
+.main-left-list ul li{height:35px;line-height: 35px;}
+.main-left-list ul li a{color:#BCBCBC;font-size: 10px;width: 100%;}
+.main-left-list ul li a:hover{color:#fff}
+.main-left-list ul li a i{background: url(../images/user/live.png) 0 2px no-repeat;padding-right:25px;}
+.main-left-list ul li a:hover i{width:30px;background: url(../images/user/livehover1.png) 0 2px no-repeat;}
+.main-header-right span{cursor:pointer; display: block;width:50%;float:left;color:#fff;font-size: 14px;}
+.main-header-right .text-active{color:#0292F5;border-bottom: 1px solid #0091F4;}
+.main-right-list{padding:0 16px;font-size: 10px;overflow-y:auto; position: absolute;top:60px;bottom:200px;}
+.main-right-list dl{line-height: 20px;margin-bottom: 5px;color:#BCBCBC}
+.main-right-list dl dd{color:#fff;}
+.main-right .main-header i{width: 20px; height: 20px;background: url(../images/user/bi.png) 0 8px no-repeat;padding:10px 20px;cursor:pointer;}
+.main-right .main-right-box{height:200px;width:100%; position: absolute;bottom:0;right:0;}
+.main-right .main-right-box .btn{cursor:pointer;position: absolute; bottom: 20px;right:20px; padding: 5px 27px;background: url(../images/user/xinxixiugaibaocun.png) no-repeat;border:0;color:#fff;}
+.main-right .main-right-box .btn:hover{opacity: 0.8;}
+.main-right-box textarea{width:100%;height:50%;background-color: #1B1B1B;color: #fff;border: 0;outline:none;}
