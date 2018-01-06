@@ -1,0 +1,35 @@
+/* 登录框 */
+.bg-white{background-color: #fff;}
+.pay-wrapper{width: 650px;background-color: #fff;box-shadow: 0px 0px 46px rgba(80,131,207,0.13);
+border: 1px solid #f4f7fc;border-radius: 5px;position: fixed;top:8%;left: 50%;margin-left: -325px;z-index: 100;}
+.pay-wrapper .pay-header{height: 40px;border-bottom: 1px solid #f2f2f5;line-height: 40px;overflow: hidden;font-size: 24px;padding: 20px;}
+.pay-wrapper .pay-header p{float: left;color:#333333;}
+.pay-wrapper .pay-header span{float: right;font-weight: 600;color:#000000;}
+.pay-type-box{width: 294px;margin: 10px auto 40px;}
+.pay-type-box p{line-height: 40px;font-size: 18px;text-align: center;}
+.pay-type-box .btn-group{text-align: center;margin: 20px auto;}
+.pay-type-box .pay-type{padding-top: 36px;overflow: hidden;}
+.pay-type-box .pay-type li{width: 50%;float: left;padding:0 25px;box-sizing: border-box;cursor: pointer;}
+.pay-type-box .pay-type li .box{width: 60px;text-align: center;}
+.pay-type-box .pay-type li .box span{display: block;line-height: 36px;color:#333333;font-size: 18px;}
+.pay-type-box .pay-type li .box i{width: 14px;height: 14px;display: block;margin: 5px auto;background:url(../images/pay/pay_icon.png);}
+.pay-type-box .pay-type li.selected .box i{background:url(../images/pay/pay_icon_select.png);}
+.btn-group{text-align: center;}
+.btn-group a{display: block;margin: 40px auto;}
+.btn-group .btn-submit{width: 294px;height: 40px;line-height: 38px;border: none;outline: none;cursor: pointer;background:url(../images/login/login_bg.png);background-size: cover;font-size: 16px;color:#ffffff;opacity:1;transition:opacity ease-in-out .5s;}
+.btn-group .btn-submit:hover{opacity:0.85;}
+.btn-group .btn-submit span{letter-spacing: 40px;margin-left: 40px;}
+
+/* 购买成功 */
+.success-icon{width: 92px;height: 92px;margin: 30px auto 15px;}
+.success-tip{color:#666666;text-align: center;font-size: 18px;line-height: 30px;margin-bottom: 15px;}
+
+/* 收货地址 */
+.pay-wrapper .shdz-box h2{line-height: 55px;height: 66px;text-align: center;width: 100%;font-size: 18px;color:#000000;font-weight: 500;}
+.pay-wrapper .shdz-box .form-group{width: 364px;margin: 0 auto;}
+.pay-wrapper .shdz-box .form-group .input-group{margin-bottom: 30px;}
+.pay-wrapper .shdz-box .form-group .input-css{width: 100%;background-color: #f2f2f5;height: 40px;line-height: 40px;padding-left: 20px;box-sizing: border-box;font-size: 14px;color:#999999;border: none;outline: none;border-radius: 5px;}
+.select-group{margin-bottom: 30px;}
+.select-group select{background-color: #f2f2f5;border: none;outline: none;height: 40px;line-height: 40px;border-radius: 5px;padding: 0 10px;font-family: "Microsoft YaHei";color:#666666;font-size: 14px;width: 98px;margin-right: 30px;}
+.select-group select:last-child{margin-right: 0;}
+.pay-wrapper .shdz-box .btn-group{margin-bottom: 40px;}

@@ -178,3 +178,25 @@
 .order-jsbox .check-info span.total em{color:#ff0000;font-style: normal;font-weight: bold;font-size: 14px;}
 .order-jsbox .check-info .btn-jiesuan{display: inline-block;vertical-align: top;background-color: #ff0000;font-size: 14px;color:#ffffff;text-align: center;width: 90px;float: right;font-weight: bold;transition: all ease-in-out .5s;}
 .order-jsbox .check-info .btn-jiesuan:hover{opacity:0.85;}
+
+/* 我的直播 */
+.zhibo-list{padding: 0 18px;margin-top: -30px;}
+.zhibo-list li{padding-top: 30px;padding-bottom: 30px;border-bottom: 1px solid #dfdfdf;}
+.zhibo-list li:last-child{border-bottom: none;}
+.zhibo-list .zbbox{position: relative;overflow: hidden;height: 60px;}
+.zhibo-list .photo{position: absolute;left: 0;top: 0;width: 100px;height: 60px;overflow: hidden;}
+.zhibo-list .photo a img{transition: all ease-in-out .5s;transform: scale(1);}
+.zhibo-list .photo a:hover img{opacity:0.8;transform: scale(1.1);}
+.zhibo-list .photo .ended{display: block;width: 90px;height: 50px;position: absolute;top: 50%;margin-top: -25px;left: 50%;margin-left: -45px;background:url(../images/user/ended.png);}
+.zhibo-list .content-top a{font-size: 18px;color:#333333;position: relative;line-height: 16px;margin-bottom: 5px;}
+.zhibo-list .content-top a:hover{color:#4db2f7;}
+.zhibo-list .content-top p{font-size: 10px;color:#666666;line-height: 16px;}
+.zhibo-list .content{margin-left: 125px;}
+.zhibo-list .content .content-bottom{margin-top: 4px;overflow: hidden;}
+.zhibo-list .content i:after,.zhibo-list .content i{display: inline-block;vertical-align: top;margin-top: 1px;}
+.zhibo-list .content i.zbjs_icon{background:url(../images/user/video_icon_end.png) no-repeat center left;padding-left: 20px;}
+.zhibo-list .content i.zbjxs_icon,.zhibo-list .content i.zbjjks_icon{background:url(../images/user/video_icon_ing.png) no-repeat center left;padding-left: 20px;}
+.zhibo-list .content i.zbjxs_icon:after{content: "正在直播...";font-style: normal;color:#4db2f7;font-size: 10px;}
+.zhibo-list .content i.zbjjks_icon:after{content: "即将开始";font-style: normal;color:#4db2f7;font-size: 10px;}
+.zhibo-list .content i.zbjs_icon:after{content: "查看回收";font-style: normal;color:#999999;font-size: 10px;}
+.zhibo-list .content .timebox{font-size: 12px;color:#666666;overflow: hidden;float: right;}
