@@ -1,3 +1,27 @@
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar
+{
+    width: 5px;
+    height: 5px;
+    background-color: #F5F5F5;
+}
+
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+    border-radius: 0px;
+    background-color: #f1f1f1;
+}
+
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb
+{
+    border-radius: 0px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.5);
+    background-color: #333333;
+}
+
 /* 视频页 */
 html,body,html>body,.video-wrapper{padding: 0;margin: 0;height: 100%;}
 .video-wrapper header{posi>body,tion:relative;height: 60px;background-color: #111111;border-bottom: 1px solid #333333;overflow: hidden;color:#ffffff;font-size: 18px;line-height: 60px;}
@@ -26,13 +50,13 @@ html,body,html>body,.video-wrapper{padding: 0;margin: 0;height: 100%;}
 .video-container .rightbox .tabbox ul{height: 60px;overflow: hidden;line-height: 60px;text-align: center;background-color: #111111;}
 .video-container .rightbox .tabbox li{width: 50%;float: left;font-size: 18px;cursor: pointer;}
 .video-container .rightbox .tabbox li.on{color:#0091f4;border-bottom: 2px solid #0091f4;height: 58px;}
-.video-container .rightbox .tabbox .content{padding: 20px;}
+.video-container .rightbox .tabbox .content{padding: 20px;box-sizing: border-box;height: 50vh;overflow-y: auto;}
 .video-container .rightbox .tabbox .content dd{margin-bottom: 10px;font-size: 12px;}
 .video-container .rightbox .tabbox .content h3{color:#bcbcbc;margin-bottom: 5px;}
 .video-container .rightbox .tabbox .content p{color:#ffffff;line-height: 22px;}
 .video-container .rightbox .tabbox .content a{display: block;line-height: 30px;font-size: 16px;color:#ffffff;margin-bottom: 15px;}
 .video-container .rightbox .tabbox .content img{width: 30px;height: 30px;display: inline-block;vertical-align: top;margin-right: 15px;vertical-align: top;}
-.video-container .rightbox .tabbox .content .box{display: none;overflow-y: auto;height: 100%;}
+.video-container .rightbox .tabbox .content .box{display: none;}
 .video-container .rightbox .formbox{position: absolute;bottom: 0px;width: 100%;height: 40%;}
 .video-container .rightbox .formbox .form-header{height: 50px;background-color: #111111;}
 .video-container .rightbox .formbox .form-header .edit{width: 70px;height: 50px;display: block;cursor: pointer;background:url(../images/video/edit_icon.png);}
