@@ -60,7 +60,8 @@ html,body,html>body,.video-wrapper{padding: 0;margin: 0;height: 100%;}
 .video-container .rightbox .formbox{position: absolute;bottom: 0px;width: 100%;height: 30%;}
 .video-container .rightbox .formbox .form-header{height: 50px;background-color: #111111;}
 .video-container .rightbox .formbox .form-header .edit{width: 70px;height: 50px;display: block;cursor: pointer;background:url(../images/video/edit_icon.png);}
-.video-container .rightbox .formbox textarea{background: none;padding: 10px;position: absolute;top: 50px;bottom: 70px;color:#ffffff;font-size: 14px;border: none;outline: none;}
+.form-area{padding: 10px;position: absolute;top: 50px;bottom: 70px;overflow: hidden;word-wrap: break-word;width: 100%;box-sizing: border-box;}
+.video-container .rightbox .formbox textarea{background: none;color:#ffffff;font-size: 14px;border: none;outline: none;width: 100%;height: 100%;}
 .soujin{width: 20px;height: 100px;background:url(../images/video/suojin.png);background-size: contain;position: absolute;top: 50%;margin-top: -74px;left: -19px;z-index: 100;cursor: pointer;}
 .video-container .rightbox .formbox .btn-box{height: 70px;position: absolute;bottom: 0;left: 0;width: 100%;text-align: right;}
 .btn-fasong{width: 81px;height: 39px;margin: 15px;border: none;outline: none;cursor: pointer;font-size: 18px;color:#ffffff;background:url(../images/video/btnbg.png);}
