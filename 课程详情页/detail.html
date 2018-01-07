@@ -8,6 +8,7 @@
     <link href="Css/Share.css" rel="stylesheet" />
     <!--首页样式-->
     <link href="Css/detail.css" rel="stylesheet" />
+    <link href="Css/dialog.css" rel="stylesheet" />
 </head>
 <body>
     <!--头部 共用-->
@@ -45,7 +46,7 @@
                 </div>
                 <div class="btn">
                     <a href="" class="huiyuan">加入SVIP</a>
-                    <a href="" class="goumai">立即购买</a>
+                    <a href="javascript:void(0);" onclick="pay()" class="goumai">立即购买</a>
                     <span class="people">已有301人报名</span>
                 </div>
             </div>
@@ -352,6 +353,38 @@
         </div>
     </footer>
 
+
+    <section class="pay-wrapper">
+      <div class="pay-header">
+        <p>2019考研英语直播班</p>
+        <span>售价：2599</span>
+      </div>
+      <div class="pay-type-box">
+        <p>请选择支付方式，并前往支付</p>
+        <div class="pay-type">
+          <ul>
+            <li data-type="alipay" class="selected">
+              <div class="box fl">
+                <img src="images/pay/zhifubao.png" alt="" class="img-responsive"/>
+                <span>支付宝</span>
+                <i></i>
+              </div>
+            </li>
+            <li data-type="wechat">
+              <div class="box fr">
+                <img src="images/pay/weixin.png" alt="" class="img-responsive"/>
+                <span>微信</span>
+                <i></i>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="btn-group">
+          <button type="button" class="btn-submit"><span>确定</span></button>
+        </div>
+      </div>
+    </section>
+
     <!--js 开始-->
     <!--课程套餐-->
     <script type="text/javascript">
@@ -380,6 +413,19 @@
     <script src="js/detail/timecd.js"></script>
     <!--课程详情滚动切换end-->
     <!--js end-->
+    <script>
 
+    $(document).click(function(){
+      $(".pay-wrapper").fadeOut();
+    });
+
+    $(".pay-wrapper,.goumai").click(function(e){
+      e.stopPropagation();
+    });
+
+    function pay(){
+      $(".pay-wrapper").fadeIn();
+    }
+    </script>
 </body>
 </html>

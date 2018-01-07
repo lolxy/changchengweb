@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width"/>
+    <title>选择支付方式</title>
+    <!--共用样式-->
+    <link href="Css/Share.css" rel="stylesheet" />
+    <!--弹窗样式-->
+    <link href="Css/dialog.css" rel="stylesheet" />
+</head>
+<body>
+    <!--头部 共用-->
+    <nav class="index_menu">
+        <div class="w11">
+            <a href="" class="fl"><img src="images/index/logo.png" /></a>
+            <ul class="fl">
+                <li class="hover"><a href="">首页</a></li>
+                <li><a href="">考研英语</a></li>
+                <li><a href="">考研数学</a></li>
+                <li><a href="">考研政治</a></li>
+                <li><a href="">专业硕士</a></li>
+                <li><a href="">专业课</a></li>
+                <li><a href="">考研规划</a></li>
+                <li><a href="">高端班</a></li>
+            </ul>
+            <div class="user fr">
+                <a href="">订单中心</a><span>|</span><a href="">注册</a>/<a href="">登录</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 支付 -->
+    <section class="pay-wrapper">
+      <div class="pay-header">
+        <p>2019考研英语直播班</p>
+        <span>售价：2599</span>
+      </div>
+      <div class="order-detail-box">
+        <div class="order-detail">
+          <p>订单号:B17121916181240Z</p>
+          <p>订单名称：2018考研英语作文点睛班（适用英语一、二）</p>
+          <p>订单状态：已付款</p>
+          <p>收货人：cg</p>
+          <p>手机号：13255975230</p>
+          <p>订单价格：2599 元</p>
+          <p>快递信息：<span>812753860254</span><a href="#">[查看物流]</a></p>
+          <p>创建时间：2017/12/19 16:18:12</p>
+          <p>付款时间：2017/12/19 16:18:54</p>
+          <p>备注：备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注</p>
+        </div>
+        <div class="btn-group">
+          <button type="button" class="btn-submit"><span>确定</span></button>
+        </div>
+      </div>
+    </section>
+
+    <!--尾部 共用-->
+    <footer class="index_footer clear">
+        <div class="w11">
+            <ul class="fl">
+                <li>
+                    <img src="images/index/weibo.png" class="fenxiang" alt="微博" />微博
+                </li>
+                <li>
+                    <img src="images/index/weixin.png" class="fenxiang" alt="微信" />微信
+                </li>
+            </ul>
+            <p class="copyright fr">Powered by <a href="/">http://www.jylearning.com/</a> ©2012-2017</p>
+        </div>
+    </footer>
+
+    <!--弹窗处理-->
+    <script src="js/Index/jquery-1.8.3.min.js"></script>
+    <script>
+    	$(".pay-type-box .pay-type li").click(function(){
+        $(this).addClass("selected").siblings().removeClass("selected");
+      });
+
+      $(".btn-submit").click(function(){
+        //$(".pay-wrapper").fadeOut();
+        var currentPayType = $(".pay-type li.selected").data("type");
+        //获取当前选择的支付类型，通过ajax访问
+      });
+
+      $(document).click(function(){
+        $(".pay-wrapper").fadeOut();
+      });
+
+      $(".pay-wrapper").click(function(e){
+        e.stopPropagation();
+      });
+    </script>
+
+</body>
+</html>

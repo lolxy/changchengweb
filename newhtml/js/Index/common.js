@@ -10,4 +10,10 @@ $(function(){
   },function(){
     $(".r-weixin").css({"right":"-284px"});
   });
+
+  $(".tab-nav li").click(function(){
+    var index = $(this).index();
+    $(this).addClass("on").siblings().removeClass("on");
+    $(".tab-content .box").eq(index).show().siblings().hide();
+  });
 });
