@@ -30,33 +30,56 @@
     </nav>
 
     <!-- 支付 -->
-    <section class="pay-wrapper">
-      <div class="pay-header">
-        <p>2019考研英语直播班</p>
-        <span>售价：2599</span>
-      </div>
-      <div class="pay-type-box">
-        <p>请选择支付方式，并前往支付</p>
-        <div class="pay-type">
-          <ul>
-            <li data-type="alipay" class="selected">
-              <div class="box fl">
-                <img src="images/pay/zhifubao.png" alt="" class="img-responsive"/>
-                <span>支付宝</span>
-                <i></i>
-              </div>
-            </li>
-            <li data-type="wechat">
-              <div class="box fr">
-                <img src="images/pay/weixin.png" alt="" class="img-responsive"/>
-                <span>微信</span>
-                <i></i>
-              </div>
-            </li>
-          </ul>
+    <section class="dialog-wrapper">
+      <div class="pay-wrapper">
+        <div class="pay-header">
+          <p>2019考研英语直播班</p>
+          <div class="selectbox">
+            <select name="" id="discounts">
+              <option value="0">使用优惠券</option>
+              <option value="1">使用优惠码</option>
+            </select>
+          </div>
         </div>
-        <div class="btn-group">
-          <button type="button" class="btn-submit"><span>确定</span></button>
+        <div class="discount-box">
+          <div class="type">
+            <label>优惠券：</label>
+            <select name="">
+              <option value="0">满500减50</option>
+              <option value="1">满300减30</option>
+            </select>
+          </div>
+          <div class="type" style="display:none">
+            <input type="text" name="" id="" class="yh-input-css"/>
+            <button class="btn-yhm">使用优惠码</button>
+          </div>
+        </div>
+        <div class="pay-type-box">
+          <p>请选择支付方式，并前往支付</p>
+          <div class="pay-type">
+            <ul>
+              <li data-type="alipay" class="selected">
+                <div class="box fl">
+                  <img src="images/pay/zhifubao.png" alt="" class="img-responsive"/>
+                  <span>支付宝</span>
+                  <i></i>
+                </div>
+              </li>
+              <li data-type="wechat">
+                <div class="box fr">
+                  <img src="images/pay/weixin.png" alt="" class="img-responsive"/>
+                  <span>微信</span>
+                  <i></i>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="price">
+            <span>售价：2599</span>
+          </div>
+          <div class="btn-group">
+            <button type="button" class="btn-submit"><span>确定</span></button>
+          </div>
         </div>
       </div>
     </section>
@@ -89,12 +112,19 @@
         //获取当前选择的支付类型，通过ajax访问
       });
 
-      $(document).click(function(){
-        $(".pay-wrapper").fadeOut();
+      // 点击遮罩层隐藏弹窗
+      $(".dialog-wrapper").click(function(){
+        $(this).fadeOut();
       });
-
+      //清除冒泡
       $(".pay-wrapper").click(function(e){
         e.stopPropagation();
+      });
+
+      // 切换优惠方式
+      $("#discounts").change(function(){
+        var index = $(this).val();
+        $(".discount-box .type").eq(index).show().siblings().hide();
       });
     </script>
 

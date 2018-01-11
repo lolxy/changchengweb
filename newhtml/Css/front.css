@@ -56,10 +56,17 @@
 .layout-wrapper .tab-content .box .list li{margin-bottom: 10px;background: url(../images/common/libg.png) 0px 10px no-repeat;padding-left: 25px;}
 .layout-wrapper .tab-content .box .list p{font-size: 12px;color:#333333;line-height: 30px;}
 .layout-wrapper .tab-content .box .list .date{font-size: 14px;}
-.layout-wrapper .tab-content .box .list .kc-content{margin-left: 60px;border-bottom: 1px solid #f2f2f5;padding-bottom: 10px;}
+.layout-wrapper .tab-content .box .list .kc-content{margin-left: 60px;border-bottom: 1px solid #f2f2f5;padding-bottom: 10px;position: relative;}
 .layout-wrapper .tab-content .box .list .kc-content p{line-height:24px;}
 .layout-wrapper .tab-content .box .list .content{color:#666666;}
 .layout-wrapper .tab-content .box .list span{margin-right: 30px;}
+.layout-wrapper .tab-content .box .list .opbtn{position: absolute;bottom: 25px;right: 10px;overflow: hidden;}
+.layout-wrapper .tab-content .box .list .opbtn a{display: block;float: left;margin-left: 12px;width: 54px;height: 20px;background-size: contain;}
+.opbtn.disabled a{cursor: not-allowed;}
+.opbtn a.pl-btn{background-image: url(../images/common/pinglun.png)}
+.opbtn.disabled a.pl-btn{background-image: url(../images/common/pinglun_disabled.png)}
+.opbtn a.hf-btn{background-image: url(../images/common/huifang.png)}
+.opbtn a.wkk-btn{background-image: url(../images/common/weikaike.png)}
 
 /* 目录回放 */
 .layout-wrapper .mainbox .main-heading{padding-left: 20px;line-height: 40px;height: 40px;background-color: #eaeaea;font-size: 16px;color:#666666;}
@@ -74,3 +81,13 @@
 .layout-wrapper .mainbox .main-list li.disabled:hover .rights{color:#999999;}
 .layout-wrapper .mainbox .main-list li.disabled a{cursor: default;}
 .layout-wrapper .mainbox .main-list li.disabled .rights:before{content:"";position: absolute;width: 62px;height: 40px;background:url(../images/common/play_end_icon.png);top: 0;left: -40px;}
+
+/* 错误页面 */
+.error-box{width: 500px;margin: 15vh auto;text-align: center;}
+.error-box img{margin: 0 auto;vertical-align: top;}
+.error-box p{text-align: center;line-height: 50px;font-size: 30px;color:#000000;margin: 20px auto;}
+.error-box .btn-box{overflow: hidden;}
+.error-box .btn-box li{width: 50%;text-align: center;float: left;}
+.error-box .btn-box li .btn{display: block;border: 1px solid #0091f4;width: 160px;height: 60px;line-height: 60px;text-align: center;border-radius: 6px;font-size: 24px;color:#0091f4;margin: 20px auto;}
+.error-box .btn-box li a:hover{opacity: 0.9;}
+.error-box .btn-box li a.btn-blur{background-color: #0091f4;color:#ffffff;}

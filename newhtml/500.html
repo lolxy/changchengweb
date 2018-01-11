@@ -2,11 +2,11 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width"/>
-    <title>支付成功</title>
+    <title>404页面</title>
     <!--共用样式-->
     <link href="Css/Share.css" rel="stylesheet" />
-    <!--弹窗样式-->
-    <link href="Css/dialog.css" rel="stylesheet" />
+    <!--前台样式-->
+    <link href="Css/front.css" rel="stylesheet" />
 </head>
 <body class="bg-white">
     <!--头部 共用-->
@@ -29,19 +29,16 @@
         </div>
     </nav>
 
-    <!-- 支付 -->
-    <section class="dialog-wrapper">
-      <div class="pay-wrapper">
-        <div class="pay-header">
-          <p>2019考研英语直播班</p>
-          <span>售价：2599</span>
-        </div>
-        <div class="success-icon">
-          <img src="images/login/success.png" alt="" class="img-responsive"/>
-        </div>
-        <p class="success-tip">购买完成~</p>
-        <div class="btn-group">
-          <a href="" class="btn-submit">查看订单</a>
+    <!-- 中间部分 -->
+    <section class="container w11">
+      <div class="error-box">
+        <img src="images/common/500.png" alt="" class="img-responsive"/>
+        <p>页面不小心飞走了 ~~ </p>
+        <div class="btn-box">
+          <ul>
+            <li><a href="#" class="btn btn-blur">返回首页</a></li>
+            <li><a href="#" class="btn">告诉我们</a></li>
+          </ul>
         </div>
       </div>
     </section>
@@ -61,28 +58,37 @@
         </div>
     </footer>
 
-    <!--弹窗处理-->
+    <!-- 侧边公共栏 -->
+    <div class="right_fixed_slide">
+      <ul>
+        <li>
+          <a href="#"><i class="chat"></i>咨<br/>询</a>
+        </li>
+        <li>
+          <a href="#"><i class="cart"></i>购<br/>物<br/>车</a>
+        </li>
+        <li class="tellbox">
+          <i class="tell"></i>
+          <div class="r-tell">
+            <img src="images/common/tell.png" alt="" class="img-responsive"/>
+          </div>
+        </li>
+        <li class="ewmbox">
+          <i class="erweima"></i>
+          <div class="r-weixin">
+            <div class="wbox">
+              <img src="images/common/ewm01.png" alt="" class="img-responsive"/>
+            </div>
+            <div class="wbox">
+              <img src="images/common/ewm02.png" alt="" class="img-responsive"/>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
     <script src="js/Index/jquery-1.8.3.min.js"></script>
-    <script>
-    	$(".pay-type-box .pay-type li").click(function(){
-        $(this).addClass("selected").siblings().removeClass("selected");
-      });
-
-      $(".btn-submit").click(function(){
-        //$(".pay-wrapper").fadeOut();
-        var currentPayType = $(".pay-type li.selected").data("type");
-        //获取当前选择的支付类型，通过ajax访问
-      });
-
-      // 点击遮罩层隐藏弹窗
-      $(".dialog-wrapper").click(function(){
-        $(this).fadeOut();
-      });
-      //清除冒泡
-      $(".pay-wrapper").click(function(e){
-        e.stopPropagation();
-      });
-    </script>
+    <script src="js/Index/common.js"></script>
 
 </body>
 </html>

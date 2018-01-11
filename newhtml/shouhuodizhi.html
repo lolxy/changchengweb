@@ -30,35 +30,37 @@
     </nav>
 
     <!-- 收货地址 -->
-    <section class="pay-wrapper">
-      <div class="pay-header">
-        <p>2019考研英语直播班</p>
-        <span>售价：2599</span>
-      </div>
-      <div class="shdz-box">
-        <h2>收货地址</h2>
-        <form action="">
-          <div class="form-group">
-            <div class="input-group">
-              <input type="text" name="" class="input-css" placeholder="姓名"/>
+    <section class="dialog-wrapper">
+      <div class="pay-wrapper">
+        <div class="pay-header">
+          <p>2019考研英语直播班</p>
+          <span>售价：2599</span>
+        </div>
+        <div class="shdz-box">
+          <h2>收货地址</h2>
+          <form action="">
+            <div class="form-group">
+              <div class="input-group">
+                <input type="text" name="" class="input-css" placeholder="姓名"/>
+              </div>
+              <div class="input-group">
+                <input type="text" name="" class="input-css mobile" placeholder="手机"/>
+                <span></span>
+              </div>
+              <div class="select-group" id="distpicker">
+                <select name=""></select>
+                <select name=""></select>
+                <select name=""></select>
+              </div>
+              <div class="input-group">
+                <input type="text" name="" class="input-css" placeholder="详细收货地址"/>
+              </div>
             </div>
-            <div class="input-group">
-              <input type="text" name="" class="input-css mobile" placeholder="手机"/>
-              <span></span>
+            <div class="btn-group">
+              <button type="submit" class="btn-submit"><span>确定</span></button>
             </div>
-            <div class="select-group" id="distpicker">
-              <select name=""></select>
-              <select name=""></select>
-              <select name=""></select>
-            </div>
-            <div class="input-group">
-              <input type="text" name="" class="input-css" placeholder="详细收货地址"/>
-            </div>
-          </div>
-          <div class="btn-group">
-            <button type="submit" class="btn-submit"><span>确定</span></button>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
     </section>
 
@@ -87,10 +89,11 @@
   		  district: '集美区'
 		  });
 
-      $(document).click(function(){
-        $(".pay-wrapper").fadeOut();
+      // 点击遮罩层隐藏弹窗
+      $(".dialog-wrapper").click(function(){
+        $(this).fadeOut();
       });
-
+      //清除冒泡
       $(".pay-wrapper").click(function(e){
         e.stopPropagation();
       });
