@@ -2,23 +2,11 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width"/>
-    <title>我的订单</title>
+    <title>我的订单详情</title>
     <!--共用样式-->
     <link href="Css/Share.css" rel="stylesheet" />
     <!--登录样式-->
     <link href="Css/user.css" rel="stylesheet" />
-    <style>
-      .right-content .panel-heading{overflow: hidden;}
-      .right-content .panel-heading h3{float: left;}
-      .right-content .panel-heading ul{float: left;margin-left: 50px;}
-      .right-content .panel-heading li{width: 100px;height: 100%;float: left;line-height: 60px;text-align: center;}
-      .right-content .panel-heading li a{display: block;width: 100%;height: 100%;}
-      .right-content .panel-heading li a.active{color:#0091f4}
-      .order-box table{margin-bottom: 10px;}
-      .order-box table th{border: none;}
-      .order-box table td.noboder-right{border-right:none;}
-      .order-box table td.noboder-left{border-left:none;}
-    </style>
 </head>
 <body>
     <!--头部 共用-->
@@ -132,93 +120,31 @@
         <!-- 右侧我的订单-->
         <div class="right-content">
           <div class="panel">
-            <div class="panel-heading">
-              <h3>我的订单</h3>
-              <ul>
-                <li><a href="#">未付款</a></li>
-                <li><a href="#" class="active">已付款</a></li>
-                <li><a href="#">已完成</a></li>
-              </ul>
-            </div>
-            <div class="panel-body">
-              <div class="order-box">
-                <table>
-                  <thead>
-                    <tr>
-                      <th width="145">订单号：B1712191618</th>
-                      <th>商品信息</th>
-                      <th>数量</th>
-                      <th width="100">金额</th>
-                      <th width="60">状态</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td class="noboder-right">
-                        <a href="#"><img src="images/user/photo.png" alt="" class="img-responsive"/></a>
-                      </td>
-                      <td class="noboder-left"><a href="#">2018考研英语作文点睛班（适用英语一、二）</a></td>
-                      <td>&times;1</td>
-                      <td>总额：￥11888.00</td>
-                      <td>已完成</td>
-                    </tr>
-                    <tr>
-                      <td class="noboder-right">
-                        <a href="#"><img src="images/user/photo.png" alt="" class="img-responsive"/></a>
-                      </td>
-                      <td class="noboder-left"><a href="#">2018考研英语作文点睛班（适用英语一、二）</a></td>
-                      <td>&times;1</td>
-                      <td>总额：￥11888.00</td>
-                      <td>运输中<a class="view" href="#" target="_blank">查看物流</a></td>
-                    </tr>
-                  </tbody>
-                </table>
-
-                <table>
-                  <thead>
-                    <tr>
-                      <th width="145">订单号：B1712191618</th>
-                      <th>商品信息</th>
-                      <th>数量</th>
-                      <th width="100">金额</th>
-                      <th width="60">状态</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td class="noboder-right">
-                        <a href="#"><img src="images/user/photo.png" alt="" class="img-responsive"/></a>
-                      </td>
-                      <td class="noboder-left"><a href="#">2018考研英语作文点睛班（适用英语一、二）</a></td>
-                      <td>&times;1</td>
-                      <td>总额：￥11888.00</td>
-                      <td>已完成</td>
-                    </tr>
-                    <tr>
-                      <td class="noboder-right">
-                        <a href="#"><img src="images/user/photo.png" alt="" class="img-responsive"/></a>
-                      </td>
-                      <td class="noboder-left"><a href="#">2018考研英语作文点睛班（适用英语一、二）</a></td>
-                      <td>&times;1</td>
-                      <td>总额：￥11888.00</td>
-                      <td>运输中<a class="view" href="#" target="_blank">查看物流</a></td>
-                    </tr>
-                  </tbody>
-                </table>
-                <!--分页-->
-                <div id="pageGro" class="pagination">
-                  <div class="pagination-wrap">
-                    <div class="pageUp">上一页</div>
-                    <div class="pageList">
-                        <ul>
-                            <li>1</li>
-                            <li>2</li>
-                        </ul>
-                    </div>
-                    <div class="pageDown">下一页</div>
+            <div class="panel-heading">订单详情</div>
+            <div class="panel-body" style="padding:0px;">
+              <div class="order-detail-wrapper">
+                  <div class="order-detail-header">
+                    <p>2019考研英语直播班</p>
+                    <span>售价：2599</span>
                   </div>
-                  <div id="countPage" style="display:none">3</div>
-                </div>
+                  <div class="order-detail-box">
+                    <div class="order-detail">
+                      <p>订单号:B17121916181240Z</p>
+                      <p>订单名称：2018考研英语作文点睛班（适用英语一、二）</p>
+                      <p>订单状态：已付款</p>
+                      <p>收货人：cg</p>
+                      <p>手机号：13255975230</p>
+                      <p>订单价格：2599 元</p>
+                      <p>快递信息：<span>812753860254</span><a href="#">[查看物流]</a></p>
+                      <p>创建时间：2017/12/19 16:18:12</p>
+                      <p>付款时间：2017/12/19 16:18:54</p>
+                      <p>备注：备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注备注</p>
+                    </div>
+                    <div class="btn-group">
+                      <button type="button" class="btn-submit"><span>确定</span></button>
+                      <button type="button" class="btn-backup"><span>返回</span></button>
+                    </div>
+                  </div>
               </div>
             </div>
           </div>
