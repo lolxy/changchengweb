@@ -1,0 +1,29 @@
+/* 公共部分 */
+.img-responsive{max-width: 100%;vertical-align: top;height: auto;}
+.mt20{margin-top: 20px !important;}
+/* 登录页 */
+.hui-form{ padding:10% 16%; background:none !important; }
+.hui-form .hui-form-items{ border-bottom:none; padding: 0; margin-bottom: 15px; }
+.hui-form .hui-form-items .hui-input{ padding: 11px 40px 11px 11px; background: #F2F2F5; border-radius: 4px; color:#999999;box-sizing: border-box;height: 44px;}
+.hui-form .hui-form-footer{line-height: 16px;font-size: 13px;margin-top: 5px;margin-bottom: 50px;}
+.hui-form .hui-login-style li{ float: left; width: 33.3333%; }
+.hui-form .hui-login-style li a{display:inline-block;width: 40px;height: 40px;background-size: cover;cursor: pointer;}
+.login_weixin{background-image: url(../images/login_weixin.png)}
+.login_weibo{background-image: url(../images/login_weibo.png)}
+.login_qq{background-image: url(../images/login_qq.png)}
+
+/* 步骤栏 */
+.hui-bar-box{overflow: hidden;padding:35px 10px 0px;background-color: #fff;margin: 10px auto;}
+.hui-bar-box .hui-bar-style{border-top: 3px solid #00A2FF;width: 65%;margin: 0 auto;}
+.hui-bar-box li{ width: 33.3333%; float: left; text-align: center; margin-top: -13px; }
+.hui-bar-box li span{display: inline-block;width: 22px;height: 22px;background-color: #00A2FF;border-radius: 50%;color:#ffffff;}
+.hui-bar-box li p{font-size: 14px;color:#00A2FF;line-height: 30px;margin-top: 5px;}
+
+/* 成功提示 */
+.success-box{padding:0 12%;margin-top: 20px;}
+.success-box .success-icon{width: 80px;height: 80px;overflow: hidden;margin: 18px auto 15px;}
+.success-box p{line-height: 18px;font-size: 16px;color:#666666;text-align: center;margin-bottom: 30px;}
+.success-box .btn-group .hui-outline{border: 1px solid #00A2FF;color:#00A2FF;line-height: 30px;}
+.success-box .btn-group .hui-outline:hover{background-color: #00A2FF;color:#ffffff;}
+.success-box .btn-group a{line-height: 31px;height: 33px;border-radius:33px;}
+.success-box .btn-group .hui-center{width: 110px;text-align: center;margin: 0 auto;}

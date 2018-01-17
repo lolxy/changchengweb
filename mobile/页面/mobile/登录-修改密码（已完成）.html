@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>修改密码</title>
+<link rel="stylesheet" type="text/css" href="css/hui.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+<header class="hui-header">
+	<div id="hui-back"></div>
+	<h1>修改密码</h1>
+</header>
+<div class="hui-wrap">
+    <div class="hui-form hui-no-border" id="loginForm">
+        <div class="hui-form-items">
+            <input type="text" class="hui-input" placeholder="旧密码" name="oldpassword" />
+        </div>
+        <div class="hui-form-items">
+            <input type="password" name="password" class="hui-input hui-pwd-eye" placeholder="输入密码" />
+        </div>
+				<div class="hui-form-items">
+            <input type="password" name="comfirmPassword" class="hui-input hui-pwd-eye" placeholder="确认密码" />
+        </div>
+        <div class="hui-form-items mt20">
+            <button type="button" class="hui-button hui-button-large hui-primary" id="submitBtn">确定</button>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="js/hui.js"></script>
+<script type="text/javascript" src="js/hui-form.js"></script>
+<script type="text/javascript">
+hui.formInit();
+//表单元素数据收集演示
+hui('#submitBtn').click(function(){
+    var data = hui.getFormData('#form1');
+    console.log(data);
+});
+</script>
+</body>
+</html>
