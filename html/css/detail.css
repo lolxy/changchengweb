@@ -5,30 +5,12 @@
 .ke_detail .ke_cont h1{font-size:18px;line-height:30px;}
 .ke_detail .ke_cont .jianjie{width: 432px;height: 57px;background-color: #ffe99e;border-radius: 3px;margin-top:10px;font-size:12px;padding:5px 10px;line-height:20px;color:#666;}
 .ke_detail .ke_cont .ls_jieshao{font-size:12px;color:#666;margin-top:15px;}
-.ke_detail .ke_cont time{font-size:12px;color:#0091f4;display:inline-block;}
+.ke_detail .ke_cont time{font-size:12px;color:#0091f4;margin-top:15px;display:inline-block;}
+.ke_detail .ke_cont .price{height:40px;line-height:40px;}
 .ke_detail .ke_cont .yellow{margin-left:20px;}
 .ke_detail .btn .huiyuan{color:#FE0000;height:26px;line-height:26px;text-align:center;border-radius: 4px;border: solid 1px #ff0000;display:inline-block;width:79px;margin-right:20px;}
-.ke_detail .btn .goumai{width:81px;height:28px;background-repeat:no-repeat;background:#ff0000;font-size: 14px;line-height:28px;text-align:center;color:#fff;display:inline-block;margin-right:20px;}
+.ke_detail .btn .goumai{width:81px;height:28px;background-size:81px 28px;background-repeat:no-repeat;background-image:url("../images/index/goumai_bg.jpg");line-height:28px;text-align:center;color:#fff;display:inline-block;margin-right:20px;}
 .ke_detail .btn span{color:#999;font-size:12px;vertical-align:bottom;}
-
-.ke_cont .ke_cont_heading{overflow: hidden;}
-.ke_cont .ke_cont_heading h1{float: left;}
-.ke_cont .ke_cont_heading a{float: right;color:#666666;font-size: 14px;}
-.ke-cont-body em{font-style: normal;margin: 0 5px;}
-.ke-cont-body p{font-size: 12px;color:#333333;line-height: 25px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;word-wrap: break-word;word-break: break-all;}
-.ke-cont-body .numbox,.ke-cont-body .price .s-txt{font-size: 10px;color:#999999;}
-.ke-cont-body .skubox{overflow: hidden;margin:15px 0 10px 0px;}
-.ke-cont-body .skubox li{float: left;margin-right: 10px;width: 80px;height: 30px;text-align: center;font-size: 14px;color:#999999;background: url(../images/detail/bdimg.png) #ffffff;line-height: 30px;}
-.ke-cont-body .skubox li.active,.ke-cont-body .skubox li:hover{cursor: pointer;background:url(../images/detail/bdimgactive.png) #ffffff;color:#0091f4;}
-.ke-cont-body .price span{display: block;margin-top: 5px;}
-.ke-cont-body .price .svip{color:#ff0000;font-size: 14px;}
-.ke-cont-body .price .svip a{color:#999999;font-size: 10px;margin-left: 10px;}
-.ke-cont-body .price .svip a:hover{color:#666666;}
-.ke-cont-body .price .normal{font-size: 12px;color:#333333;}
-.ke-cont-body .btn{margin-top: 15px;}
-.ke-cont-body .btn .btn-des{font-size: 10px;color:#999999;overflow: hidden;margin-top: 10px;}
-.ke-cont-body .btn .btn-des .timebox{color:#666666;float: right;}
-.ke-cont-body .btn .btn-des .timebox span{color:#ff5858;}
 /*套餐推荐*/
 .panel-2{width:100%;height:368px;background-color:#fff;}
 .panel-2 h2{font-size:18px;padding-top:25px;margin-bottom:20px;}
