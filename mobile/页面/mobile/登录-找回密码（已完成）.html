@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>找回密码</title>
+<link rel="stylesheet" type="text/css" href="css/hui.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+<header class="hui-header">
+	<div id="hui-back"></div>
+	<h1>找回密码</h1>
+</header>
+<div class="hui-wrap">
+    <div class="hui-form hui-no-border" id="loginForm">
+        <div class="hui-form-items">
+            <input type="number" class="hui-input" placeholder="手机号" name="phone" />
+        </div>
+				<div class="yzmbox">
+	        <div class="hui-form-items">
+	           <input type="text" name="yzm" class="hui-input" placeholder="验证码" />
+	        </div>
+					<a href="JavaScript:void(0)" class="hui-button">获取验证码</a>
+				</div>
+				<!-- <div class="yzmbox">
+	        <div class="hui-form-items">
+	           <input type="text" name="yzm" class="hui-input" placeholder="验证码" />
+	        </div>
+					<a href="JavaScript:void(0)" class="hui-button">57秒后获取</a>
+				</div> -->
+        <div class="hui-form-items mt20">
+            <button type="button" class="hui-button hui-button-large hui-primary" id="submitBtn">确定</button>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="js/hui.js"></script>
+<script type="text/javascript" src="js/hui-form.js"></script>
+<script type="text/javascript">
+hui.formInit();
+//表单元素数据收集演示
+hui('#submitBtn').click(function(){
+    var data = hui.getFormData('#form1');
+    console.log(data);
+});
+</script>
+</body>
+</html>

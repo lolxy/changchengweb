@@ -1,8 +1,8 @@
-*{margin:0; padding:0; font-size:15px; color:#343434; outline:none; -webkit-text-size-adjust:100%; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; font-style:normal; -webkit-tap-highlight-color:transparent;}
+*{margin:0; padding:0; font-size:15px; color:#333333; outline:none; -webkit-text-size-adjust:100%; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; font-style:normal; -webkit-tap-highlight-color:transparent;}
 div{overflow:hidden;}
 ::-webkit-scrollbar{display:none;}
-a{color:#343434; text-decoration:none; -webkit-tap-highlight-color:rgba(200,200,200,0.2);}
-a:active{color:#343434;}
+a{color:#333333; text-decoration:none;}
+a:active{color:#333333;}
 img{border:none;}
 ul{list-style-type:none;}
 body{background:#fafbfc; -webkit-user-select:none; -moz-user-select:none;font-family:"Microsoft YaHei";}
@@ -36,11 +36,11 @@ h3{font-size:16px}
 #hui-header-menu{width:38px; height:44px; line-height:44px; font-family:"hui-font"; position:absolute; z-index:20; right:0px; top:0px;}
 #hui-header-menu:before{content:"\e60e"; font-size:25px; color:#12a8ff;}
 /* 列表 */
-.hui-list{padding:0px 10px;}
+.hui-list{padding:0px 15px;}
 .hui-list li{}
-.hui-list li{position:relative; width:100%; border-bottom:1px solid #E3E3E3; white-space:nowrap; overflow:hidden; height:50px; line-height:50px;}
+.hui-list li{position:relative; width:100%; border-bottom:1px solid #fcfcfc; white-space:nowrap; overflow:hidden; height:50px; line-height:50px;}
 .hui-list li:last-child{border:none;}
-.hui-list li a{display:block; white-space:nowrap; overflow:hidden; height:50px; line-height:50px !important; text-overflow:ellipsis; -o-text-overflow:ellipsis;}
+.hui-list li a{display:block; white-space:nowrap; overflow:hidden; height:50px; line-height:50px !important; text-overflow:ellipsis; -o-text-overflow:ellipsis;font-size: 15px;color:#333333;}
 .hui-arrow{padding-right:22px !important;}
 .hui-arrow:after{position:absolute; z-index:1; width:20px; height:50px; line-height:50px; text-align:right; right:0px; top:0px; content:"\e608"; font-family:"hui-font" !important; color:#C8C8C8;}
 /* media list */
@@ -223,10 +223,10 @@ h3{font-size:16px}
 .hui-picker-list div{height:30px; font-size:14px; line-height:30px; text-align:center; color:#9E9E9E;}
 .hui-picker-line{position:absolute; z-index:-1; left:0px; top:142px; width:100%; height:30px; border-top:1px solid #9E9E9E; border-bottom:1px solid #9E9E9E;}
 /* hui-footer */
-#hui-footer{width:100%; height:44px; background:#FCFCFC; padding:5px 0px; bottom:0px; left:0px; position:fixed; overflow:hidden; z-index:10; box-shadow:1px -1px 3px #D1D1D1;}
-#hui-footer a{display:block; width:20%; float:left;}
+#hui-footer{width:100%; height:44px; background:#ffffff; padding:5px 0px; bottom:0px; left:0px; position:fixed; overflow:hidden; z-index:10; box-shadow: 0 2px 13px 0 #CBD6EC;}
+#hui-footer a{display:block; width:33.3333%; float:left;}
 .hui-footer-icons{font-family:"hui-font"; text-align:center; font-size:20px; height:26px; line-height:26px;}
-.hui-footer-text{text-align:center; font-size:13px; height:18px; line-height:18px; padding-top:2px;}
+.hui-footer-text{text-align:center; font-size:12px; height:18px; line-height:18px; padding-top:2px;color:#333333;}
 .hui-footer-active *{color:#00A2FF;}
 .hui-fooer-line{height:54px;}
 /* point msg */
@@ -275,9 +275,9 @@ h3{font-size:16px}
 .hui-icons-success:before{content:"\e632";} .hui-icons-error:before{content:"\e638";} .hui-icons-range:before{content:"\e613";}
 .hui-icons-warn:before{content:"\e603";} .hui-icons-click:before{content:"\e75b";} .hui-icons-tab:before{content:"\e667";}
 .hui-icons-loading:before{content:"\e647";} .hui-icons-form:before{content:"\e62c";} .hui-icons-picker:before{content:"\e923";}
-.hui-icons-eyes:before{content:"\e63d";} .hui-icons-clear:before{content:"\e6a0";} .hui-icons-home:before{content:"\e611";}
+.hui-icons-eyes:before{content:"\e63d";} .hui-icons-clear:before{content:"\e6a0";}
 .hui-icons-switch:before{content:"\e679";} .hui-icons-action-sheet:before{content:"\e605";} .hui-icons-news:before{content:"\e62e";}
-.hui-icons-swipe:before{content:"\e699";} .hui-icons-media-list:before{content:"\e62d";} .hui-icons-my:before{content:"\e618";}
+.hui-icons-swipe:before{content:"\e699";} .hui-icons-media-list:before{content:"\e62d";}
 .hui-icons-forum:before{content:"\e602";} .hui-icons-shop:before{content:"\e67f";} .hui-icons-nav:before{content:"\e606";}
 .hui-icons-menu-point:before{content:"\e60e";} .hui-icons-menu-point2:before{content:"\e625";} .hui-icons-star:before{content:"\e661";}
 .hui-icons-msg:before{content:"\e60b";} .hui-icons-help:before{content:"\e652";} .hui-icons-water-fall:before{content:"\e60c";}

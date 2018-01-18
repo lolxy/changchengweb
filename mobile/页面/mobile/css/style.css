@@ -1,11 +1,15 @@
 /* 公共部分 */
 .img-responsive{max-width: 100%;vertical-align: top;height: auto;}
 .mt20{margin-top: 20px !important;}
+.mb15{margin-bottom: 15px !important;}
+.hui-pos-relative{position:relative;}
 /* 登录页 */
 .hui-form{ padding:10% 16%; background:none !important; }
 .hui-form .hui-form-items{ border-bottom:none; padding: 0; margin-bottom: 15px; }
 .hui-form .hui-form-items .hui-input{ padding: 11px 40px 11px 11px; background: #F2F2F5; border-radius: 4px; color:#999999;box-sizing: border-box;height: 44px;}
 .hui-form .hui-form-footer{line-height: 16px;font-size: 13px;margin-top: 5px;margin-bottom: 50px;}
+.hui-form-footer .login-txt{font-size: 13px;}
+.hui-form-footer .login-txt a{color:#00A2FF;font-size: 13px;}
 .hui-form .hui-login-style li{ float: left; width: 33.3333%; }
 .hui-form .hui-login-style li a{display:inline-block;width: 40px;height: 40px;background-size: cover;cursor: pointer;}
 .login_weixin{background-image: url(../images/login_weixin.png)}
@@ -27,3 +31,46 @@
 .success-box .btn-group .hui-outline:hover{background-color: #00A2FF;color:#ffffff;}
 .success-box .btn-group a{line-height: 31px;height: 33px;border-radius:33px;}
 .success-box .btn-group .hui-center{width: 110px;text-align: center;margin: 0 auto;}
+
+/* 验证码 */
+.yzmbox{position: relative;overflow: hidden;height: 44px;}
+.yzmbox .hui-form-items{margin-right: 41%;width:auto;}
+.yzmbox a{display: block;position: absolute;right: 0;top: 0;width: 36%;height: 42px;padding: 0;border: 1px solid #e4e4e4;color:#00A2FF;font-size: 12px;box-shadow: none;background-color: #fff;line-height: 40px;}
+
+/* 个人中心 */
+.hui-media-box{position: relative;width: 100%;height: 180px;overflow: hidden;background:url(../images/usercenterbg.png) center center no-repeat;background-size:cover;}
+.hui-media-box .xiaoxi{width: 30px;height: 30px;position: absolute;right: 10px;top: 10px;background: url(../images/message.png) center center no-repeat;background-size:contain;}
+.hui-media-box .xiaoxi .has-data{display: block;position: absolute;background-color: #ff0000;width: 6px;height: 6px;border-radius: 50%;top:2px;right:1px;}
+.hui-fruserinfo-box{margin: 50px auto 30px;text-align: center;}
+.hui-fruserinfo-box .cover{width: 75px;height: 75px;display: inline-block;background-size: cover;background-position: center center;border-radius: 50%;overflow: hidden;}
+.hui-fruserinfo-box p{line-height: 25px;font-size: 14px;}
+.hui-list .hui-icons i{background-size:contain;width: 24px;height: 24px;display: inline-block;background-repeat: no-repeat;background-position: center center;vertical-align: top;margin: 13px 15px 13px 5px;}
+.hui-list .hui-icons-kecheng{background-image: url(../images/icon01.png)}
+.hui-list .hui-icons-safe{background-image: url(../images/icon02.png)}
+.hui-list .hui-icons-xieyi{background-image: url(../images/icon03.png)}
+.hui-list .hui-icons-address{background-image: url(../images/icon04.png)}
+.hui-list .hui-icons-card{background-image: url(../images/icon05.png)}
+.hui-list .hui-icons-order{background-image: url(../images/icon06.png)}
+.hui-list .hui-icons-notice{background-image: url(../images/notice.png)}
+.hui-list .hui-icons-ask{background-image: url(../images/ask.png)}
+.hui-list .badge{float: right;background-color: #FF5959;width: 18px;height: 18px;border-radius: 50%;display: inline-block;vertical-align: top;margin: 17px 0px 15px;color:#ffffff;font-size: 10px;line-height: 18px;overflow: hidden;text-align: center;}
+
+/* 底部图标 */
+#hui-footer a{text-align: center;}
+#hui-footer .hui-footer-icons{width: 20px;height: 20px;background-position: center center;background-repeat: no-repeat;display: inline-block;background-size: contain;}
+#hui-footer .hui-icons-home{background-image: url(../images/home.png)}
+#hui-footer .hui-icons-kecheng{background-image: url(../images/kecheng.png)}
+#hui-footer .hui-icons-my{background-image: url(../images/user.png)}
+#hui-footer a:hover .hui-icons-home,#hui-footer a.active .hui-icons-home{background-image: url(../images/home_active.png)}
+#hui-footer a:hover .hui-icons-kecheng,#hui-footer a.active .hui-icons-kecheng{background-image: url(../images/kecheng_active.png)}
+#hui-footer a:hover .hui-icons-my,#hui-footer a.active .hui-icons-my{background-image: url(../images/user_active.png)}
+
+/* 我的消息 */
+.my-message{padding: 0;}
+.my-message li{border-bottom: none;background-color: #fff;padding: 0 15px;margin-top: 10px;box-sizing: border-box;}
+.my-message .hui-arrow:after{right: 15px;}
+.my-xieyi{margin-top: 10px;}
+.my-xieyi ul li{line-height: 22px;white-space: normal;margin: 0;margin-bottom: 5px;}
+.my-xieyi ul li a{line-height: 22px !important;white-space: normal;}
+.my-xieyi ul li .text-ellsips-2{display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden;margin: 3px auto;margin-right: 32%;height: 44px;font-size: 14px;}
+.my-xieyi ul li .status{position: absolute;right: 40px;top: 0;text-align: right;display: block;line-height: 50px;font-size: 13px;}
