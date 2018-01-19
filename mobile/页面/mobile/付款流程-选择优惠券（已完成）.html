@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>选择优惠券</title>
+<link rel="stylesheet" type="text/css" href="css/hui.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+<header class="hui-header">
+	<div id="hui-back"></div>
+	<h1>优惠券</h1>
+</header>
+<div class="hui-wrap">
+
+	<div class="hui-pay-wrap mt10">
+		<ul id="hui-pay-select">
+			<li class="hui-pos-relative active">
+				<a href="javascript:void(0);" class="hui-pay hui-none-padding-left">满500减50</a>
+			</li>
+			<li class="hui-pos-relative">
+				<a href="javascript:void(0);" class="hui-pay hui-none-padding-left">满1000减100</a>
+			</li>
+		</ul>
+	</div>
+
+</div>
+<script type="text/javascript" src="js/hui.js" charset="UTF-8"></script>
+<script type="text/javascript">
+hui.ready(function(){
+	hui('#hui-pay-select li').click(function(){
+    hui(this).addClass('active').siblings().removeClass('active')
+	});
+});
+</script>
+</body>
+</html>
