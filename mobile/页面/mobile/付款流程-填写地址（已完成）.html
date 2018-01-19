@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>填写收货地址</title>
+<link rel="stylesheet" type="text/css" href="css/hui.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+<header class="hui-header">
+	<div id="hui-back"></div>
+	<h1>填写收货地址</h1>
+</header>
+<div class="hui-wrap">
+	<div class="hui-bar-box">
+		<div class="hui-bar-style"><span style="width:25%;"></span></div>
+		<ul>
+			<li class="active">
+				<span>1</span>
+				<p>填写地址</p>
+			</li>
+			<li>
+				<span>2</span>
+				<p>支付</p>
+			</li>
+			<li>
+				<span>3</span>
+				<p>购买成功</p>
+			</li>
+		</ul>
+	</div>
+
+	<div class="hui-address-form" id="loginForm">
+		<h1>2019考研全程规划指导</h1>
+
+		<div class="hui-input-group">
+			<div class="hui-form-item">
+				<label for=""><span>收货人</span>：</label>
+				<div class="input-box">
+					<input type="text" class="hui-input-css" placeholder="请输入收件人姓名">
+				</div>
+			</div>
+
+			<div class="hui-form-item">
+				<label for=""><span>手机号码</span>：</label>
+				<div class="input-box">
+					<input type="number" class="hui-input-css" placeholder="手机号（重要）">
+				</div>
+			</div>
+
+			<div class="hui-form-item hui-arrow">
+				<label for=""><span>所在地区</span>：</label>
+				<div class="input-box">
+					<button type="button" class="hui-button hui-button-large" id="citybtn">选择地区</button>
+				</div>
+			</div>
+
+			<div class="hui-form-item">
+				<label for=""><span>详细地址</span>：</label>
+				<div class="input-box">
+					<input type="text" class="hui-input-css" placeholder="请输入详细地址">
+				</div>
+			</div>
+		</div>
+
+		<div class="hui-btn-group mt20">
+			<button type="button" class="hui-button hui-button-large hui-radius hui-primary" id="submitBtn">下一步</button>
+		</div>
+	</div>
+
+</div>
+<script type="text/javascript" src="js/hui.js" charset="UTF-8"></script>
+<script type="text/javascript" src="js/hui-form.js"></script>
+<script src="js/hui-picker.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/cities.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+hui.formInit();
+//表单元素数据收集
+hui.ready(function() {
+	var initArray = cities;
+	var sheng1   = initArray[12].text;
+	var shi1     = initArray[12].children[1].text;
+	var qu1     = initArray[12].children[1].children[3].text;
+	hui('#citybtn').html('<span>' + sheng1 + '</span><span>' + shi1 + '</span><span>' + qu1 +'</span>');
+
+	hui('#submitBtn').click(function(){
+	    var data = hui.getFormData('#form1');
+	    console.log(data);
+	});
+});
+
+/* 地区选择， 关联型数据 */
+var picker = new huiPicker('#citybtn', function(){
+    var sheng   = picker.getText(0);
+    var shi     = picker.getText(1);
+    var qu      = picker.getText(2);
+    hui('#citybtn').html('<span>' + sheng + '</span><span>' + shi + '</span><span>' + qu +'</span>');
+});
+picker.level = 3;
+picker.bindRelevanceData(cities);
+</script>
+</body>
+</html>
