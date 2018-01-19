@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>搜索页</title>
+<link rel="stylesheet" type="text/css" href="css/hui.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+<header class="hui-header">
+  <div id="hui-header-sreach">
+    <input type="search" id="searchKey" placeholder="考研英语" />
+		<a href="javascript:void(0)" class="qvxiao">取消</a>
+  </div>
+</header>
+<div class="hui-wrap">
+	<div id="hui-hot-sreach">
+      <div id="hui-hot-sreach-title">热门搜索</div>
+      <div id="hui-hot-sreach-keys">
+          <a href="javascript:hotSearch('厦门大学');">厦门大学</a>
+          <a href="javascript:hotSearch('厦门大学');">厦门大学</a>
+					<a href="javascript:hotSearch('厦门大学');">厦门大学</a>
+					<a href="javascript:hotSearch('厦门大学');">厦门大学</a>
+					<a href="javascript:hotSearch('厦门大学');">厦门大学</a>
+					<a href="javascript:hotSearch('厦门大学');">厦门大学</a>
+					<a href="javascript:hotSearch('厦门大学');">厦门大学</a>
+					<a href="javascript:hotSearch('厦门大学');">厦门大学</a>
+      </div>
+  </div>
+</div>
+<script type="text/javascript" src="js/hui.js" charset="UTF-8"></script>
+<script type="text/javascript">
+//监听搜索按钮时间
+document.getElementById('searchKey').addEventListener('keyup', function(e){if(e.keyCode == 13){searchNow();}});
+function hotSearch(k){
+    hui('#searchKey').val(k);
+    searchNow();
+}
+function searchNow(){
+    document.activeElement.blur();
+    var kwd = hui('#searchKey').val();
+    kwd = kwd.trim();
+    if(kwd.length < 2){hui.toast('关键字至少2个字符'); return false;}
+    // hui.toast('搜索 '+ kwd);
+}
+hui(".qvxiao").click(function(){
+	hui('#searchKey').val('');
+})
+</script>
+</body>
+</html>

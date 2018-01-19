@@ -104,3 +104,13 @@ background-size:cover;}
 .hui-pay-wrap .hui-yhstyle{color:#ff0000;padding-left: 0;}
 .hui-pay-wrap .hui-yhstyle:before{display: none;}
 .hui-btn-group{padding: 0 10px;}
+
+/*************************************** 搜索页 ******************************/
+#hui-header-sreach{height:32px; padding:0px !important; line-height:32px; position:absolute; z-index:21; left:15px; top:6px;right: 15px;color:#999999;}
+#hui-header-sreach input{width:82%; height:32px !important; line-height:33px !important; margin:0px !important; -webkit-appearance:none; -moz-appearance:none; appearance:none; border-radius:5px; border:0; background:#EFF3F6; font-size:13px; text-indent:30px;float: left;}
+#hui-header-sreach a.qvxiao{display:block;line-height: 32px;width: 16%;text-align: center;font-size: 18px;color:#6d6d6d;float: right;}
+#hui-header-sreach::after{font-family:"hui-font"; content:'\e714'; display:block; position:absolute; z-index:22; width:28px height:32px; left:5px; top:0;}
+#hui-hot-sreach{padding:10px 15px;}
+#hui-hot-sreach-title{line-height:35px; font-size:15px; font-weight:500;color:#333333;}
+#hui-hot-sreach-keys{margin-top:10px;}
+#hui-hot-sreach-keys a{display:block; border-radius:5px; float:left; margin:0 10px 10px 0px; padding:6px 10px; line-height:20px; font-size:13px; background:#ffffff;color:#656565;}
