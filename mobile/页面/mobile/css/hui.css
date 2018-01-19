@@ -267,7 +267,7 @@ h3{font-size:16px}
 .hui-menu-show{-webkit-animation:hui-a-menu-show 0.3s forwards; animation:hui-a-menu-show 0.3s forwards;}
 /* icons */
 @font-face{font-family:"hui-font"; src:url('fonts/iconfont.eot'); src:url('fonts/iconfont.eot?#iefix') format('embedded-opentype'), url('fonts/iconfont.woff') format('woff'), url('fonts/iconfont.ttf') format('truetype'), url('fonts/iconfont.svg#iconfont') format('svg');}
-.hui-icons{font-family:"hui-font" !important; font-style:normal; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing:grayscale; padding-right:8px;}
+.hui-icons{font-style:normal; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing:grayscale; padding-right:8px;}
 .hui-icons-menu:before{content:"\e634";} .hui-icons-toast:before{content:"\e689";} .hui-icons-img:before{content:"\e620";}
 .hui-icons-left:before{content:"\e6a5";} .hui-icons-right:before{content:"\e608";} .hui-icons-number:before{content:"\e604";}
 .hui-icons-up:before{content:"\e649";}  .hui-icons-up2:before{content:"\e655";} .hui-icons-down:before{content:"\e744";}

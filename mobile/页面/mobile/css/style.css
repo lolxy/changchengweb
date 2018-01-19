@@ -2,7 +2,12 @@
 .img-responsive{max-width: 100%;vertical-align: top;height: auto;}
 .mt20{margin-top: 20px !important;}
 .mb15{margin-bottom: 15px !important;}
+.mt10{margin-top: 10px !important;}
+.hui-radius{border-radius: 40px;}
 .hui-pos-relative{position:relative;}
+
+/********************************* 注册登录 ********************************/
+
 /* 登录页 */
 .hui-form{ padding:10% 16%; background:none !important; }
 .hui-form .hui-form-items{ border-bottom:none; padding: 0; margin-bottom: 15px; }
@@ -17,10 +22,12 @@
 .login_qq{background-image: url(../images/login_qq.png)}
 
 /* 步骤栏 */
-.hui-bar-box{overflow: hidden;padding:35px 10px 0px;background-color: #fff;margin: 10px auto;}
-.hui-bar-box .hui-bar-style{border-top: 3px solid #00A2FF;width: 65%;margin: 0 auto;}
+.hui-bar-box{overflow: hidden;padding:35px 10px 10px;background-color: #fff;margin: 10px auto;}
+.hui-bar-box .hui-bar-style{background-color: #E4F0F6;height: 3px;width: 68%;margin: 0 auto;}
+.hui-bar-box .hui-bar-style span{display:block;height:100%;background-color: #00A2FF;}
 .hui-bar-box li{ width: 33.3333%; float: left; text-align: center; margin-top: -13px; }
-.hui-bar-box li span{display: inline-block;width: 22px;height: 22px;background-color: #00A2FF;border-radius: 50%;color:#ffffff;}
+.hui-bar-box li span{display: inline-block;width: 22px;height: 22px;background-color: #E4F0F6;border-radius: 50%;color:#ffffff;}
+.hui-bar-box li.active span{background-color: #00A2FF;}
 .hui-bar-box li p{font-size: 14px;color:#00A2FF;line-height: 30px;margin-top: 5px;}
 
 /* 成功提示 */
@@ -37,7 +44,9 @@
 .yzmbox .hui-form-items{margin-right: 41%;width:auto;}
 .yzmbox a{display: block;position: absolute;right: 0;top: 0;width: 36%;height: 42px;padding: 0;border: 1px solid #e4e4e4;color:#00A2FF;font-size: 12px;box-shadow: none;background-color: #fff;line-height: 40px;}
 
-/* 个人中心 */
+/*************************************** 个人中心 ************************************/
+
+/* 个人中心--首页 */
 .hui-media-box{position: relative;width: 100%;height: 180px;overflow: hidden;background:url(../images/usercenterbg.png) center center no-repeat;background-size:cover;}
 .hui-media-box .xiaoxi{width: 30px;height: 30px;position: absolute;right: 10px;top: 10px;background: url(../images/message.png) center center no-repeat;background-size:contain;}
 .hui-media-box .xiaoxi .has-data{display: block;position: absolute;background-color: #ff0000;width: 6px;height: 6px;border-radius: 50%;top:2px;right:1px;}
@@ -55,7 +64,7 @@
 .hui-list .hui-icons-ask{background-image: url(../images/ask.png)}
 .hui-list .badge{float: right;background-color: #FF5959;width: 18px;height: 18px;border-radius: 50%;display: inline-block;vertical-align: top;margin: 17px 0px 15px;color:#ffffff;font-size: 10px;line-height: 18px;overflow: hidden;text-align: center;}
 
-/* 底部图标 */
+/* 个人中心-底部图标 */
 #hui-footer a{text-align: center;}
 #hui-footer .hui-footer-icons{width: 20px;height: 20px;background-position: center center;background-repeat: no-repeat;display: inline-block;background-size: contain;}
 #hui-footer .hui-icons-home{background-image: url(../images/home.png)}
@@ -65,7 +74,7 @@
 #hui-footer a:hover .hui-icons-kecheng,#hui-footer a.active .hui-icons-kecheng{background-image: url(../images/kecheng_active.png)}
 #hui-footer a:hover .hui-icons-my,#hui-footer a.active .hui-icons-my{background-image: url(../images/user_active.png)}
 
-/* 我的消息 */
+/* 个人中心--我的消息 */
 .my-message{padding: 0;}
 .my-message li{border-bottom: none;background-color: #fff;padding: 0 15px;margin-top: 10px;box-sizing: border-box;}
 .my-message .hui-arrow:after{right: 15px;}
@@ -74,3 +83,24 @@
 .my-xieyi ul li a{line-height: 22px !important;white-space: normal;}
 .my-xieyi ul li .text-ellsips-2{display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden;margin: 3px auto;margin-right: 32%;height: 44px;font-size: 14px;}
 .my-xieyi ul li .status{position: absolute;right: 40px;top: 0;text-align: right;display: block;line-height: 50px;font-size: 13px;}
+
+/***************************************** 支付流程 **********************************/
+
+/* 支付流程 */
+.hui-pay-wrap li{background-color: #fff;line-height: 28px;padding:10px 15px;box-sizing: border-box;overflow: hidden;font-size: 16px;height: 48px;margin-bottom:2px;}
+.hui-pay-wrap li:last-child{margin-bottom: 0;}
+.hui-pay-wrap li .title{margin-right: 25%;display: block;white-space: nowrap;word-break:break-all;overflow: hidden;text-overflow:ellipsis;color:#666666;line-height: 24px;}
+.hui-pay-wrap li .right-box{position:absolute;right: 15px;top: 10px;width: 20%;text-align: right;color:#333333;line-height: 24px;}
+.hui-pay-wrap a{font-size: 14px;color:#6d6d6d;}
+.hui-pay-wrap .hui-arrow:after{right: 15px;}
+.hui-pay-wrap .hui-pay{color:#343434;padding-left: 32px;padding-right: 32px;line-height: 28px;display: block;}
+.hui-pay-wrap .hui-pay:before,.hui-pay-wrap .hui-pay:after,.hui-pay-wrap .hui-yhstyle:after{content:"";display:block;position: absolute;background-position: center center;background-repeat: no-repeat;
+background-size:cover;}
+.hui-pay-wrap .hui-pay:before{width: 22px;height: 22px;left: 15px;top: 13px;}
+.hui-pay-wrap .hui-pay:after,.hui-pay-wrap .hui-yhstyle:after{width: 18px;height: 18px;right: 15px;top: 15px;background-image:url(../images/wxz_icon.png);}
+.hui-pay-wrap li.active .hui-pay:after,.hui-pay-wrap .hui-yhstyle:after{background-image:url(../images/xz_icon.png);}
+.hui-pay-wrap .hui-wx-pay:before{background-image:url(../images/wx_pay.png);}
+.hui-pay-wrap .hui-zfb-pay:before{background-image:url(../images/zfb_pay.png);}
+.hui-pay-wrap .hui-yhstyle{color:#ff0000;padding-left: 0;}
+.hui-pay-wrap .hui-yhstyle:before{display: none;}
+.hui-btn-group{padding: 0 10px;}
