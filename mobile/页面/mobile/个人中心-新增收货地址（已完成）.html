@@ -3,36 +3,17 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-<title>填写收货地址</title>
+<title>新增收货地址</title>
 <link rel="stylesheet" type="text/css" href="css/hui.css" />
 <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 <body>
 <header class="hui-header">
 	<div id="hui-back"></div>
-	<h1>填写收货地址</h1>
+	<h1>新增收货地址</h1>
 </header>
-<div class="hui-wrap">
-	<div class="hui-bar-box">
-		<div class="hui-bar-style"><span style="width:25%;"></span></div>
-		<ul>
-			<li class="active">
-				<span>1</span>
-				<p>填写地址</p>
-			</li>
-			<li>
-				<span>2</span>
-				<p>支付</p>
-			</li>
-			<li>
-				<span>3</span>
-				<p>购买成功</p>
-			</li>
-		</ul>
-	</div>
-
+<div class="hui-wrap mt15">
 	<div class="hui-address-form" id="loginForm">
-		<h1>2019考研全程规划指导</h1>
 
 		<div class="hui-input-group">
 			<div class="hui-form-item">
@@ -64,11 +45,17 @@
 			</div>
 		</div>
 
-		<div class="hui-btn-group mt20">
-			<button type="button" class="hui-button hui-button-large hui-radius hui-primary" id="submitBtn">下一步</button>
+		<div class="checkbox-group">
+			<div class="hui-form-radios">
+	        <input type="checkbox" value="" name="" id="setAddress" checked="checked"/>
+					<label>设为默认地址</label>
+	    </div>
+		</div>
+
+		<div class="hui-btn-group">
+			<button type="button" class="hui-button hui-button-large hui-radius hui-primary" id="submitBtn">确定增加</button>
 		</div>
 	</div>
-
 </div>
 <script type="text/javascript" src="js/hui.js" charset="UTF-8"></script>
 <script type="text/javascript" src="js/hui-form.js"></script>
@@ -88,6 +75,17 @@ hui.ready(function() {
 	    var data = hui.getFormData('#loginForm');
 	    console.log(data);
 	});
+
+	//获取复选框的值
+	hui('.hui-form-radios label').click(function(){
+		var that = hui(this).siblings('input')
+		var checked = hui(this).siblings().attr('checked');
+		if(checked == 'checked'){
+			that.removeAttr('checked')
+		}else{
+			that.attr('checked','checked')
+		}
+	})
 });
 
 /* 地区选择， 关联型数据 */
