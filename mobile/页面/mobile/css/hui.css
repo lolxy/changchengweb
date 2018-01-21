@@ -110,7 +110,7 @@ h3{font-size:16px}
 @-webkit-keyframes hui-a-rotate360{0%{-webkit-transform:rotate(0deg);} 50%{-webkit-transform:rotate(180deg);} 100%{-webkit-transform:rotate(360deg);}}
 @-moz-keyframes hui-a-rotate360{0%{-moz-transform:rotate(0deg);} 50%{-moz-transform:rotate(180deg);} 100%{-moz-transform:rotate(360deg);}}
 @-o-keyframes hui-a-rotate360{0%{-o-transform:rotate(0deg);} 50%{-o-transform:rotate(180deg);} 100%{-o-transform:rotate(360deg);}}
-.hui-loading-wrap{position:absolute; z-index:1; left:50%; top:50%; margin-top: -10px;-webkit-transform:translate(-50%, -50%); transform:translate(-50%, -50%); -moz-transform:translate(-50%, -50%); -o-transform:translate(-50%, -50%);}
+.hui-loading-wrap{position:absolute; z-index:1; left:50%; top:15px;-webkit-transform:translate(-50%, -50%); transform:translate(-50%, -50%); -moz-transform:translate(-50%, -50%); -o-transform:translate(-50%, -50%);}
 .hui-loading{width:22px; height:22px;margin: 9px;line-height:20px; font-size:13px; text-align:center; font-family:"hui-font" !important; animation:hui-a-rotate360 1s infinite linear; -webkit-animation:hui-a-rotate360 1s infinite linear; -moz-animation:hui-a-rotate360 1s infinite linear; -o-animation:hui-a-rotate360 1s infinite linear; float:left;vertical-align: top;}
 .hui-loading:before{content:"\e647";}
 .hui-loading-text{float:left; line-height:inherit; padding-left:3px;}
@@ -212,7 +212,7 @@ h3{font-size:16px}
 .hui-refresh-icon{height:60px; line-height:60px; text-align:center; margin-top:-60px; position:relative; color:#9E9E9E;}
 .hui-refresh-icon *{color:#9E9E9E;}
 .hui-refresh-content{}
-#hui-load-more{font-size: 13px;height:40px; line-height:40px; text-align:center; color:#9E9E9E; position:relative; display:none; padding-bottom:20px; margin-top:5px;}
+#hui-load-more{font-size: 13px;height:40px; line-height:40px; text-align:center; color:#9E9E9E; position:relative; display:none;margin-top:5px;}
 #hui-load-more *{color:#9E9E9E;}
 /* picker */
 .hui-picker{position:fixed; z-index:21; background:#DDDDDD; height:238px; left:0px; bottom:0px; width:100%; display:none;}
