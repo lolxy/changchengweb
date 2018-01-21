@@ -8,6 +8,57 @@
 .hui-pos-relative{position:relative;}
 .hui-none-padding-left{padding-left: 0 !important;}
 
+/********************************** 首页 ************************/
+.logo{width: 24%;height:26px;background-repeat: no-repeat;background-position: center center;background-size:contain;margin: 9px auto;}
+#hui-header-menu{left: 0;right: auto;text-align: center;}
+#hui-header-menu:before,#hui-header-search::before{content:"";display:block;width: 20px;height: 20px;margin: 12px auto;background-size: contain;}
+#hui-header-menu:before{background-image: url(../images/menu_icon.png);}
+#hui-header-search{position:absolute;right: 0;top: 0;width: 44px;height: 44px;}
+#hui-header-search:before{background-image: url(../images/search_icon.png);}
+/* 轮播图 */
+.hui-swipe-indicator{text-align: center;bottom: 12px;}
+.hui-swipe-indicators{border-radius: 8px;height: 8px;width: 8px;background: #d8d8d8;}
+.hui-swipe-indicator .hui-fr{float: none !important;display: inline-block !important;}
+/* 九宫格导航 */
+.hui-menu-box{padding:5px;margin-top: -5px;}
+.hui-menu-box .hui-speed-dial{padding: 10px;}
+.hui-menu-box .hui-speed-dial li{margin-top: 5px;}
+.hui-menu-box .hui-speed-dial-icons{text-align: center;}
+.hui-menu-box .hui-speed-dial-icons .hui-icons{width: 45px;height: 45px;display: inline-block;background-position: center center;background-repeat: no-repeat;background-size: contain;}
+.hui-menu-box .hui-speed-dial li a{display: block;width: 100%;height: 100%;}
+.hui-menu-box .hui-speed-dial-text{font-size: 12px;}
+.hui-icons-icon1{background-image: url(../images/index_icon1.png)}
+.hui-icons-icon2{background-image: url(../images/index_icon2.png)}
+.hui-icons-icon3{background-image: url(../images/index_icon3.png)}
+.hui-icons-icon4{background-image: url(../images/index_icon4.png)}
+.hui-icons-icon5{background-image: url(../images/index_icon5.png)}
+.hui-icons-icon6{background-image: url(../images/index_icon6.png)}
+.hui-icons-icon7{background-image: url(../images/index_icon7.png)}
+.hui-icons-icon8{background-image: url(../images/index_icon8.png)}
+/* 首页列表 */
+#refreshContainer{padding: 0 10px;}
+.hui-index-list li{overflow: hidden;border: 1px solid #b8b8b8;background-color: #fff;box-sizing: border-box;height: 180px;border-radius: 5px;margin-top: 10px;}
+.hui-index-list li a{display: block;width: 100%;height: 100%;}
+.hui-index-list li .panel-body{height: 128px;box-sizing: border-box;position: relative;}
+.hui-index-list li .panel-body .content{margin-right: 130px;padding: 15px;}
+.hui-index-list li .panel-body .content h2{font-size: 16px;white-space: nowrap;text-overflow: ellipsis;word-break: break-all;overflow: hidden;margin-bottom: 20px;}
+.hui-index-list li .panel-body .content p{color:#666666;font-size: 12px;line-height: 24px;}
+.hui-index-list li .panel-body .imgbox{position: absolute;right: 0;top: 0;width: 120px;height: 100%;}
+.hui-index-list li .panel-footer{height: 50px;background-color: #f6f6f6;border-top: 1px solid #b8b8b8;overflow: hidden;box-sizing: border-box;padding: 5px;}
+.hui-index-list li .panel-footer .p-fl{float: left;line-height: 20px;padding-left: 5px;}
+.hui-index-list li .panel-footer .p-fl p{color:#999999;font-size: 12px;}
+.hui-index-list li .panel-footer .p-fl span{display: block;color: #00A2FF;font-size: 12px;}
+.hui-index-list li .panel-footer .p-fr{float: right;color:#000000;font-size: 18px;font-weight: 600;line-height: 38px;padding-right: 5px;height: 40px;}
+.hui-index-list li .panel-footer .p-fr em{font-style: normal;margin-left: 5px}
+/* 首页侧边栏 */
+.hui-index-menu{background-color: #fff;}
+.close-menu{height: 44px;}
+.close-menu::before{content: "";display: block;width: 20px;height: 20px;margin: 12px;background: url(../images/back_icon.png) center center no-repeat;background-size: contain;}
+.hui-accordion-box{overflow-y: auto;position: absolute;top: 64px;left: 0;width: 100%;bottom: 0;padding:0px 15px;box-sizing: border-box;}
+.hui-accordion-box .hui-accordion-title{background: none;border-bottom: 1px solid #f0f0f0;}
+.hui-accordion-box .hui-accordion-content{border-bottom: 1px solid #f0f0f0;}
+.hui-accordion-box .hui-accordion-content li{width: 100%;height: 36px;}
+.hui-accordion-box .hui-accordion-content li a{display: block;width: 100%;height: 100%;line-height: 36px !important;color:#666666;font-size: 12px;}
 /********************************* 注册登录 ********************************/
 
 /* 登录页 */

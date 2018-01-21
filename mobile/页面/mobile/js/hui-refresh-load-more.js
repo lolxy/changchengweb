@@ -5,10 +5,10 @@ hui 下拉刷新、上拉加载更多组件
 */
 hui.refreshY = 0, hui.refreshIng = false, hui.refreshTitle, hui.refreshIcon1, hui.refreshNumber = 0, hui.loadMoreText = '';
 hui.refresh = function(selector, func, icons1, icons2, loading){
-	if(!icons1){icons1 = '<span class="hui-icons hui-icons-down"></span>继续下拉刷新';}
+	if(!icons1){icons1 = '继续下拉刷新';}
 	hui.refreshIcon1 = icons1;
-	if(!icons2){icons2 = '<span class="hui-icons hui-icons-up"></span>释放立即刷新';}
-	if(!loading){loading = '<div class="hui-loading-wrap"><div class="hui-loading" style="margin:18px 5px 0px 0px;"></div><div class="hui-loading-text">加载中</div></div>';}
+	if(!icons2){icons2 = '释放立即刷新';}
+	if(!loading){loading = '<div class="hui-loading-wrap"><div class="hui-loading"></div><div class="hui-loading-text">加载中</div></div>';}
 	var dom = hui(selector); hui.refreshTitle = dom.find('.hui-refresh-icon');
 	hui.refreshTitle.html(icons1);
 	var huiRefreshStartY = 0, winInfo;
@@ -31,7 +31,7 @@ hui.refresh = function(selector, func, icons1, icons2, loading){
 			hui.refreshIng = true;
 			hui.refreshTitle.html(loading);
 			hui.refreshNumber++;
-			func(); 
+			func();
 		}else{
 			hui.refreshIng = false;
 			hui.refreshTitle.css({'marginTop' :'-60px'});
@@ -48,8 +48,8 @@ hui.endRefresh = function(){
 /* 上拉加载更多 */
 hui.loadMoreEnd = false;
 hui.loadMore = function(func, title, loading){
-	if(!title){title = '<span class="hui-icons hui-icons-up"></span>上拉加载更多';}
-	if(!loading){loading = '<div class="hui-loading-wrap"><div class="hui-loading" style="margin:8px 5px 0px 0px;"></div><div class="hui-loading-text">加载中</div></div>';}
+	if(!title){title = '上拉加载更多';}
+	if(!loading){loading = '<div class="hui-loading-wrap"><div class="hui-loading"></div><div class="hui-loading-text">加载中</div></div>';}
 	hui.loadMoreText = title;
 	var dom = hui('#hui-load-more'), winInfo = hui.winInfo();
 	if(dom.length < 1){
