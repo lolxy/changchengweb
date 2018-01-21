@@ -18,7 +18,7 @@
 .ke-cont-body p{font-size: 12px;color:#333333;line-height: 25px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;word-wrap: break-word;word-break: break-all;}
 .ke-cont-body .numbox,.ke-cont-body .price .s-txt{font-size: 10px;color:#999999;}
 .ke-cont-body .skubox{overflow: hidden;margin:15px 0 10px 0px;}
-.ke-cont-body .skubox li{float: left;margin-right: 10px;width: 80px;height: 30px;text-align: center;font-size: 14px;color:#999999;background: url(../images/detail/bdimg.png) #ffffff;line-height: 30px;}
+.ke-cont-body .skubox li{float: left;margin-right: 10px;width: 80px;height: 30px;text-align: center;font-size: 14px;color:#999999;background: url(../images/detail/bdimg.png) #ffffff;line-height: 30px;margin-bottom: 10px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;word-break: break-all;}
 .ke-cont-body .skubox li.active,.ke-cont-body .skubox li:hover{cursor: pointer;background:url(../images/detail/bdimgactive.png) #ffffff;color:#0091f4;}
 .ke-cont-body .price span{display: block;margin-top: 5px;}
 .ke-cont-body .price .svip{color:#ff0000;font-size: 14px;}
