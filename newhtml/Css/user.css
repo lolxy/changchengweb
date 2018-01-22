@@ -90,7 +90,7 @@
 .my-info-box .leftbox{width:250px;margin-right: 10px;}
 .my-info-box .centerbox{width:300px;margin-right: 10px;}
 .my-info-box .rightbox{width: 182px;}
-.my-info-box dl{position:relative;margin-bottom: 15px;}
+.my-info-box dl{position:relative;margin-bottom: 15px;min-height: 30px;}
 .my-info-box dt,.my-info-box dd{line-height: 30px;font-size: 16px;color:#333333;}
 .my-info-box dt{position:absolute;width: 85px;top: 0;left: 0;}
 .my-info-box dt span{letter-spacing: 29px;margin-right: -30px;}

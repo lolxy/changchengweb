@@ -61,6 +61,7 @@ a:hover{color:#0091f4;}
 .pagination .pageUp.disabled,.pagination .pageDown.disabled{color:#b2b2b2;cursor: default;}
 .pagination .pageDown{margin-right:0;}
 .pagination div ul li.on{ color:#fff; background-color: #0091f4;}
+.pagination div ul li.on a{color:#ffffff;}
 /* 个人中心公共部分 */
 .user-center-wrapper{margin-top: 30px;margin-bottom: 100px;overflow: hidden;}
 .user-center-wrapper .left-menu{width: 210px;float: left;overflow: hidden;background-color: #fff;border: 1px solid #dfdfdf;}

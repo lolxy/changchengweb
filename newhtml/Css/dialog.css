@@ -26,7 +26,7 @@
 .pay-wrapper{width: 650px;background-color: #fff;box-shadow: 0px 0px 46px rgba(80,131,207,0.13);
 border: 1px solid #f4f7fc;border-radius: 5px;position:fixed;top:10%;left: 50%;margin-left: -325px;z-index:20;}
 .pay-wrapper .pay-header{height: 40px;border-bottom: 1px solid #f2f2f5;line-height: 40px;overflow: hidden;font-size: 24px;padding: 20px;}
-.pay-wrapper .pay-header p{float: left;color:#333333;}
+.pay-wrapper .pay-header p{float: left;color:#333333;width: 450px; overflow: hidden; height: 40px; white-space: nowrap; word-wrap: break-word; word-break: break-all; text-overflow: ellipsis;}
 .pay-wrapper .pay-header span{float: right;font-weight: 600;color:#000000;}
 .pay-type-box{width: 294px;margin: 10px auto 40px;}
 .pay-type-box p{line-height: 40px;font-size: 18px;text-align: center;}
