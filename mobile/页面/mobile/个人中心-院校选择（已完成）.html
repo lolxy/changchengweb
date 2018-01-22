@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>地区</title>
+<link rel="stylesheet" type="text/css" href="css/hui.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<style>
+.hui-header{border-bottom: 1px solid #eeeeee;box-shadow: none;}
+</style>
+</head>
+<body>
+<header class="hui-header">
+    <div id="hui-back"></div>
+    <h1>地区</h1>
+</header>
+<div class="hui-wrap">
+    <!-- 列表数据 循环  hui-index-list-title 和 hui-list -->
+    <div class="hui-index-list-title" id="hui-index-list-title_A">A</div>
+    <div class="hui-s-list">
+        <ul>
+            <li><a href="#">安徽大学</a></li>
+            <li><a href="#">安徽大学</a></li>
+						<li><a href="#">安徽大学</a></li>
+						<li><a href="#">安徽大学</a></li>
+						<li><a href="#">安徽大学</a></li>
+        </ul>
+    </div>
+    <div class="hui-index-list-title" id="hui-index-list-title_B">B</div>
+    <div class="hui-s-list">
+        <ul>
+					<li><a href="#">北京大学</a></li>
+					<li><a href="#">北京大学</a></li>
+					<li><a href="#">北京大学</a></li>
+					<li><a href="#">北京大学</a></li>
+					<li><a href="#">北京大学</a></li>
+					<li><a href="#">北京大学</a></li>
+					<li><a href="#">北京大学</a></li>
+					<li><a href="#">北京大学</a></li>
+					<li><a href="#">北京大学</a></li>
+        </ul>
+    </div>
+    <div class="hui-index-list-title" id="hui-index-list-title_C">C</div>
+    <div class="hui-s-list">
+        <ul>
+            <li><a href="#">长安大学</a></li>
+            <li><a href="#">长安大学</a></li>
+						<li><a href="#">长安大学</a></li>
+						<li><a href="#">长安大学</a></li>
+						<li><a href="#">长安大学</a></li>
+						<li><a href="#">长安大学</a></li>
+						<li><a href="#">长安大学</a></li>
+						<li><a href="#">长安大学</a></li>
+						<li><a href="#">长安大学</a></li>
+						<li><a href="#">长安大学</a></li>
+						<li><a href="#">长安大学</a></li>
+						<li><a href="#">长安大学</a></li>
+        </ul>
+    </div>
+    <div class="hui-index-list-title" id="hui-index-list-title_D">D</div>
+    <div class="hui-s-list">
+        <ul>
+            <li><a href="#">大连海事学院</a></li>
+            <li><a href="#">大连海事学院</a></li>
+						<li><a href="#">大连海事学院</a></li>
+						<li><a href="#">大连海事学院</a></li>
+						<li><a href="#">大连海事学院</a></li>
+						<li><a href="#">大连海事学院</a></li>
+						<li><a href="#">大连海事学院</a></li>
+						<li><a href="#">大连海事学院</a></li>
+						<li><a href="#">大连海事学院</a></li>
+						<li><a href="#">大连海事学院</a></li>
+        </ul>
+    </div>
+</div>
+<div id="hui-index-list-bar">
+    <a>A</a>
+    <a>B</a>
+    <a>C</a>
+    <a>D</a>
+    <a>E</a>
+    <a>F</a>
+    <a>G</a>
+    <a>H</a>
+    <a>I</a>
+    <a>J</a>
+    <a>K</a>
+    <a>L</a>
+    <a>M</a>
+    <a>N</a>
+    <a>O</a>
+    <a>P</a>
+    <a>Q</a>
+    <a>R</a>
+    <a>S</a>
+    <a>T</a>
+    <a>U</a>
+    <a>V</a>
+    <a>W</a>
+    <a>X</a>
+    <a>Y</a>
+    <a>Z</a>
+		<a>#</a>
+</div>
+<script type="text/javascript" src="js/hui.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script>
+//1、右侧字母序号点击事件绑定
+$('#hui-index-list-bar').find('a').click(function(){skipToIndex(this.innerHTML);});
+//2、跳转到指定字母开头处函数定义
+function skipToIndex(index){
+    var listTitle = $('#hui-index-list-title_'+index);
+    if(listTitle.length < 1){hui.toast('没有对应的数据！'); return;}
+    var sets = listTitle.offset().top -46;
+    //减掉46是头部导航的高度 根据实际需求设置
+		$('html,body').animate({scrollTop:sets},1000);
+}
+</script>
+</body>
+</html>
