@@ -314,7 +314,8 @@ background-size:cover;width: 18px;height: 18px;right: 15px;top: 26px;background-
 .hui-my-info .photo a,.hui-my-info .photo a.hui-arrow:after{height: 80px;line-height: 80px !important;}
 .hui-my-info li span{position: absolute;right: 20px;top: 0;}
 .hui-my-info a{color:#333333;font-size: 15px;}
-.hui-my-info li span.null{color:#979797;font-size: 15px;}
+.hui-my-info li span.null{color:#979797;font-size: 15px;box-sizing: border-box;}
+.hui-my-info li span.null input{box-sizing: border-box;width: 100%;border: none;outline: none;text-align: right;color:#979797;font-size: 15px;}
 .hui-my-info .photo .cover{width: 46px;height: 46px;background-size:cover;background-position: center center;background-repeat: no-repeat;background-color: #CFD7E9;border-radius: 5px;margin: 17px 0px;}
 
 /* 个人中心-收货地址 */
