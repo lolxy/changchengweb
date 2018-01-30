@@ -200,9 +200,11 @@
 #hui-footer .hui-icons-home{background-image: url(../images/home.png)}
 #hui-footer .hui-icons-kecheng{background-image: url(../images/kecheng.png)}
 #hui-footer .hui-icons-my{background-image: url(../images/user.png)}
+#hui-footer .hui-icons-kf{background-image: url(../images/message_icon.png)}
 #hui-footer a:hover .hui-icons-home,#hui-footer a.active .hui-icons-home{background-image: url(../images/home_active.png)}
 #hui-footer a:hover .hui-icons-kecheng,#hui-footer a.active .hui-icons-kecheng{background-image: url(../images/kecheng_active.png)}
 #hui-footer a:hover .hui-icons-my,#hui-footer a.active .hui-icons-my{background-image: url(../images/user_active.png)}
+#hui-footer a:hover .hui-icons-kf,#hui-footer a.active .hui-icons-kf{background-image: url(../images/message_icon_active.png)}
 
 /* 个人中心--我的消息 */
 .my-message{padding: 0;}

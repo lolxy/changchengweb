@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>首页</title>
+<link rel="stylesheet" type="text/css" href="css/hui.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/news.css" />
+<style>
+body{padding-bottom: 58px;}
+.hui-header{box-shadow: 0 1px 12px 0 rgba(236,236,236,0.50);}
+</style>
+</head>
+<body>
+<header class="hui-header">
+    <div id="hui-header-menu" onclick="showMenu();"></div>
+    <div class="logo" style="background-image:url(images/logo.png)"></div>
+    <div id="hui-header-search"></div>
+</header>
+<div class="hui-wrap">
+  <!-- 轮播图 -->
+    <div class="hui-swipe" id="swipe">
+        <div class="hui-swipe-pre"><img src="images/placeholder.png"/></div>
+        <div class="hui-swipe-item"><img src="images/banner.png"/></div>
+        <div class="hui-swipe-item"><img src="images/banner.png"/></div>
+        <div class="hui-swipe-item"><img src="images/banner.png"/></div>
+        <div class="hui-swipe-item"><img src="images/banner.png"/></div>
+        <div class="hui-swipe-item"><img src="images/banner.png"/></div>
+    </div>
+  <!-- 首页主菜单 -->
+  <nav class="hui-menu-box">
+    <div class="hui-speed-dial">
+      <ul>
+          <li>
+              <a href="#">
+                <div class="hui-speed-dial-icons">
+                    <span class="hui-icons hui-icons-icon1"></span>
+                </div>
+                <div class="hui-speed-dial-text">院校库</div>
+              </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="hui-speed-dial-icons">
+                  <span class="hui-icons hui-icons-icon2"></span>
+              </div>
+              <div class="hui-speed-dial-text">看直播</div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="hui-speed-dial-icons">
+                  <span class="hui-icons hui-icons-icon3"></span>
+              </div>
+              <div class="hui-speed-dial-text">资料下载</div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="hui-speed-dial-icons">
+                  <span class="hui-icons hui-icons-icon4"></span>
+              </div>
+              <div class="hui-speed-dial-text">考研资讯</div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="hui-speed-dial-icons">
+                  <span class="hui-icons hui-icons-icon5"></span>
+              </div>
+              <div class="hui-speed-dial-text">找研友</div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="hui-speed-dial-icons">
+                  <span class="hui-icons hui-icons-icon6"></span>
+              </div>
+              <div class="hui-speed-dial-text">考研常识</div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="hui-speed-dial-icons">
+                  <span class="hui-icons hui-icons-icon7"></span>
+              </div>
+              <div class="hui-speed-dial-text">考研干货</div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="hui-speed-dial-icons">
+                  <span class="hui-icons hui-icons-icon8"></span>
+              </div>
+              <div class="hui-speed-dial-text">考研大纲</div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="hui-speed-dial-icons">
+                  <span class="hui-icons hui-icons-icon9"></span>
+              </div>
+              <div class="hui-speed-dial-text">考研公共课</div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="hui-speed-dial-icons">
+                  <span class="hui-icons hui-icons-icon10"></span>
+              </div>
+              <div class="hui-speed-dial-text">考研专业课</div>
+            </a>
+          </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- 倒计时 -->
+  <div class="count-down-box">
+      <p>距活动结束还有</p>
+      <div id="count-down" data-time="2018/02/08 23:23:00">
+          <span class="day">00</span>天
+          <span class="hour">00</span>时
+          <span class="minuse">00</span>分
+          <span class="second">00</span>秒
+      </div>
+  </div>
+
+  <!-- 最新资讯 -->
+  <div class="panel">
+    <div class="panel-head">
+      <a href="#">最新资讯</a>
+    </div>
+    <div class="panel-body">
+      <ul>
+        <li>
+          <div class="pic">
+            <a href="#" style="background-image:url(images/news/newsimg.png)"></a>
+          </div>
+          <div class="content">
+            <a href="#" class="text-ellsips-2">
+              2017年“中国最好的科学排名”布，你的学校榜上有名吗？2017年“中国最好的科学排名”布，你的学校榜上有名吗？
+            </a>
+            <p>
+              <span class="hui-fl"><i class="hui-icons hui-view"></i>237</span>
+              <span class="hui-fr">01月12日</span>
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <div class="pic">
+            <a href="#" style="background-image:url(images/news/newsimg.png)"></a>
+          </div>
+          <div class="content">
+            <a href="#" class="text-ellsips-2">
+              2017年“中国最好的科学排名”布，你的学校榜上有名吗？2017年“中国最好的科学排名”布，你的学校榜上有名吗？
+            </a>
+            <p>
+              <span class="hui-fl"><i class="hui-icons hui-view"></i>237</span>
+              <span class="hui-fr">01月12日</span>
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <div class="pic">
+            <a href="#" style="background-image:url(images/news/newsimg.png)"></a>
+          </div>
+          <div class="content">
+            <a href="#" class="text-ellsips-2">
+              2017年“中国最好的科学排名”布，你的学校榜上有名吗？2017年“中国最好的科学排名”布，你的学校榜上有名吗？
+            </a>
+            <p>
+              <span class="hui-fl"><i class="hui-icons hui-view"></i>237</span>
+              <span class="hui-fr">01月12日</span>
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="panel-foot">
+      <a href="#">查看更多</a>
+    </div>
+  </div>
+
+  <!-- 广告位 -->
+  <div class="ads-box"></div>
+
+  <!-- 推荐资料 -->
+  <div class="panel">
+    <div class="panel-head">
+      <a href="#">推荐资料</a>
+    </div>
+    <div class="panel-body">
+      <ul class="cloum-2">
+        <li>
+          <div class="pic">
+            <a href="#" style="background-image:url(images/news/newsimg.png)"></a>
+          </div>
+          <div class="content">
+            <a href="#" class="text-ellsips-2">
+              802文学理论与文学写作复习全书802文学理论与文学写作复习全书802文学理论与文学写作复习全书802文学理论与文学写作复习全书
+            </a>
+            <p>
+              <span class="hui-fl price">￥<em>298</em></span>
+              <span class="hui-fr">499人付款</span>
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <div class="pic">
+            <a href="#" style="background-image:url(images/news/newsimg.png)"></a>
+          </div>
+          <div class="content">
+            <a href="#" class="text-ellsips-2">
+              802文学理论与文学写作复习全书802文学理论与文学写作复习全书802文学理论与文学写作复习全书802文学理论与文学写作复习全书
+            </a>
+            <p>
+              <span class="hui-fl price">￥<em>298</em></span>
+              <span class="hui-fr">499人付款</span>
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <div class="pic">
+            <a href="#" style="background-image:url(images/news/newsimg.png)"></a>
+          </div>
+          <div class="content">
+            <a href="#" class="text-ellsips-2">
+              802文学理论与文学写作复习全书802文学理论与文学写作复习全书802文学理论与文学写作复习全书802文学理论与文学写作复习全书
+            </a>
+            <p>
+              <span class="hui-fl price">￥<em>298</em></span>
+              <span class="hui-fr">499人付款</span>
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <div class="pic">
+            <a href="#" style="background-image:url(images/news/newsimg.png)"></a>
+          </div>
+          <div class="content">
+            <a href="#" class="text-ellsips-2">
+              802文学理论与文学写作复习全书802文学理论与文学写作复习全书802文学理论与文学写作复习全书802文学理论与文学写作复习全书
+            </a>
+            <p>
+              <span class="hui-fl price">￥<em>298</em></span>
+              <span class="hui-fr">499人付款</span>
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="panel-foot">
+      <a href="#">查看更多</a>
+    </div>
+  </div>
+
+  <!-- 广告位 -->
+  <div class="ads-box"></div>
+
+  <!-- 备考指导 -->
+  <div class="panel">
+    <div class="panel-head beikao">
+      <a href="#">备考指导</a>
+    </div>
+    <div class="panel-body">
+      <div class="hui-tab">
+          <div class="hui-tab-title">
+              <div>考研英语</div>
+              <div>考研数学</div>
+              <div>考研政治</div>
+              <div>考研专业课</div>
+          </div>
+          <div class="hui-tab-body">
+              <div class="hui-tab-body-items">
+                 <div class="hui-tab-item">
+                   <ul>
+                     <li>
+                       <div class="pic">
+                         <a href="#" style="background-image:url(images/news/newsimg.png)"></a>
+                       </div>
+                       <div class="content">
+                         <a href="#" class="text-ellsips-2">
+                           112017年“中国最好的科学排名”布，你的学校榜上有名吗？2017年“中国最好的科学排名”布，你的学校榜上有名吗？
+                         </a>
+                         <p>
+                           <span class="hui-fl"><i class="hui-icons hui-view"></i>237</span>
+                           <span class="hui-fr">01月12日</span>
+                         </p>
+                       </div>
+                     </li>
+
+                     <li>
+                       <div class="pic">
+                         <a href="#" style="background-image:url(images/news/newsimg.png)"></a>
+                       </div>
+                       <div class="content">
+                         <a href="#" class="text-ellsips-2">
+                           2017年“中国最好的科学排名”布，你的学校榜上有名吗？2017年“中国最好的科学排名”布，你的学校榜上有名吗？
+                         </a>
+                         <p>
+                           <span class="hui-fl"><i class="hui-icons hui-view"></i>237</span>
+                           <span class="hui-fr">01月12日</span>
+                         </p>
+                       </div>
+                     </li>
+
+                     <li>
+                       <div class="pic">
+                         <a href="#" style="background-image:url(images/news/newsimg.png)"></a>
+                       </div>
+                       <div class="content">
+                         <a href="#" class="text-ellsips-2">
+                           2017年“中国最好的科学排名”布，你的学校榜上有名吗？2017年“中国最好的科学排名”布，你的学校榜上有名吗？
+                         </a>
+                         <p>
+                           <span class="hui-fl"><i class="hui-icons hui-view"></i>237</span>
+                           <span class="hui-fr">01月12日</span>
+                         </p>
+                       </div>
+                     </li>
+                   </ul>
+                 </div>
+                 <div class="hui-tab-item">
+                   <ul>
+                     <li>
+                       <div class="pic">
+                         <a href="#" style="background-image:url(images/news/newsimg.png)"></a>
+                       </div>
+                       <div class="content">
+                         <a href="#" class="text-ellsips-2">
+                           222017年“中国最好的科学排名”布，你的学校榜上有名吗？2017年“中国最好的科学排名”布，你的学校榜上有名吗？
+                         </a>
+                         <p>
+                           <span class="hui-fl"><i class="hui-icons hui-view"></i>237</span>
+                           <span class="hui-fr">01月12日</span>
+                         </p>
+                       </div>
+                     </li>
+
+                     <li>
+                       <div class="pic">
+                         <a href="#" style="background-image:url(images/news/newsimg.png)"></a>
+                       </div>
+                       <div class="content">
+                         <a href="#" class="text-ellsips-2">
+                           2017年“中国最好的科学排名”布，你的学校榜上有名吗？2017年“中国最好的科学排名”布，你的学校榜上有名吗？
+                         </a>
+                         <p>
+                           <span class="hui-fl"><i class="hui-icons hui-view"></i>237</span>
+                           <span class="hui-fr">01月12日</span>
+                         </p>
+                       </div>
+                     </li>
+
+                     <li>
+                       <div class="pic">
+                         <a href="#" style="background-image:url(images/news/newsimg.png)"></a>
+                       </div>
+                       <div class="content">
+                         <a href="#" class="text-ellsips-2">
+                           2017年“中国最好的科学排名”布，你的学校榜上有名吗？2017年“中国最好的科学排名”布，你的学校榜上有名吗？
+                         </a>
+                         <p>
+                           <span class="hui-fl"><i class="hui-icons hui-view"></i>237</span>
+                           <span class="hui-fr">01月12日</span>
+                         </p>
+                       </div>
+                     </li>
+                   </ul>
+                 </div>
+                 <div class="hui-tab-item">
+                   <ul>
+                     <li>
+                       <div class="pic">
+                         <a href="#" style="background-image:url(images/news/newsimg.png)"></a>
+                       </div>
+                       <div class="content">
+                         <a href="#" class="text-ellsips-2">
+                           332017年“中国最好的科学排名”布，你的学校榜上有名吗？2017年“中国最好的科学排名”布，你的学校榜上有名吗？
+                         </a>
+                         <p>
+                           <span class="hui-fl"><i class="hui-icons hui-view"></i>237</span>
+                           <span class="hui-fr">01月12日</span>
+                         </p>
+                       </div>
+                     </li>
+
+                     <li>
+                       <div class="pic">
+                         <a href="#" style="background-image:url(images/news/newsimg.png)"></a>
+                       </div>
+                       <div class="content">
+                         <a href="#" class="text-ellsips-2">
+                           2017年“中国最好的科学排名”布，你的学校榜上有名吗？2017年“中国最好的科学排名”布，你的学校榜上有名吗？
+                         </a>
+                         <p>
+                           <span class="hui-fl"><i class="hui-icons hui-view"></i>237</span>
+                           <span class="hui-fr">01月12日</span>
+                         </p>
+                       </div>
+                     </li>
+
+                     <li>
+                       <div class="pic">
+                         <a href="#" style="background-image:url(images/news/newsimg.png)"></a>
+                       </div>
+                       <div class="content">
+                         <a href="#" class="text-ellsips-2">
+                           2017年“中国最好的科学排名”布，你的学校榜上有名吗？2017年“中国最好的科学排名”布，你的学校榜上有名吗？
+                         </a>
+                         <p>
+                           <span class="hui-fl"><i class="hui-icons hui-view"></i>237</span>
+                           <span class="hui-fr">01月12日</span>
+                         </p>
+                       </div>
+                     </li>
+                   </ul>
+                 </div>
+                 <div class="hui-tab-item">
+                   <ul>
+                     <li>
+                       <div class="pic">
+                         <a href="#" style="background-image:url(images/news/newsimg.png)"></a>
+                       </div>
+                       <div class="content">
+                         <a href="#" class="text-ellsips-2">
+                           442017年“中国最好的科学排名”布，你的学校榜上有名吗？2017年“中国最好的科学排名”布，你的学校榜上有名吗？
+                         </a>
+                         <p>
+                           <span class="hui-fl"><i class="hui-icons hui-view"></i>237</span>
+                           <span class="hui-fr">01月12日</span>
+                         </p>
+                       </div>
+                     </li>
+
+                     <li>
+                       <div class="pic">
+                         <a href="#" style="background-image:url(images/news/newsimg.png)"></a>
+                       </div>
+                       <div class="content">
+                         <a href="#" class="text-ellsips-2">
+                           2017年“中国最好的科学排名”布，你的学校榜上有名吗？2017年“中国最好的科学排名”布，你的学校榜上有名吗？
+                         </a>
+                         <p>
+                           <span class="hui-fl"><i class="hui-icons hui-view"></i>237</span>
+                           <span class="hui-fr">01月12日</span>
+                         </p>
+                       </div>
+                     </li>
+
+                     <li>
+                       <div class="pic">
+                         <a href="#" style="background-image:url(images/news/newsimg.png)"></a>
+                       </div>
+                       <div class="content">
+                         <a href="#" class="text-ellsips-2">
+                           2017年“中国最好的科学排名”布，你的学校榜上有名吗？2017年“中国最好的科学排名”布，你的学校榜上有名吗？
+                         </a>
+                         <p>
+                           <span class="hui-fl"><i class="hui-icons hui-view"></i>237</span>
+                           <span class="hui-fr">01月12日</span>
+                         </p>
+                       </div>
+                     </li>
+                   </ul>
+                 </div>
+              </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="panel-foot">
+      <a href="#">查看更多</a>
+    </div>
+  </div>
+
+  <div class="index-footer">
+    <div class="f-nav">
+      <a href="#">考研网校</a>
+      <a href="#">电脑版</a>
+    </div>
+    <p>闽公网安备35020302001452号  </p>
+  </div>
+</div>
+<!-- 底部菜单 -->
+<div id="hui-footer">
+    <a href="#" id="nav-home" class="active">
+        <div class="hui-footer-icons hui-icons-home"></div>
+        <div class="hui-footer-text">首页</div>
+    </a>
+    <a href="#" id="nav-tushu">
+        <div class="hui-footer-icons hui-icons-kecheng"></div>
+        <div class="hui-footer-text">图书</div>
+    </a>
+    <a href="#" id="nav-kefu">
+        <div class="hui-footer-icons hui-icons-kf"></div>
+        <div class="hui-footer-text">客服</div>
+    </a>
+    <a href="#" id="nav-my">
+        <div class="hui-footer-icons hui-icons-my"></div>
+        <div class="hui-footer-text">我的</div>
+    </a>
+</div>
+
+<!-- 左侧菜单 -->
+<div class="hui-menu hui-index-menu">
+    <div class="close-menu" onclick="closeMenu();"></div>
+    <div class="hui-accordion-box">
+      <div class="hui-accordion">
+          <div class="hui-accordion-title">考研英语</div>
+          <div class="hui-accordion-content">
+              <div class="hui-list">
+                  <ul>
+                      <li><a href="#">test1...</a></li>
+                      <li><a href="#">test1...</a></li>
+                      <li><a href="#">test1...</a></li>
+                      <li><a href="#">test1...</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <div class="hui-accordion">
+          <div class="hui-accordion-title">考研数学</div>
+          <div class="hui-accordion-content">
+              <div class="hui-list">
+                  <ul>
+                    <li><a href="#">test2...</a></li>
+                    <li><a href="#">test2...</a></li>
+                    <li><a href="#">test2...</a></li>
+                    <li><a href="#">test2...</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <div class="hui-accordion">
+          <div class="hui-accordion-title">考研政治</div>
+          <div class="hui-accordion-content">
+              <div class="hui-list">
+                  <ul>
+                    <li><a href="#">test3...</a></li>
+                    <li><a href="#">test3...</a></li>
+                    <li><a href="#">test3...</a></li>
+                    <li><a href="#">test3...</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <div class="hui-accordion">
+          <div class="hui-accordion-title">四六级</div>
+          <div class="hui-accordion-content">
+              <div class="hui-list">
+                  <ul>
+                    <li><a href="#">test3...</a></li>
+                    <li><a href="#">test3...</a></li>
+                    <li><a href="#">test3...</a></li>
+                    <li><a href="#">test3...</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <div class="hui-accordion">
+          <div class="hui-accordion-title">高端班</div>
+          <div class="hui-accordion-content">
+              <div class="hui-list">
+                  <ul>
+                    <li><a href="#">test3...</a></li>
+                    <li><a href="#">test3...</a></li>
+                    <li><a href="#">test3...</a></li>
+                    <li><a href="#">test3...</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <div class="hui-accordion">
+          <div class="hui-accordion-title">专业硕士</div>
+          <div class="hui-accordion-content">
+              <div class="hui-list">
+                  <ul>
+                    <li><a href="#">test3...</a></li>
+                    <li><a href="#">test3...</a></li>
+                    <li><a href="#">test3...</a></li>
+                    <li><a href="#">test3...</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <div class="hui-accordion">
+          <div class="hui-accordion-title">全程规划</div>
+          <div class="hui-accordion-content">
+              <div class="hui-list">
+                  <ul>
+                    <li><a href="#">test3...</a></li>
+                    <li><a href="#">test3...</a></li>
+                    <li><a href="#">test3...</a></li>
+                    <li><a href="#">test3...</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <div class="hui-accordion">
+          <div class="hui-accordion-title">专业课</div>
+          <div class="hui-accordion-content">
+              <div class="hui-list">
+                  <ul>
+                    <li><a href="#">全部</a></li>
+                    <li><a href="#">一对一</a></li>
+                    <li><a href="#">学长分享</a></li>
+                    <li><a href="#">专题解析</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+    </div>
+</div>
+<script type="text/javascript" src="js/hui.js"></script>
+<script type="text/javascript" src="js/hui-swipe.js"></script>
+<script type="text/javascript" src="js/hui-accordion.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/hui-tab.js"></script>
+<script type="text/javascript">
+hui.tab('.hui-tab');
+// 左侧菜单
+hui.accordion(true,true);
+
+function showMenu(){
+    hui.maskShow();
+    var menu = hui('.hui-menu').eq(0);
+    menu.addClass('hui-menu-show');
+    hui.maskTap(function(){
+        closeMenu();
+    });
+}
+function closeMenu(){
+    var menu = hui('.hui-menu').eq(0);
+    menu.removeClass('hui-menu-show');
+    hui.maskHide();
+}
+
+// 轮播图
+var swipe = new huiSwpie('#swipe');
+swipe.autoPlay = false;
+swipe.run();
+
+// 倒计时
+function GetRTime(){
+	var time = $('#count-down').data('time');
+	var NowTime = new Date();
+  var EndTime = new Date(time);
+  //var EndTime= new Date(CreateTime.getTime()+3*60*60*1000);
+  var t =EndTime.getTime() - NowTime.getTime();
+  var d=0;
+  var h=0;
+  var m=0;
+  var s=0;
+  if(t>=0){
+    d=Math.floor(t/1000/60/60/24);
+    h=Math.floor(t/1000/60/60%24)<10?'0'+Math.floor(t/1000/60/60%24):Math.floor(t/1000/60/60%24);
+    m=Math.floor(t/1000/60%60)<10?'0'+Math.floor(t/1000/60%60):Math.floor(t/1000/60%60);
+    s=Math.floor(t/1000%60)<10?'0'+Math.floor(t/1000%60):Math.floor(t/1000%60);
+  }else{
+  	s=h=m='00';
+  }
+  $('#count-down').find(".day").text(d);
+  $('#count-down').find(".second").text(s);
+  $('#count-down').find(".hour").text(h);
+  $('#count-down').find(".minuse").text(m);
+}
+
+setInterval('GetRTime()',0);
+</script>
+</body>
+</html>
