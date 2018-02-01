@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>课程列表</title>
+<link rel="stylesheet" type="text/css" href="css/hui.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/news.css" />
+<style>
+body{padding-top: 90px;padding-bottom: 58px;}
+#refreshContainer{padding: 0;}
+</style>
+</head>
+<body>
+<div class="header-box">
+	<header class="hui-header">
+	  <div id="hui-header-sreach">
+	    <input type="search" id="searchKey" placeholder="学校名称+考试科目代码" />
+			<a href="javascript:void(0)" class="qvxiao">取消</a>
+	  </div>
+	</header>
+	<ul class="cloum-2 selectbox">
+		<li>
+			<select id="select1">
+				  <option value="">科目选择</option>
+          <option value="不限科目">不限科目</option>
+          <option value="考研专业课">考研专业课</option>
+          <option value="考研英语">考研英语</option>
+          <option value="考研资料大礼包">考研资料大礼包</option>
+					<option value="管理类/经济类联考">管理类/经济类联考</option>
+      </select>
+		</li>
+		<li>
+			<select id="select2">
+          <option value="">院校选择</option>
+          <option value="北京大学">北京大学</option>
+          <option value="清华大学">清华大学</option>
+          <option value="东南大学">东南大学</option>
+      </select>
+		</li>
+	</ul>
+</div>
+<div class="hui-wrap kecheng-wrap">
+	<div class="panel">
+		<div class="panel-body">
+			<!-- <ul class="cloum-2">
+        <li>
+          <div class="pic">
+            <a href="#" style="background-image:url(images/news/newsimg.png)"></a>
+          </div>
+          <div class="content">
+            <a href="#" class="text-ellsips-2">
+              802文学理论与文学写作复习全书802文学理论与文学写作复习全书802文学理论与文学写作复习全书802文学理论与文学写作复习全书
+            </a>
+            <p>
+              <span class="hui-fl price">￥<em>298</em></span>
+              <span class="hui-fr">499人付款</span>
+            </p>
+          </div>
+        </li>
+
+				<li>
+          <div class="pic">
+            <a href="#" style="background-image:url(images/news/newsimg.png)"></a>
+          </div>
+          <div class="content">
+            <a href="#" class="text-ellsips-2">
+              802文学理论与文学写作复习全书802文学理论与文学写作复习全书802文学理论与文学写作复习全书802文学理论与文学写作复习全书
+            </a>
+            <p>
+              <span class="hui-fl price">￥<em>298</em></span>
+              <span class="hui-fr">499人付款</span>
+            </p>
+          </div>
+        </li>
+			</ul> -->
+
+			<!-- 以上<li>部分放在js里面加载 -->
+			<div id="refreshContainer" class="hui-refresh">
+				<div class="hui-refresh-icon"></div>
+				<div class="hui-refresh-content">
+						<ul class="cloum-2" id="list"></ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- 底部菜单 -->
+<div id="hui-footer">
+    <a href="#" id="nav-home">
+        <div class="hui-footer-icons hui-icons-home"></div>
+        <div class="hui-footer-text">首页</div>
+    </a>
+    <a href="#" id="nav-tushu" class="active">
+        <div class="hui-footer-icons hui-icons-kecheng"></div>
+        <div class="hui-footer-text">图书</div>
+    </a>
+    <a href="#" id="nav-kefu">
+        <div class="hui-footer-icons hui-icons-kf"></div>
+        <div class="hui-footer-text">客服</div>
+    </a>
+    <a href="#" id="nav-my">
+        <div class="hui-footer-icons hui-icons-my"></div>
+        <div class="hui-footer-text">我的</div>
+    </a>
+</div>
+<script type="text/javascript" src="js/hui.js"></script>
+<script type="text/javascript" src="js/hui-select-beautify.js"></script>
+<script type="text/javascript" src="js/hui-refresh-load-more.js"></script>
+<script type="text/javascript">
+//监听搜索按钮时间
+document.getElementById('searchKey').addEventListener('keyup', function(e){if(e.keyCode == 13){searchNow();}});
+function hotSearch(k){
+    hui('#searchKey').val(k);
+    searchNow();
+}
+function searchNow(){
+    document.activeElement.blur();
+    var kwd = hui('#searchKey').val();
+    kwd = kwd.trim();
+    if(kwd.length < 2){hui.toast('关键字至少2个字符'); return false;}
+    // hui.toast('搜索 '+ kwd);
+}
+hui(".qvxiao").click(function(){
+	hui('#searchKey').val('');
+})
+
+hui('#select1').selectBeautify(showVal);
+hui('#select2').selectBeautify(showVal);
+function showVal(val){
+  hui.toast('选项值 : ' + val);
+}
+
+// 上拉加载和下拉刷新
+var page = 1;
+hui.refresh('#refreshContainer', refresh);
+hui.loadMore(getMore);
+//加载更多
+function getMore(){
+    hui.get(
+        'http://hoa.hcoder.net/index.php?user=hcoder&pwd=hcoder&m=list1&page='+page,
+        function(res){
+            //判断加载完毕
+            if(res == 'null'){
+                hui.endLoadMore(true, '已经到头了...');
+                return false;
+            }
+            var data = res.split('--hcSplitor--');
+            for(var i = 0; i < data.length; i++){
+                var li = document.createElement('li');
+                li.innerHTML = '<div class="pic"> <a href="#" style="background-image:url(images/news/newsimg.png)"></a> </div> <div class="content"> <a href="#" class="text-ellsips-2"> 802文学理论与文学写作复习全书802文学理论与文学写作复习全书802文学理论与文学写作复习全书802文学理论与文学写作复习全书 </a> <p> <span class="hui-fl price">￥<em>298</em></span> <span class="hui-fr">499人付款</span> </p> </div>';
+                hui(li).appendTo('#list');
+            }
+            page++;
+            hui.endLoadMore();
+        }
+    );
+}
+
+//下拉刷新
+function refresh(){
+    hui.loading('加载中...');
+    hui.get(
+        'http://hoa.hcoder.net/index.php?user=hcoder&pwd=hcoder&m=list1&page=1',
+        function(res){
+            hui.closeLoading();
+            // 数据处理
+            var data = res.split('--hcSplitor--');
+            var html = '';
+            for(var i = 0; i < data.length; i++){
+                html += '<li><div class="pic"> <a href="#" style="background-image:url(images/news/newsimg.png)"></a> </div> <div class="content"> <a href="#" class="text-ellsips-2"> 802文学理论与文学写作复习全书802文学理论与文学写作复习全书802文学理论与文学写作复习全书802文学理论与文学写作复习全书 </a> <p> <span class="hui-fl price">￥<em>298</em></span> <span class="hui-fr">499人付款</span> </p> </div></li>';
+            }
+            page = 2;
+            hui('#list').html(html);
+            //结束刷新
+            hui.endRefresh();
+            //重置加载更多状态
+            hui.resetLoadMore();
+        },
+        function(){
+            hui.closeLoading();
+            hui.upToast('连接服务器失败！');
+            hui.endRefresh();
+        }
+    );
+}
+</script>
+</body>
+</html>

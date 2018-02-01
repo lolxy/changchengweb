@@ -1,4 +1,6 @@
 /* 资讯页面 */
+#hui-mask{display: none;}
+#hui-select-beautify{position: fixed;}
 .text-ellsips-2{display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden;font-size: 14px;}
 /* 首页-轮播图*/
 .hui-swipe-indicators{transition: all ease-in-out 0.6s;}
@@ -63,3 +65,67 @@ i.hui-view{width: 25px;height: 25px;display: inline-block;vertical-align: top;ba
 .index-footer p{color:#666666;font-size: 10px;line-height: 24px;}
 
 #hui-footer a{width: 25%;}
+
+/* 详情页 */
+.detail-list .tab-li .column-3 li{width: 33.333%;}
+
+/* qq群 */
+.hui-select-beautify-sed{color:#12a8ff;}
+.selectbox li>div,.selectbox>div{text-align: center;font-family: "hui-font";}
+.qq-wrap{background-color: #fff;margin-top: 10px;margin-bottom: 10px;}
+.qq-header{height: 44px;border-bottom: 1px solid #fafbfc;}
+.qq-header ul{display: flex;flex-direction:row;justify-content:space-between; align-content: center;}
+.qq-header ul li{width: 33.3333%;text-align: center;height: 100%;line-height: 44px;font-size: 13px;color:#333333;font-weight: 600;}
+.qq-header ul li::after{content:"|";float: right;color:#eeeeee;font-size: 16px;}
+.qq-header ul li:last-child::after{display: none;}
+.qqList{padding:0px 15px;}
+.qqList ul{display: flex;display: -webkit-flex;flex-wrap: wrap;}
+.qqList li{width: 100%;display: flex;display: -webkit-flex;flex-direction:row;justify-content:space-between;height: 44px;overflow: hidden;border-bottom: 1px solid #fafbfc;line-height: 44px;}
+.qqList li:last-child{border-bottom: none;}
+.qqList li>div{padding: 0 10px;font-size: 12px;color:#333333;}
+.qqList li>div a{color:#333333;font-size: 12px;}
+.qqList li div:first-child{flex: 1;}
+
+.pagebox{background-color: #fff;height: 44px;line-height: 44px;background-color: #fff;display: flex;flex-direction: row;justify-content:space-between;}
+.pagebox a{font-size: 13px;color:#333333;flex: 1;text-align: center;}
+.pagebox a:first-child{border-right: 1px solid #ebebeb;}
+
+/* 学校选择 */
+.school-wrap ul{display: flex;flex-direction:column;margin-bottom: 10px;}
+.school-wrap ul li{height: 95px;background-color: #fff;overflow: hidden;margin-top: 10px;padding: 10px 15px;box-sizing: border-box;}
+.school-wrap ul li .box{display: flex;flex-direction: row;justify-content:space-around;align-items: center;align-content: center;height: 100%;}
+.school-wrap ul li .box .pic{flex-basis: 125px;height: 75px;}
+.school-wrap ul li .box .pic a{display: block;width: 100%;height: 100%;background-size: cover;background-repeat: no-repeat;background-position: center;}
+.school-wrap ul li .box .school-info,.school-wrap ul li .box .school-area{display: flex;flex-direction: column;justify-content:space-between;height: 100%;}
+.school-wrap ul li .box .school-info a{font-size: 14px;color:#333333;font-weight: bold;}
+.school-wrap ul li .box .school-info p{font-size: 12px;}
+.school-wrap ul li .box .school-info{flex-grow: 1;margin-left: 10px;margin-right: 10px;}
+.school-wrap ul li .box .school-area{text-align: right;}
+.school-wrap ul li .box .school-area span{font-size: 12px;color:#999999;}
+.school-wrap ul li .box .school-area p{font-size: 13px;color:#333333;font-weight: 500;}
+
+/* 资讯列表 */
+.news-wrap .panel,.kecheng-wrap .panel{margin-bottom: 0px;}
+
+/* 分类 */
+.category-wrap .panel{padding-bottom: 0;}
+.category-wrap .panel .panel-body{padding-left:15px;background-color: #fff;}
+.category-wrap .panel .panel-body li{margin-bottom: 0;border-bottom: 1px solid #eeeeee;padding:10px 15px 10px 0}
+.category-wrap .panel .panel-body li .content{margin-left: 0;}
+.category-wrap .panel .panel-footer{margin-top: 10px;}
+
+/* 分页 */
+.page-box{display: flex;flex-direction: row;flex-wrap: wrap;padding: 10px 0px;justify-content:center;}
+.page-box a{display: inline-block;vertical-align: top;padding: 0px 12px;line-height: 30px;color:#333333;font-size: 15px;background-color: #fff;margin:5px 2px;border-radius: 2px;}
+.page-box a.active{background-color: #00A2FF;color:#ffffff;}
+.page-box span{display: inline-block;vertical-align: top;margin: 0 5px;line-height: 30px;}
+.page-box .page-input{border: 1px solid #eeeeee;width: 50px;height: 30px;line-height: 30px;padding: 0 5px;text-align: center;margin-top: 10px;margin-right: 10px;}
+.page-box .btn{border: none;outline: none;background-color: #00A2FF;color:#ffffff;height: 30px;line-height: 30px;text-align: center;padding: 0 12px;margin-top: 10px;}
+
+.swiper-container-box{width: 100%;height: 44px;overflow: hidden;position:relative;}
+.swiper-container-box div{overflow: visible;}
+.swiper-container-box .swiper-slide {font-size: 14px; color:#333333;line-height: 44px;text-align: center;padding: 0 5px;box-sizing: border-box;}
+.swiper-container-box .swiper-button-nexts{right: 0;height: 44px;width: 44px;box-sizing: border-box;padding: 10px;background-color:#fff;box-shadow: -8px 0 12px 0 rgba(231,231,231,0.50);position: absolute;top: 0;z-index: 5;}
+.swiper-container-box .swiper-button-nexts:after{font-family: "hui-font";content:"\e608";display: block;width: 22px;height: 22px;margin: 11px;position: absolute;top: 0;left: 0;line-height: 22px;text-align: center;font-size: 13px;}
+.swiper-container-box .swiper-slide a{display: block;width: 100%;height: 100%;}
+.swiper-container-box .swiper-slide.swiper-slide-active a{color:#45ffbb;}
