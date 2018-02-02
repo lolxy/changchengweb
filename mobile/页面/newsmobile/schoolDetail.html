@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>学校详情</title>
+<link rel="stylesheet" type="text/css" href="css/hui.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/news.css" />
+<style>
+.hui-header{box-shadow: none;}
+</style>
+</head>
+<body>
+<header class="hui-header">
+	<div id="hui-back"></div>
+	<h1>北京大学</h1>
+	<div id="hui-header-search"></div>
+</header>
+<div class="hui-wrap school-detail-wrapper">
+	<!-- 详情图片轮播图 -->
+  <div class="hui-swipe" id="swipe">
+      <div class="hui-swipe-item"><img src="images/schoolbanner.png"/></div>
+      <div class="hui-swipe-item"><img src="images/schoolbanner.png"/></div>
+      <div class="hui-swipe-item"><img src="images/schoolbanner.png"/></div>
+      <div class="hui-swipe-item"><img src="images/schoolbanner.png"/></div>
+      <div class="hui-swipe-item"><img src="images/schoolbanner.png"/></div>
+  </div>
+
+	<div class="panel-school">
+		<div class="panel-head">
+			<h2>学校概况</h2>
+			<span>电话：62756913</span>
+		</div>
+		<div class="panel-body">
+			<ul>
+				<li>所属省份：北京</li>
+				<li>院校类型：综合类</li>
+				<li>院校性质：985/211</li>
+				<li>是否自主划线：是</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="panel-school">
+		<div class="panel-head hui-arrow" id="showPanelBody">
+			<h2>学校简介</h2>
+		</div>
+		<div class="panel-body">
+			<p>从1917年沙滩红楼的研究所，到今天未名湖畔的研究生院，北京大学的研究生教育已有近百年，她见证和经历了中国研究生教育从诞生到发展、调整、规范、壮大的整个过程。北京大学的研究生教育可以上溯到二十世纪初。1917年，北京大学成立</p>
+		</div>
+	</div>
+
+	<!-- 学校菜单 -->
+	<div class="school-nav">
+    <ul>
+        <li>
+            <a href="#">
+              <div class="hui-speed-dial-icons">
+                  <span class="hui-icons hui-icons-sicon1"></span>
+              </div>
+              <div class="hui-speed-dial-text">院校库</div>
+            </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="hui-speed-dial-icons">
+                <span class="hui-icons hui-icons-sicon2"></span>
+            </div>
+            <div class="hui-speed-dial-text">看直播</div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="hui-speed-dial-icons">
+                <span class="hui-icons hui-icons-sicon3"></span>
+            </div>
+            <div class="hui-speed-dial-text">资料下载</div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="hui-speed-dial-icons">
+                <span class="hui-icons hui-icons-sicon4"></span>
+            </div>
+            <div class="hui-speed-dial-text">考研资讯</div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="hui-speed-dial-icons">
+                <span class="hui-icons hui-icons-sicon5"></span>
+            </div>
+            <div class="hui-speed-dial-text">找研友</div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="hui-speed-dial-icons">
+                <span class="hui-icons hui-icons-sicon6"></span>
+            </div>
+            <div class="hui-speed-dial-text">考研常识</div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="hui-speed-dial-icons">
+                <span class="hui-icons hui-icons-sicon7"></span>
+            </div>
+            <div class="hui-speed-dial-text">考研干货</div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="hui-speed-dial-icons">
+                <span class="hui-icons hui-icons-sicon8"></span>
+            </div>
+            <div class="hui-speed-dial-text">考研大纲</div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="hui-speed-dial-icons">
+                <span class="hui-icons hui-icons-sicon9"></span>
+            </div>
+            <div class="hui-speed-dial-text">考研公共课</div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="hui-speed-dial-icons">
+                <span class="hui-icons hui-icons-sicon10"></span>
+            </div>
+            <div class="hui-speed-dial-text">考研专业课</div>
+          </a>
+        </li>
+				<li>
+          <a href="#">
+            <div class="hui-speed-dial-icons">
+                <span class="hui-icons hui-icons-sicon11"></span>
+            </div>
+            <div class="hui-speed-dial-text">考研公共课</div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="hui-speed-dial-icons">
+                <span class="hui-icons hui-icons-sicon12"></span>
+            </div>
+            <div class="hui-speed-dial-text">考研专业课</div>
+          </a>
+        </li>
+    </ul>
+	</div>
+
+	<!-- 最新资料 -->
+	<div class="category-wrap">
+		<div class="panel panel-list">
+			<div class="panel-head">
+				<span>最新资讯</span>
+				<a href="#">MORE</a>
+			</div>
+
+			<div class="panel-body">
+				<ul>
+					<li>
+						<div class="content">
+							<a href="#" class="text-ellsips-2">
+								2017年“中国最好的科学排名”布，你的学校榜上有名吗？2017年“中国最好的科学排名”布，你的学校榜上有名吗？
+							</a>
+							<p>
+								<span class="hui-fl"><i class="hui-icons hui-view"></i>237</span>
+								<span class="hui-fr">01月12日</span>
+							</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="content">
+							<a href="#" class="text-ellsips-2">
+								2017年“中国最好的科学排名”布，你的学校榜上有名吗？2017年“中国最好的科学排名”布，你的学校榜上有名吗？
+							</a>
+							<p>
+								<span class="hui-fl"><i class="hui-icons hui-view"></i>237</span>
+								<span class="hui-fr">01月12日</span>
+							</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="content">
+							<a href="#" class="text-ellsips-2">
+								2017年“中国最好的科学排名”布，你的学校榜上有名吗？2017年“中国最好的科学排名”布，你的学校榜上有名吗？
+							</a>
+							<p>
+								<span class="hui-fl"><i class="hui-icons hui-view"></i>237</span>
+								<span class="hui-fr">01月12日</span>
+							</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- 推荐资料 -->
+	<div class="kecheng-wrap">
+		<div class="panel panel-list">
+			<div class="panel-head">
+				<span>推荐资料</span>
+				<a href="#">MORE</a>
+			</div>
+
+			<div class="panel-body">
+				<ul class="cloum-2">
+	        <li>
+	          <div class="pic">
+	            <a href="#" style="background-image:url(images/newsimg.png)"></a>
+	          </div>
+	          <div class="content">
+	            <a href="#" class="text-ellsips-2">
+	              802文学理论与文学写作复习全书802文学理论与文学写作复习全书802文学理论与文学写作复习全书802文学理论与文学写作复习全书
+	            </a>
+	            <p>
+	              <span class="hui-fl price">￥<em>298</em></span>
+	              <span class="hui-fr">499人付款</span>
+	            </p>
+	          </div>
+	        </li>
+
+					<li>
+	          <div class="pic">
+	            <a href="#" style="background-image:url(images/newsimg.png)"></a>
+	          </div>
+	          <div class="content">
+	            <a href="#" class="text-ellsips-2">
+	              802文学理论与文学写作复习全书802文学理论与文学写作复习全书802文学理论与文学写作复习全书802文学理论与文学写作复习全书
+	            </a>
+	            <p>
+	              <span class="hui-fl price">￥<em>298</em></span>
+	              <span class="hui-fr">499人付款</span>
+	            </p>
+	          </div>
+	        </li>
+
+					<li>
+	          <div class="pic">
+	            <a href="#" style="background-image:url(images/newsimg.png)"></a>
+	          </div>
+	          <div class="content">
+	            <a href="#" class="text-ellsips-2">
+	              802文学理论与文学写作复习全书802文学理论与文学写作复习全书802文学理论与文学写作复习全书802文学理论与文学写作复习全书
+	            </a>
+	            <p>
+	              <span class="hui-fl price">￥<em>298</em></span>
+	              <span class="hui-fr">499人付款</span>
+	            </p>
+	          </div>
+	        </li>
+
+					<li>
+	          <div class="pic">
+	            <a href="#" style="background-image:url(images/newsimg.png)"></a>
+	          </div>
+	          <div class="content">
+	            <a href="#" class="text-ellsips-2">
+	              802文学理论与文学写作复习全书802文学理论与文学写作复习全书802文学理论与文学写作复习全书802文学理论与文学写作复习全书
+	            </a>
+	            <p>
+	              <span class="hui-fl price">￥<em>298</em></span>
+	              <span class="hui-fr">499人付款</span>
+	            </p>
+	          </div>
+	        </li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- 推荐课程 -->
+	<div class="panel-list">
+		<div class="panel-head">
+			<span>推荐课程</span>
+			<a href="#">MORE</a>
+		</div>
+    <div class="hui-index-list">
+			<ul>
+				<li>
+					<a href="#">
+						<div class="panel">
+							<div class="panel-body">
+								<div class="content">
+									<h2>测试数据</h2>
+									<p>时间：12月06日</p>
+									<p>（2课时）</p>
+								</div>
+								<div class="imgbox">
+									<img src="images/index_img.png" alt="" class="img-responsive">
+								</div>
+							</div>
+							<div class="panel-footer">
+								<div class="p-fl">
+									<p>已有107人报名</p>
+									<span>限时5折</span>
+								</div>
+								<div class="p-fr"> 售价：<em>99</em> </div>
+							</div>
+						</div>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<div class="panel">
+							<div class="panel-body">
+								<div class="content">
+									<h2>测试数据</h2>
+									<p>时间：12月06日</p>
+									<p>（2课时）</p>
+								</div>
+								<div class="imgbox">
+									<img src="images/index_img.png" alt="" class="img-responsive">
+								</div>
+							</div>
+							<div class="panel-footer">
+								<div class="p-fl">
+									<p>已有107人报名</p>
+									<span>限时5折</span>
+								</div>
+								<div class="p-fr"> 售价：<em>99</em> </div>
+							</div>
+						</div>
+					</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<div class="panel">
+							<div class="panel-body">
+								<div class="content">
+									<h2>测试数据</h2>
+									<p>时间：12月06日</p>
+									<p>（2课时）</p>
+								</div>
+								<div class="imgbox">
+									<img src="images/index_img.png" alt="" class="img-responsive">
+								</div>
+							</div>
+							<div class="panel-footer">
+								<div class="p-fl">
+									<p>已有107人报名</p>
+									<span>限时5折</span>
+								</div>
+								<div class="p-fr"> 售价：<em>99</em> </div>
+							</div>
+						</div>
+					</a>
+				</li>
+			</ul>
+    </div>
+  </div>
+
+</div>
+
+<script type="text/javascript" src="js/hui.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/hui-swipe.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('#showPanelBody').click(function(){
+		if($(this).hasClass('hui-active')){
+			$(this).removeClass('hui-active');
+			$(this).siblings('.panel-body').animate({'height':'150px'},300);
+		}else{
+			$(this).addClass('hui-active');
+			$(this).siblings('.panel-body').animate({'height':'0'},300);
+		}
+	})
+})
+// 轮播图
+var swipe = new huiSwpie('#swipe');
+swipe.autoPlay = false;
+swipe.run();
+</script>
+</body>
+</html>
