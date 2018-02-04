@@ -125,6 +125,50 @@
 								<p>据悉，华南理工大学2018年硕士研究生招生专业参考书目及考试大纲（含非全日制）</p>
 							</div>
 						</li>
+
+						<li>
+							<div class="cover" style="background-image:url(images/default_photo.png)"></div>
+							<div class="pjbox">
+								<div class="pj-header">
+									<h2 class="text-ellsips">wzcs</h2>
+									<span>19:01</span>
+								</div>
+								<p>据悉，华南理工大学2018年硕士研究生招生专业参考书目及考试大纲（含非全日制）</p>
+							</div>
+						</li>
+
+						<li>
+							<div class="cover" style="background-image:url(images/default_photo.png)"></div>
+							<div class="pjbox">
+								<div class="pj-header">
+									<h2 class="text-ellsips">wzcs</h2>
+									<span>19:01</span>
+								</div>
+								<p>据悉，华南理工大学2018年硕士研究生招生专业参考书目及考试大纲（含非全日制）</p>
+							</div>
+						</li>
+
+						<li>
+							<div class="cover" style="background-image:url(images/default_photo.png)"></div>
+							<div class="pjbox">
+								<div class="pj-header">
+									<h2 class="text-ellsips">wzcs</h2>
+									<span>19:01</span>
+								</div>
+								<p>据悉，华南理工大学2018年硕士研究生招生专业参考书目及考试大纲（含非全日制）</p>
+							</div>
+						</li>
+
+						<li>
+							<div class="cover" style="background-image:url(images/default_photo.png)"></div>
+							<div class="pjbox">
+								<div class="pj-header">
+									<h2 class="text-ellsips">wzcs</h2>
+									<span>19:01</span>
+								</div>
+								<p>据悉，华南理工大学2018年硕士研究生招生专业参考书目及考试大纲（含非全日制）</p>
+							</div>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -163,6 +207,15 @@ swipe.run();
 // sku切换
 $(".sku-box a").click(function(){
 	$(this).addClass('selected').siblings().removeClass('selected')
+})
+
+$('.detail-wrapper').scroll(function(){
+	var scrollH = $('.detail-list').offset().top;
+  if(scrollH == 45){
+		$('.detail-list .tab-content .box').css('overflow-y','auto');
+	}else{
+		$('.detail-list .tab-content .box').css('overflow-y','hidden');
+	}
 })
 </script>
 </body>
