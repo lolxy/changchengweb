@@ -38,11 +38,11 @@ hui.eyesChange = function(o){
 	if(_selfDom.hasClass('hui-pwd-eyes-sed')){
 		_selfDom.removeClass('hui-pwd-eyes-sed');
 		_inputDom.dom[0].type     = 'password';
-		_inputDom.dom[0].disabled = false;
+		// _inputDom.dom[0].disabled = false;
 	}else{
 		_selfDom.addClass('hui-pwd-eyes-sed');
 		_inputDom.dom[0].setAttribute('type', 'text');
-		_inputDom.dom[0].setAttribute('disabled', true);
+		// _inputDom.dom[0].setAttribute('disabled', true);
 	}
 };
 function huiFormCheck(selector){
@@ -63,7 +63,7 @@ function huiFormCheckBase(obj){
 	if(!checkMsg){return true;}
 	var checkVal   = obj.value;
 	switch(checkType){
-		case 'string' : 
+		case 'string' :
 			checkVal = checkVal.trim();
 			var reg  = new RegExp('^.{'+checkData+'}$');
 			if(!reg.test(checkVal)){return huiFormCheckShowErrMsg(checkMsg);}
@@ -74,32 +74,32 @@ function huiFormCheckBase(obj){
 			var reg2 = new RegExp('^\-?0+[0-9]+$');
 			if(reg2.test(checkVal)){return huiFormCheckShowErrMsg(checkMsg);}
 		break;
-		case 'between' : 
+		case 'between' :
 			if(!huiFormCheckNumber(checkVal, checkData, checkMsg)){return false;}
 		break;
-		case 'betweenD' : 
+		case 'betweenD' :
 			var reg  = new RegExp('^\-?[0-9]+$');
 			if(!reg.test(checkVal)){return huiFormCheckShowErrMsg(checkMsg);}
 			if(!huiFormCheckNumber(checkVal, checkData, checkMsg)){return false;}
 		break;
-		case 'betweenF' : 
+		case 'betweenF' :
 			var reg  = new RegExp('^\-?[0-9]+\.[0-9]+$');
 			if(!reg.test(checkVal)){return huiFormCheckShowErrMsg(checkMsg);}
 			if(!huiFormCheckNumber(checkVal, checkData, checkMsg)){return false;}
 		break;
-		case 'same' : 
+		case 'same' :
 			if(checkVal != checkData){return huiFormCheckShowErrMsg(checkMsg);}
 		break;
-		case 'sameWithId' : 
+		case 'sameWithId' :
 			if(checkVal != hui('#'+checkData).val()){return huiFormCheckShowErrMsg(checkMsg);}
 		break;
-		case 'notSame' : 
+		case 'notSame' :
 			if(checkVal == checkData){return huiFormCheckShowErrMsg(checkMsg);}
 		break;
 		case 'notSameWithId' :
 			if(checkVal == hui(checkData).val()){return huiFormCheckShowErrMsg(checkMsg);}
 		break;
-		case 'email' : 
+		case 'email' :
 			var reg = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
 			if(!reg.test(checkVal)){return huiFormCheckShowErrMsg(checkMsg);}
 		break;
@@ -115,11 +115,11 @@ function huiFormCheckBase(obj){
 			var reg = /^[0-9]{6}$/;
 			if(!reg.test(checkVal)){return huiFormCheckShowErrMsg(checkMsg);}
 		break;
-		case 'reg'  : 
+		case 'reg'  :
 			var reg = new RegExp(checkData);
 			if(!reg.test(checkVal)){return huiFormCheckShowErrMsg(checkMsg);}
 		break;
-		case 'fun'  : 
+		case 'fun'  :
 			eval('var res = '+checkData+'("'+checkVal+'");');
 			if(!res){return huiFormCheckShowErrMsg(checkMsg);}
 		break;
@@ -183,7 +183,7 @@ hui.serializeElement = function(elementObj){
 hui.getInputs = function(elementObj, method) {
 	if(elementObj.name == ''){return false;}
 	if(method == 'textarea' || method == 'select'){return [elementObj.name, elementObj.value];}
-	switch (elementObj.type.toLowerCase()){  
+	switch (elementObj.type.toLowerCase()){
 		case 'submit':
 		case 'hidden':
 	   	case 'password':
@@ -192,10 +192,10 @@ hui.getInputs = function(elementObj, method) {
 		case 'email':
 		case 'tel':
 		case 'url':
-		return [elementObj.name, elementObj.value];  
+		return [elementObj.name, elementObj.value];
 		case 'checkbox':
 		case 'radio':
-		return hui.inputSelector(elementObj);  
+		return hui.inputSelector(elementObj);
 	}
 	return false;
 }
@@ -205,7 +205,7 @@ hui.inputSelector = function(elementObj){
 	return false;
 }
 
-hui.formGetElements = function (formId) {  
+hui.formGetElements = function (formId) {
 	var form = document.getElementById(formId);
 	var elements = new Array();
 	var tagElements = form.getElementsByTagName('input');
