@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>购物车</title>
+<link rel="stylesheet" type="text/css" href="css/hui.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/news.css" />
+</head>
+<body>
+<header class="hui-header">
+	<div id="hui-back"></div>
+	<h1>购物车</h1>
+	<div id="hui-commit">完成</div>
+</header>
+<div class="hui-wrap cart-wrap">
+	<div class="cart-list">
+		<ul>
+			<li>
+				<div class="checkbox">
+					<i></i>
+					<input type="checkbox" name="" id="" class="check" checked="checked"/>
+				</div>
+				<div class="probox">
+					<a href="#"><img src="images/book.png" alt="" class="img-responsive"/></a>
+				</div>
+				<div class="numbox">
+					<div class="hui-number-box" min="1" max="100">
+	            <div class="reduce">-</div>
+	            <input type="number" value="1" />
+	            <div class="add">+</div>
+	        </div>
+				</div>
+				<div class="dellbox">删除</div>
+			</li>
+
+			<li>
+				<div class="checkbox">
+					<i></i>
+					<input type="checkbox" name="" id="" class="check"/>
+				</div>
+				<div class="probox">
+					<a href="#"><img src="images/book.png" alt="" class="img-responsive"/></a>
+				</div>
+				<div class="numbox">
+					<div class="hui-number-box" min="1" max="100">
+	            <div class="reduce">-</div>
+	            <input type="number" value="1" />
+	            <div class="add">+</div>
+	        </div>
+				</div>
+				<div class="dellbox">删除</div>
+			</li>
+
+			<li>
+				<div class="checkbox">
+					<i></i>
+					<input type="checkbox" name="" id="" class="check"/>
+				</div>
+				<div class="probox">
+					<a href="#"><img src="images/book.png" alt="" class="img-responsive"/></a>
+				</div>
+				<div class="numbox">
+					<div class="hui-number-box" min="1" max="100">
+	            <div class="reduce">-</div>
+	            <input type="number" value="1" />
+	            <div class="add">+</div>
+	        </div>
+				</div>
+				<div class="dellbox">删除</div>
+			</li>
+		</ul>
+	</div>
+	<div class="cart-footer">
+		<div class="checkbox allselect">
+			<i></i>
+			<label for="allselect">
+				<input type="checkbox" name="" id="allselect"/>全选
+			</label>
+		</div>
+		<div class="actionbox">
+			<a href="javascript:void(0)" id="scSelect" class="btn btn-wraning">移入收藏夹</a>
+			<a href="javascript:void(0)" id="dellSelect" class="btn btn-danger">删除</a>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="js/hui.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript">
+	hui.numberBox();
+	$(".cart-list li").each(function(){
+		var currentCheck = $(this).find('.check');
+		var currentI = $(this).find('i');
+		if(currentCheck.prop("checked")){
+			currentI.addClass("checked")
+		}
+	});
+
+	$(".check").change(function(){
+		if($(this).prop("checked")){
+			$(this).siblings('i').addClass("checked")
+		}else{
+			$(this).siblings('i').removeClass("checked")
+		}
+		allselect();
+	})
+
+	$('#allselect').click(function(){
+		if($(this).prop("checked")){
+			$(".check").prop("checked",true);
+			$(".check").siblings('i').addClass('checked');
+			$(this).parent().siblings('i').addClass('checked');
+		}else{
+			$(".check").prop("checked",false);
+			$(".check").siblings('i').removeClass('checked');
+			$(this).parent().siblings('i').removeClass('checked');
+		}
+	});
+
+function allselect(){
+	cartNum = $('.check').length;
+	selectNum = $('.check').siblings('.checked').length;
+	if(selectNum == cartNum){
+		$("#allselect").prop("checked",true);
+		$("#allselect").parent().siblings('i').addClass('checked');
+	}else{
+		$("#allselect").prop("checked",false);
+		$("#allselect").parent().siblings('i').removeClass('checked');
+	}
+}
+</script>
+</body>
+</html>
