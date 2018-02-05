@@ -103,6 +103,41 @@ body{padding-bottom: 58px;}
   <div id="refreshContainer" class="hui-index-list hui-refresh">
       <div class="hui-refresh-icon"></div>
       <div class="hui-refresh-content">
+      <!-- <ul>
+        <li>
+          <div class="panel">
+            <div class="panel-body">
+              <div class="content">
+                <h2><a href="#">2019考研全程规划指导</a></h2>
+                <p>时间：12月06日（2课时）</p>
+              </div>
+              <div class="ms-list">
+                <a href="#">
+                  <img src="images/photo.png" alt="" class="img-responsive"/>
+                  <p>简彩仁</p>
+                </a>
+                <a href="#">
+                  <img src="images/photo.png" alt="" class="img-responsive"/>
+                  <p>简彩仁</p>
+                </a>
+                <a href="#">
+                  <img src="images/photo.png" alt="" class="img-responsive"/>
+                  <p>简彩仁</p>
+                </a>
+              </div>
+            </div>
+            <div class="panel-footer">
+              <div class="p-fl">
+                <p>已有107人报名</p>
+                <span>限时5折</span>
+              </div>
+              <div class="p-fr">
+                售价：<em>99</em>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul> -->
           <ul id="list"></ul>
       </div>
   </div>
@@ -277,7 +312,7 @@ function getMore(){
             var data = res.split('--hcSplitor--');
             for(var i = 0; i < data.length; i++){
                 var li = document.createElement('li');
-                li.innerHTML = '<a href="#"><div class="panel"><div class="panel-body"><div class="content"><h2>'+data[i]+'</h2><p>时间：12月06日</p> <p>（2课时）</p> </div> <div class="imgbox"> <img src="images/index_img.png" alt="" class="img-responsive"> </div> </div> <div class="panel-footer"> <div class="p-fl"> <p>已有107人报名</p> <span>限时5折</span> </div> <div class="p-fr"> 售价：<em>99</em> </div> </div> </div></a>';
+                li.innerHTML = '<div class="panel"> <div class="panel-body"> <div class="content"> <h2><a href="#">2019考研全程规划指导</a></h2> <p>时间：12月06日（2课时）</p> </div> <div class="ms-list"> <a href="#"> <img src="images/photo.png" alt="" class="img-responsive"/> <p>简彩仁</p> </a> <a href="#"> <img src="images/photo.png" alt="" class="img-responsive"/> <p>简彩仁</p> </a> <a href="#"> <img src="images/photo.png" alt="" class="img-responsive"/> <p>简彩仁</p> </a> </div> </div> <div class="panel-footer"> <div class="p-fl"> <p>已有107人报名</p> <span>限时5折</span> </div> <div class="p-fr"> 售价：<em>99</em> </div> </div> </div>';
                 hui(li).appendTo('#list');
             }
             page++;
@@ -297,7 +332,7 @@ function refresh(){
             var data = res.split('--hcSplitor--');
             var html = '';
             for(var i = 0; i < data.length; i++){
-                html += '<li><a href="#"><div class="panel"><div class="panel-body"><div class="content"><h2>'+data[i]+'</h2><p>时间：12月06日</p> <p>（2课时）</p> </div> <div class="imgbox"> <img src="images/index_img.png" alt="" class="img-responsive"> </div> </div> <div class="panel-footer"> <div class="p-fl"> <p>已有107人报名</p> <span>限时5折</span> </div> <div class="p-fr"> 售价：<em>99</em> </div> </div> </div></a></li>';
+                html += '<li><div class="panel"> <div class="panel-body"> <div class="content"> <h2><a href="#">2019考研全程规划指导</a></h2> <p>时间：12月06日（2课时）</p> </div> <div class="ms-list"> <a href="#"> <img src="images/photo.png" alt="" class="img-responsive"/> <p>简彩仁</p> </a> <a href="#"> <img src="images/photo.png" alt="" class="img-responsive"/> <p>简彩仁</p> </a> <a href="#"> <img src="images/photo.png" alt="" class="img-responsive"/> <p>简彩仁</p> </a> </div> </div> <div class="panel-footer"> <div class="p-fl"> <p>已有107人报名</p> <span>限时5折</span> </div> <div class="p-fr"> 售价：<em>99</em> </div> </div> </div></li>';
             }
             page = 2;
             hui('#list').html(html);

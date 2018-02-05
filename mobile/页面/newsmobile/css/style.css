@@ -418,3 +418,11 @@ background-size:cover;}
 #hui-hot-sreach-title{line-height:35px; font-size:15px; font-weight:500;color:#333333;}
 #hui-hot-sreach-keys{margin-top:10px;}
 #hui-hot-sreach-keys a{display:block; border-radius:5px; float:left; margin:0 10px 10px 0px; padding:6px 10px; line-height:20px; font-size:13px; background:#ffffff;color:#656565;}
+
+/* 404和500页面 */
+.error-wrap{padding: 50px;box-sizing: border-box;text-align: center;}
+.error-wrap i{display: block;width: 100%;height: 120px;margin: 40px auto 20px;background-position: center center;background-repeat: no-repeat;background-size:contain;}
+.error-wrap i.error-404{background-image: url(../images/404.png);}
+.error-wrap i.error-500{background-image: url(../images/500.png);}
+.error-wrap p{color:#09A5FF;font-size: 15px;line-height: 30px;}
+.error-wrap a{display: inline-block;padding: 0px 20px;color:#0091F4;font-size: 13px;border: 1px solid #0091F4;line-height: 30px;border-radius: 30px;margin-top: 10px;}
