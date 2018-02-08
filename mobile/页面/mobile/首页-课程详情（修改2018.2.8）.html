@@ -190,9 +190,6 @@
 <script type="text/javascript" src="js/hui-swipe.js"></script>
 <script type="text/javascript">
 $(function(){
-	var h=$(window).height()-99;
-	$('.detail-list').height(h);
-
 	$('.tab-li li').click(function(){
 		var index = $(this).index();
 		$(this).addClass('on').siblings().removeClass('on');
@@ -211,10 +208,10 @@ $(".sku-box a").click(function(){
 
 $('.detail-wrapper').scroll(function(){
 	var scrollH = $('.detail-list').offset().top;
-  if(scrollH == 45){
-		$('.detail-list .tab-content .box').css('overflow-y','auto');
+  if(scrollH <= 100){
+		$(".tab-li").addClass("fixed")
 	}else{
-		$('.detail-list .tab-content .box').css('overflow-y','hidden');
+		$(".tab-li").removeClass("fixed")
 	}
 })
 </script>
