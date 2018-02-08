@@ -12,7 +12,7 @@
 <header class="hui-header">
 	<div id="hui-back"></div>
 	<h1>购物车</h1>
-	<div id="hui-commit">完成</div>
+	<div id="hui-commit" class="edit">编辑</div>
 </header>
 <div class="hui-wrap cart-wrap">
 	<div class="cart-list">
@@ -25,23 +25,9 @@
 				<div class="probox">
 					<a href="#"><img src="images/book.png" alt="" class="img-responsive"/></a>
 				</div>
-				<div class="numbox">
-					<div class="hui-number-box" min="1" max="100">
-	            <div class="reduce">-</div>
-	            <input type="number" value="1" />
-	            <div class="add">+</div>
-	        </div>
-				</div>
-				<div class="dellbox">删除</div>
-			</li>
-
-			<li>
-				<div class="checkbox">
-					<i></i>
-					<input type="checkbox" name="" id="" class="check"/>
-				</div>
-				<div class="probox">
-					<a href="#"><img src="images/book.png" alt="" class="img-responsive"/></a>
+				<div class="pro-info">
+					<a href="#" class="text-ellsips-2">2019届考研全科无忧班届考研全科无</a>
+					<p><span>￥：2580</span><em>&times;1</em></p>
 				</div>
 				<div class="numbox">
 					<div class="hui-number-box" min="1" max="100">
@@ -60,6 +46,32 @@
 				</div>
 				<div class="probox">
 					<a href="#"><img src="images/book.png" alt="" class="img-responsive"/></a>
+				</div>
+				<div class="pro-info">
+					<a href="#" class="text-ellsips-2">2019届考研全科无忧班届考研全科无</a>
+					<p><span>￥：2580</span><em>&times;1</em></p>
+				</div>
+				<div class="numbox">
+					<div class="hui-number-box" min="1" max="100">
+	            <div class="reduce">-</div>
+	            <input type="number" value="1" />
+	            <div class="add">+</div>
+	        </div>
+				</div>
+				<div class="dellbox">删除</div>
+			</li>
+
+			<li>
+				<div class="checkbox">
+					<i></i>
+					<input type="checkbox" name="" id="" class="check"/>
+				</div>
+				<div class="probox">
+					<a href="#"><img src="images/book.png" alt="" class="img-responsive"/></a>
+				</div>
+				<div class="pro-info">
+					<a href="#" class="text-ellsips-2">2019届考研全科无忧班届考研全科无</a>
+					<p><span>￥：2580</span><em>&times;1</em></p>
 				</div>
 				<div class="numbox">
 					<div class="hui-number-box" min="1" max="100">
@@ -78,6 +90,10 @@
 			<label for="allselect">
 				<input type="checkbox" name="" id="allselect"/>全选
 			</label>
+		</div>
+		<div class="jsbox">
+			<span>合计：<em>3160.00</em></span>
+			<a href="javascript:void(0)" id="jsSelect" class="btn btn-danger">结算</a>
 		</div>
 		<div class="actionbox">
 			<a href="javascript:void(0)" id="scSelect" class="btn btn-wraning">移入收藏夹</a>
@@ -129,6 +145,20 @@ function allselect(){
 		$("#allselect").parent().siblings('i').removeClass('checked');
 	}
 }
+
+$("#hui-commit").click(function(){
+	if($(this).hasClass('edit')){
+		$(this).removeClass('edit');
+		$(this).text('完成');
+		$(".numbox,.dellbox,.actionbox").show();
+		$(".pro-info,.jsbox").hide();
+	}else{
+		$(this).addClass('edit');
+		$(this).text('编辑');
+		$(".numbox,.dellbox,.actionbox").hide();
+		$(".pro-info,.jsbox").show();
+	}
+})
 </script>
 </body>
 </html>
