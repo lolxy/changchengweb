@@ -25,6 +25,13 @@
 /* 弹出框 */
 .pay-wrapper{width: 650px;background-color: #fff;box-shadow: 0px 0px 46px rgba(80,131,207,0.13);
 border: 1px solid #f4f7fc;border-radius: 5px;position:fixed;top:10%;left: 50%;margin-left: -325px;z-index:20;}
+.pay-wrapper.tc-modal{width: 420px;top: 50%;height: 340px;margin-top: -170px;}
+.pay-wrapper.tc-modal .pay-header p{width: 100%;text-align: center;}
+.pay-wrapper.tc-modal .btn-group{margin: 10px auto;}
+.pay-wrapper.tc-modal .form{height: 140px;margin: 30px auto 0;width: 294px;}
+.pay-wrapper.tc-modal .form .form-group{height: 40px;width: 100%;margin-top: 30px;background-color:#F2F1F6;border-radius: 5px;}
+.pay-wrapper.tc-modal .form .form-group input,.pay-wrapper.tc-modal .form .form-group select{width: 100%;padding: 5px 10px;box-sizing: border-box;height: 40px;border: none;outline: none;background: none;color:#b2b2b2}
+
 .pay-wrapper .pay-header{height: 40px;border-bottom: 1px solid #f2f2f5;line-height: 40px;overflow: hidden;font-size: 24px;padding: 20px;}
 .pay-wrapper .pay-header p{float: left;color:#333333;width: 450px; overflow: hidden; height: 40px; white-space: nowrap; word-wrap: break-word; word-break: break-all; text-overflow: ellipsis;}
 .pay-wrapper .pay-header span{float: right;font-weight: 600;color:#000000;}
