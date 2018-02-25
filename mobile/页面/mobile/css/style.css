@@ -479,3 +479,16 @@ background-size:cover;}
 .error-wrap i.error-500{background-image: url(../images/500.png);}
 .error-wrap p{color:#09A5FF;font-size: 15px;line-height: 30px;}
 .error-wrap a{display: inline-block;padding: 0px 20px;color:#0091F4;font-size: 13px;border: 1px solid #0091F4;line-height: 30px;border-radius: 30px;margin-top: 10px;}
+
+/* 四六级弹窗 */
+.login-modal{position: fixed;top: 0;bottom: 0;width: 100%;z-index: 100;display: none;}
+.login-modal .maskbox{background-color: rgba(0,0,0,.3);position: absolute;top: 0;bottom: 0;width: 100%;}
+.login-modal .login-box{background-color: #fff;position: absolute;z-index: 101;width: 90%;border-radius: 5px;overflow: hidden;top: 50%;height: 250px;margin-top: -125px;left: 50%;margin-left: -45%;
+box-shadow: 0 0 2px #dadada;}
+.login-modal .login-box h2{font-size: 17px;color:#333333;height: 60px;line-height: 60px;text-align: center;font-weight: 400;}
+.login-modal .login-box .form{width: 80%;margin: 10px auto;}
+.login-modal .login-box .form .form-group{height: 50px;margin-bottom: 10px;border-bottom: 1px solid #e2e2e2;}
+.login-modal .login-box .form input,.login-modal .login-box .form select{padding: 5px;width: 100%;box-sizing: border-box;height: 50px;border: none;outline: none;}
+.login-modal .login-box .btn-box{height: 50px;display: flex;border-top: 1px solid #e2e2e2;}
+.login-modal .login-box .btn-box button{flex: 1;border: none;background-color: #fff;font-size: 17px;color:#00A2FF}
+.login-modal .login-box .btn-box button:first-child{border-right: 1px solid #e2e2e2;color:#333333}

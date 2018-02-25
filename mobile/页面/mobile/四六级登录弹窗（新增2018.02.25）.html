@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title></title>
+<link rel="stylesheet" type="text/css" href="css/hui.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+<header class="hui-header">
+	<div id="hui-back"></div>
+	<style>
+		#openModel{
+			border:1px solid #e2e2e2;
+			padding:0px 20px;
+			height:36px;
+			line-height:36px;
+			background:#ffffff;
+			border-radius:5px;
+			display: inline-block;
+			margin-top: 20px;
+			margin-left: 20px;
+		}
+	</style>
+</header>
+<div class="hui-wrap">
+	<!-- 通过ID点击打开，需要调用时引用，此处为示例 -->
+	<div id="openModel">打开四六级弹窗</div>
+	<!-- 四六级弹窗 -->
+	<div class="login-modal">
+		<div class="maskbox"></div>
+		<div class="login-box">
+			<h2>晋远四六级听力平台</h2>
+			<div class="form">
+				<div class="form-group">
+					<input type="text" placeholder="手机号"/>
+				</div>
+				<div class="form-group">
+					<select name="" id="">
+						<option value="">购买的产品</option>
+						<option value=""></option>
+						<option value=""></option>
+					</select>
+				</div>
+			</div>
+			<div class="btn-box">
+				<button id="btn-qx">取消</button>
+				<button id="btn-login">确定</button>
+			</div>
+		</div>
+	</div>
+	<!-- //四六级弹窗 -->
+</div>
+<script type="text/javascript" src="js/hui.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/hui-form.js"></script>
+<script type="text/javascript">
+$("#openModel").click(function() {
+	$(".login-modal").fadeIn('slow');
+});
+
+$("#btn-qx,.maskbox").click(function() {
+	$(".login-modal").fadeOut('slow');
+});
+
+$("#btn-login").click(function() {
+	// 执行下一步确定后的动作
+	// $(".login-modal").fadeOut('slow');
+});
+</script>
+</body>
+</html>
