@@ -132,7 +132,9 @@
         </form>
       </div>
     </div>
-    <video src="" class="videocss"></video>
+    <div id="videoDiv">
+      <video src="" class="videocss"></video>
+    </div>
   </section>
 </div>
 
@@ -140,8 +142,10 @@
 <script>
   $(".mulubtn").toggle(function(){
     $(".leftmenu").css("left","-25%");
+    $("#videoDiv").css("left","0");
   },function(){
     $(".leftmenu").css("left","0");
+    $("#videoDiv").css("left","24%");
   });
 
   $(".tabbox li").click(function(){
@@ -156,8 +160,10 @@
 
   $(".soujin").toggle(function(){
     $(".rightbox").css("right","-24%");
+    $("#videoDiv").css("right","0");
   },function(){
     $(".rightbox").css("right","0");
+    $("#videoDiv").css("right","24%");
   });
 </script>
 </body>
