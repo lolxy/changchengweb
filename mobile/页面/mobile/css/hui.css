@@ -5,7 +5,7 @@ a{color:#333333; text-decoration:none;}
 a:active{color:#333333;}
 img{border:none;}
 ul{list-style-type:none;}
-body{background:#fafbfc; -webkit-user-select:none; -moz-user-select:none;font-family:"Microsoft YaHei";}
+body{background:#fafbfc; -webkit-user-select:none; -moz-user-select:none;font-family:"Microsoft YaHei";-webkit-overflow-scrolling:touch;}
 textarea{resize:none; background:inherit;}
 .hui-fl{float:left !important; display:block !important;}
 .hui-fr{float:right !important; display:block !important;}
