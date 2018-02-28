@@ -125,7 +125,7 @@ select.selectcss{appearance:none;-webkit-appearance:none;border: none;outline: n
 .tc-sheet-content .dptc-list li .tc-title{height: 34px;line-height: 34px;font-size: 14px;color:#333333;display: flex;justify-content: space-between;padding: 0 10px;font-weight: bold;}
 .tc-sheet-content .dptc-list li .tc-title p{flex: 1;}
 .tc-sheet-content .dptc-list li .selectbox{width: 20px;height: 20px;border: 1px solid #979797;margin-top: 6px;}
-.tc-sheet-content .dptc-list li .table {width: 100%;border-collapse: collapse;border-spacing: 0;}
+.tc-sheet-content .dptc-list li .table {width: 100%;border-collapse: collapse;border-spacing: 0;table-layout: fixed;}
 .tc-sheet-content .dptc-list li .table th,.tc-sheet-content .dptc-list li .table td{line-height: 30px;height: 30px;text-align: center;font-size: 13px;color:#666666;font-weight: 300;border: 1px solid #979797;}
 .tc-sheet-content .dptc-list li .table td{border-top: 1px solid #979797;font-size: 12px;}
 .tc-sheet-content .dptc-list li .table th:last-child,.tc-sheet-content .dptc-list li .table td:last-child{border-right: none;}
