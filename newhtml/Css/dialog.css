@@ -23,16 +23,23 @@
 }
 
 /* 弹出框 */
+/* 弹出框 */
 .pay-wrapper{width: 650px;background-color: #fff;box-shadow: 0px 0px 46px rgba(80,131,207,0.13);
 border: 1px solid #f4f7fc;border-radius: 5px;position:fixed;top:10%;left: 50%;margin-left: -325px;z-index:20;}
-.pay-wrapper.tc-modal{width: 420px;top: 50%;height: 340px;margin-top: -170px;}
+.pay-wrapper.tc-modal{width: 420px;top:20vh;left:50%;margin-left:-210px;}
 .pay-wrapper.tc-modal .pay-header p{width: 100%;text-align: center;}
 .pay-wrapper.tc-modal .btn-group{margin: 10px auto;}
-.pay-wrapper.tc-modal .form{height: 140px;margin: 30px auto 0;width: 294px;}
+.pay-wrapper.tc-modal .btn-group.select-group{display:flex;}
+.pay-wrapper.tc-modal .btn-group.select-group label{flex:1;flex-basis: 120px;line-height: 40px;padding-left: 10px;color: #666666;}
+.pay-wrapper.tc-modal .form{margin: 30px auto;width: 294px;}
 .pay-wrapper.tc-modal .form .form-group{height: 40px;width: 100%;margin-top: 30px;background-color:#F2F1F6;border-radius: 5px;}
 .pay-wrapper.tc-modal .form .form-group input,.pay-wrapper.tc-modal .form .form-group select{width: 100%;padding: 5px 10px;box-sizing: border-box;height: 40px;border: none;outline: none;background: none;color:#b2b2b2}
 
+.pay-wrapper{width: 650px;background-color: #fff;box-shadow: 0px 0px 46px rgba(80,131,207,0.13);
+border: 1px solid #f4f7fc;border-radius: 5px;position:fixed;top:10%;left: 50%;margin-left: -325px;z-index:20;}
 .pay-wrapper .pay-header{height: 40px;border-bottom: 1px solid #f2f2f5;line-height: 40px;overflow: hidden;font-size: 24px;padding: 20px;}
+.pay-wrapper .pay-header h2{text-align:center;}
+.pay-wrapper.tc-modal .form .getyzm {text-align: right;width: 100%;display: block;font-size: 12px;color: #666666;line-height: 30px;}
 .pay-wrapper .pay-header p{float: left;color:#333333;width: 450px; overflow: hidden; height: 40px; white-space: nowrap; word-wrap: break-word; word-break: break-all; text-overflow: ellipsis;}
 .pay-wrapper .pay-header span{float: right;font-weight: 600;color:#000000;}
 .pay-type-box{width: 294px;margin: 10px auto 40px;}
@@ -44,21 +51,24 @@ border: 1px solid #f4f7fc;border-radius: 5px;position:fixed;top:10%;left: 50%;ma
 .pay-type-box .pay-type li .box span{display: block;line-height: 36px;color:#333333;font-size: 18px;}
 .pay-type-box .pay-type li .box i{width: 14px;height: 14px;display: block;margin: 5px auto;background:url(../images/pay/pay_icon.png);}
 .pay-type-box .pay-type li.selected .box i{background:url(../images/pay/pay_icon_select.png);}
-.btn-group{text-align: center;margin: 40px auto;position: relative;}
+.btn-group{text-align: center;margin: 40px auto;}
 .btn-group a{display: block;margin: 0px auto;}
+.btn-group p{margin-top:10px;} 
+.btn-group p a{display:inline;margin-left:5px;}
 .btn-group .btn-submit{width: 294px;height: 40px;line-height: 38px;border: none;outline: none;cursor: pointer;background:url(../images/login/login_bg.png);background-size: cover;font-size: 16px;color:#ffffff;opacity:1;transition:opacity ease-in-out .5s;}
 .btn-group .btn-submit:hover{opacity:0.85;}
 .btn-group .btn-submit span{letter-spacing: 40px;margin-left: 40px;}
-.btn-group a.addAddress{display: block;position: absolute;top: 0;line-height: 40px;right: -90px;width: 80px;text-align: center;}
+
+/* 购买成功 */
+.success-icon{width: 92px;height: 92px;margin: 30px auto 15px;}
+.success-tip{color:#666666;text-align: center;font-size: 18px;line-height: 30px;margin-bottom: 15px;}
+
 
 .address-select-list{padding: 20px 40px;}
 .address-select-list li{margin-bottom: 10px;line-height: 30px;cursor: pointer;}
 .address-select-list li span{margin-left: 20px;}
 .address-select-list li .box i{width: 14px;height: 14px;display: inline-block;margin: 8px;vertical-align: top;background:url(../images/pay/pay_icon.png);}
 .address-select-list li.selected .box i{background:url(../images/pay/pay_icon_select.png);}
-/* 购买成功 */
-.success-icon{width: 92px;height: 92px;margin: 30px auto 15px;}
-.success-tip{color:#666666;text-align: center;font-size: 18px;line-height: 30px;margin-bottom: 15px;}
 
 /* 收货地址 */
 .pay-wrapper .shdz-box h2{line-height: 55px;height: 66px;text-align: center;width: 100%;font-size: 18px;color:#000000;font-weight: 500;}
