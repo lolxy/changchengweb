@@ -489,8 +489,9 @@ background-size:cover;}
 box-shadow: 0 0 2px #dadada;}
 .login-modal .login-box h2{font-size: 17px;color:#333333;height: 60px;line-height: 60px;text-align: center;font-weight: 400;}
 .login-modal .login-box .form{width: 80%;margin: 10px auto;}
-.login-modal .login-box .form .form-group{height: 50px;margin-bottom: 10px;border-bottom: 1px solid #e2e2e2;}
+.login-modal .login-box .form .form-group{height: 50px;margin-bottom: 10px;border-bottom: 1px solid #e2e2e2;position:relative;}
 .login-modal .login-box .form input,.login-modal .login-box .form select{padding: 5px;width: 100%;box-sizing: border-box;height: 50px;border: none;outline: none;}
 .login-modal .login-box .btn-box{height: 50px;display: flex;border-top: 1px solid #e2e2e2;}
 .login-modal .login-box .btn-box button{flex: 1;border: none;background-color: #fff;font-size: 17px;color:#00A2FF}
 .login-modal .login-box .btn-box button:first-child{border-right: 1px solid #e2e2e2;color:#333333}
+.login-modal .login-box #getCode {position: absolute;right: 0px;top: 0px;}
