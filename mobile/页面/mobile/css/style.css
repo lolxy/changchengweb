@@ -485,7 +485,7 @@ background-size:cover;}
 /* 四六级弹窗 */
 .login-modal{position: fixed;top: 0;bottom: 0;width: 100%;z-index: 100;display: none;}
 .login-modal .maskbox{background-color: rgba(0,0,0,.3);position: absolute;top: 0;bottom: 0;width: 100%;}
-.login-modal .login-box{background-color: #fff;position: absolute;z-index: 101;width: 90%;border-radius: 5px;overflow: hidden;top: 50%;height: 250px;margin-top: -125px;left: 50%;margin-left: -45%;
+.login-modal .login-box{background-color: #fff;position: absolute;z-index: 101;width: 90%;border-radius: 5px;overflow: hidden;top: 20vh;left: 50%;margin-left: -45%;
 box-shadow: 0 0 2px #dadada;}
 .login-modal .login-box h2{font-size: 17px;color:#333333;height: 60px;line-height: 60px;text-align: center;font-weight: 400;}
 .login-modal .login-box .form{width: 80%;margin: 10px auto;}
