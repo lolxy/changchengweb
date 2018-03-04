@@ -223,7 +223,7 @@ h3{font-size:16px}
 .hui-picker-line{position:absolute; z-index:-1; left:0px; top:142px; width:100%; height:30px; border-top:1px solid #9E9E9E; border-bottom:1px solid #9E9E9E;}
 /* hui-footer */
 #hui-footer{width:100%; height:44px; background:#ffffff; padding:5px 0px; bottom:0px; left:0px; position:fixed; overflow:hidden; z-index:10; box-shadow: 0 2px 13px 0 #CBD6EC;}
-#hui-footer a{display:block; width:33.3333%; float:left;}
+#hui-footer a{display:block; width:25%; float:left;}
 .hui-footer-icons{font-family:"hui-font"; text-align:center; font-size:20px; height:26px; line-height:26px;}
 .hui-footer-text{text-align:center; font-size:12px; height:18px; line-height:18px; padding-top:2px;color:#333333;}
 .hui-footer-active *{color:#00A2FF;}
@@ -286,3 +286,22 @@ h3{font-size:16px}
 .hui-icons-remove:before{content:"\e656";} .hui-icons-edit:before{content:"\e600";} .hui-icons-like:before{content:"\e64a";}
 .hui-icons-pause:before{content:"\e96b";} .hui-icons-play:before{content:"\e6b1";} .hui-icons-stop:before{content:"\e61b";}
 .hui-icons-shopping-cart:before{content:"\e633";}
+
+/* 返回顶部 */
+.go-top {
+	position: fixed;
+	background-image: url(../images/top.png);
+	background-repeat: no-repeat;
+	height: 40px;
+	background-size: 40px 40px;
+	width: 40px;
+	bottom: 70px;
+	z-index: 999;
+	right: 5%;
+}
+
+.go-top a {
+	width: 40px;
+	height: 40px;
+	display: block;
+}
