@@ -541,12 +541,12 @@ $(function(){
 	// 套餐弹窗切换
 	$(".tcbox").click(function(){
 		$(".tc-action-sheet").css({"transform":"translateY(0)"})
-		$('body').css({"overflow-y":"auto"})
+		$('.detail-wrapper').css({"overflow-y":"auto"})
 	})
 
 	$(".tc-action-sheet").click(function(){
 		$(this).css({"transform":"translateY(100%)"})
-		$('body').css({"overflow-y":"hidden"})
+		$('.detail-wrapper').css({"overflow-y":"hidden"})
 	})
 
 	$(".tc-sheet-content,.tc-sheet-footer").click(function(event){
