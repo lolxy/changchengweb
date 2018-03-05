@@ -139,10 +139,12 @@ select.selectcss{appearance:none;-webkit-appearance:none;border: none;outline: n
 .detail-list{margin-top: 10px;padding-bottom: 10px;position: relative;}
 .detail-list .tab-li{width: 100%;overflow: hidden;height: 42px;background-color: #fff;margin-bottom: 10px;}
 .detail-list .tab-li.fixed{position:fixed;top:44px;left: 0;width: 100%;z-index:1000;}
-.detail-list .tab-li li{width: 25%;float: left;height: 40px;text-align: center;font-size: 13px;color:#666666;line-height: 40px;border-bottom: 2px solid #ffffff;}
+.detail-list .tab-li li{width: 25%;float: left;height: 40px;text-align: center;font-size: 13px;color:#666666;line-height: 40px;border-bottom: 2px solid #ffffff;transition: all ease-in-out .2s}
 .detail-list .tab-li li.on{border-bottom: 2px solid #00A2FF;}
 .detail-list .tab-content{overflow: hidden;box-sizing: border-box;position: relative;width: 100%;}
-.detail-list .tab-content .box{display: none;opacity: 0;transition: all ease-in-out .6s;width: 100%;}
+.detail-list .tab-content .box{transition: all ease-in-out .6s;width: 100%;min-height: 40px;padding: 10px 0px;}
+.detail-list .tab-content .box:first-child{padding-top: 0;}
+.detail-list .tab-content .box.hide{display: none;opacity: 0;}
 .detail-list .tab-content .box.current{display: block;opacity: 1;}
 .detail-list .tab-content .box .container{padding:0px 10px;box-sizing: border-box;font-size: 13px;color:#333333;position:relative;}
 .detail-list .tab-content .box .container,.detail-list .tab-content .box img{width: 100%;height: auto;overflow: hidden;}
