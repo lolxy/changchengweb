@@ -532,3 +532,6 @@ box-shadow: 0 0 2px #dadada;}
 .kcml-list .hui-sub-list dl dd span.weishangxian{color:#999999;}
 .kcml-list .hui-sub-list dl dd span.shiting,.kcml-list .hui-sub-list dl dd span.shangxian{color:#00A2FF;}
 .kcml-list .hui-sub-list dl dd span.shiting::before{content:"";display: inline-block;vertical-align: top;margin: 12px 8px;width: 22px;height: 22px;background:url(../images/shiting.png) center no-repeat;background-size: contain;}
+
+.backHome{width: 38px; height: 44px; font-family: "hui-font"; line-height: 44px; text-align: center; position: absolute; z-index: 20; left: 0px; top: 0px;}
+.backHome:before { content: "\e6a5"; font-size: 20px; color: #12a8ff; }
