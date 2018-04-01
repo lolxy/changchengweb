@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html class="bg">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>我的测试卷</title>
+<link rel="stylesheet" type="text/css" href="css/hui.css" />
+<link rel="stylesheet" type="text/css" href="css/ask.css" />
+</head>
+<body>
+<header class="hui-header">
+	<div id="hui-back"></div>
+	<h1>我的测试卷</h1>
+</header>
+<div class="hui-wrap">
+    <div class="ask—wrapper">
+			<div class="panel">
+				<div class="panel-heading">
+					 <label>单选</label>The extinction of large prehistoric animals is noted to suggest that ________.
+				</div>
+				<div class="panel-body">
+					<ul>
+						<li class="success">
+							<i>A</i><span>large animal were vulnerable to the changing environment</span>
+						</li>
+						<li>
+							<i>B</i><span>large animal were vulnerable to the changing environment</span>
+						</li>
+						<li>
+							<i>C</i><span>large animal were vulnerable to the changing environment</span>
+						</li>
+						<li class="error">
+							<i>D</i><span>large animal were vulnerable to the changing environment</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+    </div>
+</div>
+<div class="maskbox"></div>
+<div class="actionSheet">
+	<div class="action-wrap">
+		<div class="action-header">
+			<span>答案：A</span>
+			<span class="jiucuo">题目纠错</span>
+		</div>
+		<div class="action-body">
+			<label>最佳解释：</label>
+			<span>The extinction of large prehistoric animals is noted to suggest that .uggest thatuggest thatuggest thatuggest thatuggest thatuggest thatuggest thatuggest thatuggest that</span>
+		</div>
+		<div class="action-footer">
+			<span class="nandu">
+				难度：<span class="xingxing"><i style="width:60%"></i></span>
+			</span>
+			<span class="error">
+				错误率：8.9
+			</span>
+		</div>
+	</div>
+</div>
+<div class="model">
+	<div class="model-head">
+		系统提示
+	</div>
+	<div class="model-body">
+		时间已到，系统将自动交卷！,5秒后系统将自动跳转到我的试卷中心
+	</div>
+</div>
+<div class="wenjuan-footer">
+	<div class="caozuo-wrap">
+		<div class="btn-group">
+			<div class="btn" onclick="play()">
+				<i></i>
+				<span id="daytime">60:00</span>
+			</div>
+			<div class="btn">立即交卷</div>
+		</div>
+		<div class="page-box">1/100</div>
+		<div class="btn-group">
+			<div class="btn">上一题</div>
+			<div class="btn">下一题</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript">
+	var flag = true;
+	//定义变量 时 分 秒
+  var  hh=1;
+  var  mm=30;
+  var  ss=59;
+	//通过document将值赋给文本
+  $("#daytime").text(hh+":"+mm+""+":"+ss);
+	//定义变量计算所要走的秒数
+  var contest=5400;
+  var vartime = null;
+  function startTime(){
+		flag = false;
+	  --contest;
+	  if(contest==0){
+			$('.model').fadeIn()
+			$('.maskbox').fadeIn()
+  		//clearTimeout 关闭定时触发事件
+      clearTimeout(vartime);
+  }else{
+		//计算秒减减
+    ss=--ss;
+    //取所要走的秒数的余数当时60的余数就说明所走时间为一秒
+    if(contest%60==0){
+      ss=60;
+		//当秒钟为0是分钟减1
+     	mm=--mm;
+		//当分钟为0是小时减1
+		  if(mm==-1){
+     		hh=hh-1;
+     		mm=59;
+     	}
+    }
+  $("#daytime").text(hh+":"+mm+""+":"+ss);
+		//setTimeout 定时触发事件方法
+    vartime = setTimeout("startTime()", 1000);
+  }
+}
+
+function play(){
+	if(flag){
+		startTime()
+	}
+}
+</script>
+</body>
+</html>
