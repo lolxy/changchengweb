@@ -108,3 +108,43 @@ a:hover{opacity: .9;}
 .panel-box dd li:last-child{margin-bottom: 0;}
 .panel-box dd li p{font-size: 14px;color:#333;margin-bottom: 10px;}
 .panel-box dd li p em{font-style: normal;color:#0091f4;}
+
+.ks-right-box{padding-bottom: 6px;}
+.ks-right-box .countdown{padding:15px 20px;font-size: 14px;color:#333;display: flex;align-items: center;align-content: center;}
+.countdown .time{display: inline-block;width: 24px;height: 28px;background:url(../images/test/shijian1.png);margin-right: 10px;}
+.countdown em{color:#ff0000;font-style: normal;}
+.countdown a{font-size: 14px;color:#666;display: flex;align-items: center;align-content: center;margin-left: 25px;height: 28px;}
+.countdown a:before{content:'';width: 8px;height: 14px;background:url(../images/test/lefticon.png) center no-repeat;display: block;margin-right: 10px;margin-top: 1px;}
+.ks-right-box .btn-action{padding: 20px;padding-top: 0;display: flex;justify-content: space-between;}
+.ks-right-box .btn-action a{background-color: #00a2ff;color:#fff;text-align: center;width: 115px;height: 38px;display: flex;align-items: center;align-content: center;justify-content: center;}
+.ks-right-box .btn-action a i{width: 14px;height: 14px;display: block;background-position: center center;background-repeat: no-repeat;margin-right: 6px;}
+.back{background-image: url(../images/test/back.png);}
+.pause-icon{background-image: url(../images/test/pause.png);}
+.view{background-image: url(../images/test/shuji.png);}
+.replate{background-image: url(../images/test/chongzu.png);}
+.pause-icon.play-icon{background-image: url(../images/test/play.png);}
+.answer-card .tit{border-left: 3px solid #00a2ff;font-size: 16px;color:#333;padding-left: 15px;height: 16px;line-height: 16px;}
+.answer-card .tit em{font-style: normal;color:#ff6600;}
+.card-list{padding: 20px 15px 10px 35px;display: flex;flex-wrap: wrap;}
+.card-list span{cursor: pointer;width: 20px;height: 20px;border: 1px solid #999;margin-right: 15px;margin-bottom: 10px;font-size: 10px;color:#666;text-align: center;line-height: 20px;}
+.card-list span.on{background-color: #00a2ff;border: 1px solid #00a2ff;color:#fff;}
+.actionbox{height: 90px;display: flex;flex-direction: column;align-items: center;align-content: center;justify-content: space-between;}
+.actionbox a{width: 184px;height: 38px;background-color: #00a2ff;font-size: 14px;color:#fff;line-height: 38px;text-align: center;}
+.actionbox .jxkt{width: 115px;}
+.actionbox .jxkt .ketang{width: 25px;height: 15px;background:url(../images/test/ketang.png) center no-repeat;margin-right: 10px;display: inline-block;vertical-align: top;margin-top: 11px;}
+.answer-tip{padding:0 35px;line-height: 30px;height: 30px;background-color: #fafafa;margin-bottom: 20px;}
+.answer-tip span{margin-right: 40px;font-size: 12px;color:#666;}
+.answer-tip span i{display: inline-block;vertical-align: top;width: 10px;height: 10px;border-radius: 10px;border: 1px solid #999;margin: 10px 8px 10px 0;}
+.answer-tip span i.on{background-color: #00a2ff;border: 1px solid #00a2ff;}
+
+.test-ks-wrap .panel-footer{background-color: #fff;}
+.test-ks-wrap .panel-footer .panel-f-header{height: 30px;background-color: #fafafa;line-height: 30px;font-size: 12px;color:#333;padding: 0 20px;}
+.test-ks-wrap .panel-footer .panel-f-header ul{display: flex;justify-content: space-between;}
+.test-ks-wrap .panel-footer .panel-f-header li{padding: 0 15px;}
+.test-ks-wrap .panel-footer .panel-f-header li em{font-style: normal;color:#4bb3ff;}
+.test-ks-wrap .panel-footer .panel-f-header li.sc,.test-ks-wrap .panel-footer .panel-f-header li.slide-panel{cursor: pointer;}
+.test-ks-wrap .panel-footer .panel-f-header li i{width: 14px;height: 14px;background-position: center center;background-size: contain;display: inline-block;margin: 8px;vertical-align: top;background-repeat: no-repeat;}
+.test-ks-wrap .shoucang{background-image: url(../images/test/huis.png);}
+.test-ks-wrap .shoucang.on{background-image: url(../images/test/lans.png);}
+.test-ks-wrap .downicon{background-image: url(../images/test/downicon.png);transition: all ease-in-out .5s;}
+.test-ks-wrap .downicon.up{transform: rotate(180deg);}
