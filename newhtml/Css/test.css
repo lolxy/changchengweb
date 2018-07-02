@@ -76,3 +76,35 @@ a:hover{opacity: .9;}
 .list-wrap table td .c2{color:#0091f4;}
 .list-wrap a{margin-top: 44px;display: flex;align-items: center;align-content: center;justify-content: center;margin-left: auto;margin-right: auto;width: 125px;height: 35px;line-height: 35px;text-align: center;color:#0091f4;font-size: 14px;border: 1px solid #0091f4;}
 .list-wrap a i{display: block;width: 20px;height: 15px;background:url(../images/test/ketang.png) left top no-repeat;margin-right: 10px;}
+
+/* 测试卷 */
+.test-ks-wrap{padding-bottom: 80px;}
+.test-ks-header{width: 100%;background-color: #fff;border-bottom: 1px solid #e1e1e1;height: 145px;box-sizing: border-box;padding: 20px 0;}
+.test-ks-header h1{line-height:50px;font-size: 24px;color:#333;}
+.test-ks-header p{font-size: 14px;color:#666;line-height: 30px;}
+.test-ks-header .des span{margin-right: 40px;}
+.test-ks-header .resource{text-align: right;}
+
+.test-ks-body{margin-top: 30px;display: flex;}
+.test-ks-body .ks-left-box{flex:1;}
+.test-ks-body .ks-right-box{width: 310px;background-color: #fff;margin-left: 35px;height: 460px;}
+
+.panel-box{margin-bottom: 20px;}
+.panel-box .panel-heading{background-color: #fff;font-size: 16px;color:#00a2ff;margin-bottom: 20px;line-height: 40px;padding-left: 20px;}
+.panel-box .panel-body{background-color: #fff;padding: 20px;}
+.panel-box dl{margin-bottom: 5px;}
+.panel-box dl:last-child{margin-bottom: 0;}
+.panel-box dt{font-size: 14px;color:#333;line-height: 20px;display: flex;margin-bottom: 10px;}
+.panel-box dt span.t{color:#0091f4;}
+.panel-box dt span.c{flex:1;margin-left: 10px;}
+.panel-box dd{padding:5px 0px 5px 73px;display: flex;flex-direction: column;}
+.panel-box dd label{cursor: pointer;line-height: 20px;font-size: 12px;color:#333;display: flex;align-items: center;align-content: center;margin-bottom: 8px;}
+.panel-box dd label i{width: 12px;border: 1px solid #999;height: 12px;border-radius: 12px;display: inline-block;vertical-align: top;}
+.panel-box dd label span{flex:1;margin-left: 10px;}
+.panel-box dd label.current i,.panel-box dd label.checked i{border: 1px solid #000;display: flex;align-items: center;align-content: center;justify-content: center;}
+.panel-box dd label.current i:before,.panel-box dd label.checked i:before{content: "";width: 8px;height: 8px;background-color: #000;border-radius: 8px;}
+.panel-box dd textarea{width: 100%;border: 1px solid #bcbcbc;font-size: 13px;color:#666;padding: 10px;box-sizing: border-box;outline: none;}
+.panel-box dd li{margin-bottom: 15px;padding-left: 10px;}
+.panel-box dd li:last-child{margin-bottom: 0;}
+.panel-box dd li p{font-size: 14px;color:#333;margin-bottom: 10px;}
+.panel-box dd li p em{font-style: normal;color:#0091f4;}
