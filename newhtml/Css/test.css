@@ -22,9 +22,9 @@ a:hover{opacity: .9;}
 
 .test-box.test-moni{padding:0 30px;}
 /* 测试卷列表 */
-.menu-list{display: flex;min-height: 70px;margin-bottom: 30px;background-color: #fff;padding: 15px;border: 1px solid #dfdfdf;}
-.menu-list a{color:#00a2ff;font-size: 16px;padding: 0px 30px;height:32px;line-height: 32px;}
-.menu-list a:hover{opacity: .9;background-color: #00a2ff;color:#fff;border-radius: 4px;}
+.cate-list{display: flex;min-height: 70px;margin-bottom: 30px;background-color: #fff;padding: 15px;border: 1px solid #dfdfdf;}
+.cate-list a{color:#00a2ff;font-size: 16px;padding: 0px 30px;height:32px;line-height: 32px;}
+.cate-list a:hover{opacity: .9;background-color: #00a2ff;color:#fff;border-radius: 4px;}
 
 /* 考试须知 */
 .ksxz-wrap{background-color: #fff;margin-top: 60px;margin-bottom: 60px;}
