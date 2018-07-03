@@ -148,3 +148,10 @@ a:hover{opacity: .9;}
 .test-ks-wrap .shoucang.on{background-image: url(../images/test/lans.png);}
 .test-ks-wrap .downicon{background-image: url(../images/test/downicon.png);transition: all ease-in-out .5s;}
 .test-ks-wrap .downicon.up{transform: rotate(180deg);}
+
+.test-ks-wrap .panel-footer .panel-f-body{padding: 20px 45px;display: none;}
+.panel-f-body p{display: flex;font-size: 12px;color:#333;line-height: 25px;}
+.panel-f-body p span.pf{width: 100px;height: 15px;background:url(../images/test/weishouc.png) left top repeat-x;display: inline-block;vertical-align: top;margin-top: 5px;margin-left: 5px;}
+.panel-f-body p span.pf i{background:url(../images/test/shouc.png) left top repeat-x;display: block;height: 15px;}
+.panel-f-body p span.t{display: flex;justify-content: space-between;width: 52px;}
+.panel-f-body p em{font-style: normal;color:#00a2ff;margin: 0 2px;}
