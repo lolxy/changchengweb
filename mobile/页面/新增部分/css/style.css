@@ -230,7 +230,7 @@ select.selectcss{appearance:none;-webkit-appearance:none;border: none;outline: n
 
 
 
-.hui-media-box{position: relative;width: 100%;height: 180px;overflow: hidden;background:url(../images/usercenterbg.png) center center no-repeat;background-size:cover;}
+.hui-media-box{position: relative;width: 100%;height: 180px;overflow: hidden;opacity: 0.9; background-image: linear-gradient(-90deg, #5EC1FA 0%, #3CE8FF 100%);}
 .hui-media-box .xiaoxi{width: 30px;height: 30px;position: absolute;right: 10px;top: 10px;background: url(../images/message.png) center center no-repeat;background-size:contain;}
 .hui-media-box .xiaoxi .has-data{display: block;position: absolute;background-color: #ff0000;width: 6px;height: 6px;border-radius: 50%;top:2px;right:1px;}
 .hui-fruserinfo-box{margin: 50px auto 30px;text-align: center;}
@@ -263,7 +263,8 @@ select.selectcss{appearance:none;-webkit-appearance:none;border: none;outline: n
 .message-create .input-box input{font-size: 13px;color:#636363;box-sizing: border-box;background: #FAFBFC; background-image: linear-gradient(-180deg, rgba(244,244,244,0.50) 0%, rgba(240,240,240,0.50) 100%); border-radius: 3px;border: none;outline: none;width: 100%;height:100%;line-height: 34px;padding: 0 5px;}
 .message-create button{position: absolute;right:10px;top:5px;width: 70px;height: 34px;line-height: 36px;}
 
-#hui-footer a{text-align: center;}
+#hui-footer{display: flex;}
+#hui-footer a{text-align: center;flex:1;}
 #hui-footer .hui-footer-icons{width: 20px;height: 20px;background-position: center center;background-repeat: no-repeat;display: inline-block;background-size: contain;}
 #hui-footer .hui-icons-home{background-image: url(../images/home.png)}
 #hui-footer .hui-icons-kecheng{background-image: url(../images/kecheng.png)}
@@ -275,6 +276,7 @@ select.selectcss{appearance:none;-webkit-appearance:none;border: none;outline: n
 #hui-footer a:hover .hui-icons-book,#hui-footer a.active .hui-icons-book{background-image: url(../images/book_active.png)}
 #hui-footer a:hover .hui-icons-my,#hui-footer a.active .hui-icons-my{background-image: url(../images/user_active.png)}
 #hui-footer a:hover .hui-icons-kf,#hui-footer a.active .hui-icons-kf{background-image: url(../images/message_icon_active.png)}
+
 
 .my-message{padding: 0;}
 .my-message .no-data{background-image:url(../images/message_no_data.png);}
