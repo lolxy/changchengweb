@@ -1,8 +1,9 @@
+@charset "utf-8";
 *{margin:0; padding:0; font-size:15px; color:#333333; outline:none; -webkit-text-size-adjust:100%; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; font-style:normal; -webkit-tap-highlight-color:transparent;}
 div{overflow:hidden;}
 ::-webkit-scrollbar{display:none;}
 a{color:#333333; text-decoration:none;}
-a:active{color:#333333;}
+/* a:active{color:#333333;} */
 img{border:none;}
 ul{list-style-type:none;}
 body{background:#fafbfc; -webkit-user-select:none; -moz-user-select:none;font-family:"Microsoft YaHei";-webkit-overflow-scrolling:touch;}
@@ -27,14 +28,45 @@ h3{font-size:16px}
 .hui-content *{line-height:2em; font-size:16px;}
 .hui-content img{width:100%;}
 .hui-content p{text-indent:2em;}
-/* 头部导航 */
+.fl { float: left !important; }
+.fr { float: right !important; }
+.mgl { margin-left: 0 !important; }
+.mgr { margin-right: 0 !important; }
+.mgt { margin-top: 0 !important; }
+.mgb { margin-bottom: 0 !important; }
+.mg0 { margin: 0 auto !important; display: block; }
+.tc { text-align: center !important; }
+.tl { text-align: left !important; }
+.tr { text-align: right !important; }
+.hidden { overflow: hidden; }
+.none { display: none; }
+.red { color: #EC0202 !important; }
+.yellow { color: #ff9901; }
+.font12 { font-size: 12px!important;}
+.font13 { font-size: 13px!important;}
+.font14 { font-size: 14px!important;}
+.font16 { font-size: 16px!important; }
+.font18 { font-size: 18px!important;}
+.font20 { font-size: 20px!important; }
+.position_r { position: relative; }
+.position_a { position: absolute; }
+.cfff { color: #fff !important; }
+.c000 { color: #000 !important; }
+.c111 { color: #111 !important; }
+.c333 { color: #333 !important; }
+.c666 { color: #666 !important; }
+.c999 { color: #999 !important; }
+.clan { color: #00a2ff !important; }
+.ccen{color:#FD6C3C !important;}
+.bg-white { background-color: #fff!important; }
+/* å¤´éƒ¨å¯¼èˆª */
 .hui-header{display:block; width:100%; height:44px; line-height:44px; font-size:18px; text-align:center; top:0px; left:0px; position:fixed; z-index:19; background:#FFFFFF;box-shadow: 0 4px 2px 0 #F5F9FD;}
-.hui-header h1{font-size:18px; height:44px; line-height:44px; overflow:hidden; padding:0px 38px 0px 38px; text-align:center; font-weight:400; white-space:nowrap; text-overflow:ellipsis;}
+.hui-header h1{font-size:18px;height:44px;line-height:44px;overflow:hidden;padding:0 38px;text-align:center;font-weight:400;white-space:nowrap;text-overflow:ellipsis;}
 .hui-header + .hui-wrap{padding-top:44px;}
 #hui-back{width:38px; height:44px; font-family:"hui-font"; line-height:44px; text-align:center; position:absolute; z-index:20; left:0px; top:0px;}
 #hui-back:before{content:"\e6a5"; font-size:20px; color:#12a8ff;}
 #hui-header-menu{width:38px; height:44px; line-height:44px;position:absolute; z-index:20; right:0px; top:0px;}
-/* 列表 */
+/* åˆ—è¡¨ */
 .hui-list{padding:0px 15px;}
 .hui-list li{}
 .hui-list li{position:relative; width:100%; border-bottom:1px solid #fcfcfc; white-space:nowrap; overflow:hidden; height:50px; line-height:50px;}
@@ -60,13 +92,13 @@ h3{font-size:16px}
 .hui-img-list-content{padding:8px 8px 10px 8px; background:#FFFFFF;}
 .hui-img-list h1{font-size:16px; line-height:1.8em; font-weight:400;}
 .hui-img-list p{font-size:13px; line-height:1.6em; color:#999999; word-break:break-word;}
-/* 折叠面板 */
+/* æŠ˜å é¢æ¿ */
 .hui-accordion{}
 .hui-accordion-title{width:100%; height:52px; line-height:52px; font-size:16px; background:#FAFAFA; padding:0px 10px; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; font-family:"hui-font"; border-bottom:1px solid #E4E3E6;}
 .hui-accordion-title:after{content:"\e609"; float:right;}
 .hui-accordion-title-up:after{content:"\e655";}
 .hui-accordion-content{width:100%; display:none;}
-/* 按钮 */
+/* æŒ‰é’® */
 .hui-button{-webkit-appearance:none; -moz-appearance:none; appearance:none; border-radius:3px; border:0; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; display:block; font-size:16px; height:40px; line-height:40px; outline:0; overflow: hidden; position:relative; text-align:center; color:#656B79; background-color:#F6F8F9; box-shadow:0 0 1px #B8BBBF; padding:0px 16px; margin:1px;}
 .hui-button *{color:inherit;}
 .hui-button:active{background:#C8C8C8;}
@@ -77,9 +109,9 @@ h3{font-size:16px}
 .hui-danger:active{background:#FF0000 !important;}
 .hui-button-small{height:30px; line-height:30px; padding:0px 15px; text-align:center; display:block; border:0px; color:#656B79; background-color:#F6F8F9; font-size:14px; border-radius:3px; -webkit-appearance:none; -moz-appearance:none; appearance:none;}
 .hui-button-small:active{opacity:0.9;}
-/* 遮罩层 */
+/* é®ç½©å±‚ */
 #hui-mask{position:fixed; z-index:20; background:rgba(100,100,100, 0.2); width:100%; left:0px; top:0px; height:100%;}
-/* 对话框 */
+/* å¯¹è¯æ¡† */
 @keyframes hui-a-fade-in{0%{opacity:0;} 100%{opacity:1}}
 @-moz-keyframes hui-a-fade-in{0%{opacity:0;} 100%{opacity:1}}
 @-webkit-keyframes hui-a-fade-in{0%{opacity:0;} 100%{opacity:1}}
@@ -114,7 +146,7 @@ h3{font-size:16px}
 .hui-loading{width:22px; height:22px;margin: 9px;line-height:20px; font-size:13px; text-align:center; font-family:"hui-font" !important; animation:hui-a-rotate360 1s infinite linear; -webkit-animation:hui-a-rotate360 1s infinite linear; -moz-animation:hui-a-rotate360 1s infinite linear; -o-animation:hui-a-rotate360 1s infinite linear; float:left;vertical-align: top;}
 .hui-loading:before{content:"\e647";}
 .hui-loading-text{float:left; line-height:inherit; padding-left:3px;}
-/* 表单及表单元素 */
+/* è¡¨å•åŠè¡¨å•å…ƒç´  */
 .hui-form{background:#FFFFFF; border:1px solid #E3E3E3; border-radius:2px;}
 .hui-form-items{padding:12px; border-bottom:1px solid #E3E3E3; position:relative;}
 .hui-form-items-flex{ display:-webkit-flex; display:flex;}
@@ -149,7 +181,7 @@ h3{font-size:16px}
 /* textarea */
 .hui-form-textarea{padding-top:8px;}
 .hui-form-textarea textarea{width:100%; height:80px; background:#FAFAFA; border:none; padding:10px; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;}
-/* switch 开关 */
+/* switch å¼€å…³ */
 .hui-switch{width:50px; height:32px; border-radius:32px; -webkit-border-radius:32px; background:#DDDDDD; border:2px solid #DDDDDD; position:relative; text-align:right; line-height:32px; padding-right:16px; font-size:16px; padding-left:16px;}
 .hui-switch span{color:#9E9E9E;}
 .hui-switch-in{width:30px; height:30px; position:absolute; z-index:2; left:0px; top:0px; border-radius:50%; background:#FFFFFF; -moz-box-shadow:1px 1px 1px #999999; box-shadow:2px 2px 2px #999999; -webkit-box-shadow:1px 1px 1px #999999; margin:0px;}
@@ -200,7 +232,7 @@ h3{font-size:16px}
 /* range */
 .hui-range input[type='range']{width:100%; height:30px; padding:0; cursor:pointer; border:0; background-color:#E1E1E1; -webkit-appearance:none; appearance:none; border-radius:30px;}
 .hui-range input[type='range']::-webkit-slider-thumb{width:30px; height:30px; border:none; background-color:#00A2FF; background-clip:padding-box; -webkit-appearance:none; appearance:none; border-radius:30px;}
-/* 选项卡 */
+/* é€‰é¡¹å¡ */
 .hui-tab{width:100%;}
 .hui-tab-title{width:100%;}
 .hui-tab-title div{height:42px; line-height:42px; float:left; text-align:center; width:20%; border-bottom:2px solid #F4F5F6;}
@@ -212,7 +244,7 @@ h3{font-size:16px}
 .hui-refresh-icon{height:60px; line-height:60px; text-align:center; margin-top:-60px; position:relative; color:#9E9E9E;}
 .hui-refresh-icon *{color:#9E9E9E;}
 .hui-refresh-content{}
-#hui-load-more{font-size: 13px;height:40px; line-height:40px; text-align:center; color:#9E9E9E; position:relative; display:none;margin-top:5px;}
+#hui-load-more{font-size: 13px;height:40px; line-height:40px; text-align:center; color:#9E9E9E; position:relative; display:none;margin-top:5px;padding-bottom: 64px;}
 #hui-load-more *{color:#9E9E9E;}
 /* picker */
 .hui-picker{position:fixed; z-index:21; background:#DDDDDD; height:238px; left:0px; bottom:0px; width:100%; display:none;}
@@ -287,21 +319,6 @@ h3{font-size:16px}
 .hui-icons-pause:before{content:"\e96b";} .hui-icons-play:before{content:"\e6b1";} .hui-icons-stop:before{content:"\e61b";}
 .hui-icons-shopping-cart:before{content:"\e633";}
 
-/* 返回顶部 */
-.go-top {
-	position: fixed;
-	background-image: url(../images/top.png);
-	background-repeat: no-repeat;
-	height: 40px;
-	background-size: 40px 40px;
-	width: 40px;
-	bottom: 70px;
-	z-index: 999;
-	right: 5%;
-}
-
-.go-top a {
-	width: 40px;
-	height: 40px;
-	display: block;
-}
+/* è¿”å›žé¡¶éƒ¨ */
+.go-top {position: fixed;background-image: url(../images/top.png);background-repeat: no-repeat;height: 40px;background-size: 40px 40px;width: 40px;bottom: 70px;z-index: 999;right: 5%;}
+.go-top a {width: 40px;height: 40px;display: block;}
