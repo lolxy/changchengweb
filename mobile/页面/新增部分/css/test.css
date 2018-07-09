@@ -64,18 +64,27 @@
 
 /* 答题卡 */
 .answer-card{position: absolute;top: 44px;bottom: 64px;width: 100%;overflow-y: auto;overflow-x: hidden;}
-.card-tip{height: 50px;line-height: 50px;display: flex;width: 250px;margin: 0 auto;}
+.test-report-wrap{bottom: 0;padding-bottom: 15px;}
+.card-tip{height: 50px;line-height: 50px;display: flex;width: 260px;margin: 0 auto;}
 .card-tip span{flex:1;text-align: center;font-size: 13px; color: #333333;}
 .card-tip span i{display: inline-block;width: 10px;height: 10px;border-radius: 10px;margin-right: 10px;}
 .no-answer-icon{border: 1px solid #D3D3D3;}
+.answer-icon.error{background-color: #ff8600;}
 .answer-icon{background: #12A8FF;}
+.card-report{margin:0 15px;background-color: #fff;border-radius: 4px;}
 .card-item ul{display: flex;flex-wrap: wrap;}
 .card-item ul li{width: 20%;display: flex;justify-content: center;align-items: center;align-content: center;padding: 10px 0;}
 .card-item ul li span{width: 40px;height: 40px;border: 1px solid #979797;text-align: center;line-height: 40px;border-radius: 40px;font-size: 17px;}
 .card-item ul li span.on{background: #12A8FF;border: 1px solid #12a8ff;color:#fff;}
+.card-item ul li span.error{background: #ff8600;border: 1px solid #ff8600;color:#fff;}
 .submit-btnbox{height: 64px;position: absolute;bottom: 0;width: 100%;padding: 10px;box-sizing: border-box;}
 .submit-btnbox .submit{font-size: 14px; color: #FFFFFF;background: #00A2FF; box-shadow: 0 0 4px 0 #E0F4FF; border-radius: 4px;height: 44px;line-height: 44px;text-align: center;width: 100%;display: block;}
-
+.report-action{background: none;display: flex;align-items: center;align-content: center;justify-content: space-around;}
+.report-action a{display: flex;align-items: center;align-content: center;justify-content: center;font-size: 14px; color: #FFFFFF;flex:1;margin:0 15px;height: 33px;line-height: 33px;background: #12A8FF; box-shadow: 0 2px 8px 0 rgba(19,177,255,0.55); border-radius: 4px;}
+.report-action a:last-child{background: #29D3FF; box-shadow: 0 2px 7px 0 rgba(47,216,255,0.35);}
+.report-action a i{width: 16px;height: 16px;display: block;margin-right: 10px;}
+.report-action .icon1{background-image: url(../images/ricon2.png);}
+.report-action .icon2{background-image: url(../images/ricon2.png);}
 /* 弹窗 */
 .model-mask{position: absolute;top: 0;left: 0;right: 0;bottom: 0;background:rgba(0,0,0,.1);z-index: 40;display: none;}
 .modelbox{width: 80%;height: 180px;background-color: #fff;border-radius: 6px;box-shadow: 0 0 5px #dadada;top: 50%;left: 50%;position: absolute;margin-left: -40%;margin-top: -90px;}
@@ -202,3 +211,24 @@ background-size: contain;}
 .other-answer .answer-item li .con span.num{width: 50px;height: 30px;line-height: 30px;font-size: 12px;color:#999;text-align: center;}
 .other-answer .answer-item li .con span.process{flex:1;width: 100%;height: 4px;background-color: #d8d8d8;margin: 0 10px;}
 .other-answer .answer-item li .con span.process i{display: block;height: 4px;background-color: #00A2FF;}
+
+/* 测试报告 */
+.report-box{margin: 15px;margin-bottom: 0;background-color: #fff;border-radius: 4px;text-align: center;padding: 20px;}
+.report-box p{margin-top: 20px;color:#333;font-size: 13px;}
+.report-box .report{width: 110px;height: 110px;position: relative;margin: 0 auto;}
+.scope{width: 110px;height: 110px;line-height: 110px;text-align: center;position: relative;}
+.scope span{font-size: 24px;color:#12A8FF;}
+.scope #circle{position: absolute;top: 0;left: 0;}
+.baseinfo{margin: 15px;background-color: #fff;border-radius: 4px;padding: 10px;}
+.baseinfo .base{display: flex;margin-bottom: 10px;}
+.baseinfo .base .photo{background: #FFFFFF; box-shadow: 0 1px 6px 0 rgba(33,197,255,0.20);border:3px solid #fff;border-radius: 36px;width: 33px;height: 33px;margin-right: 10px;}
+.baseinfo .base .photo img{max-width: 100%;vertical-align: top;}
+.baseinfo .base .content{flex:1;}
+.baseinfo .base .content h2{font-size: 14px;color:#333;font-weight: 400;}
+.baseinfo .base .content span{font-size: 10px;color:#999;}
+.baseinfo h3{font-size: 14px; color: #666666;line-height: 30px;font-weight: 420;}
+.baseinfo p{font-size: 10px; color: #999999;}
+.hui-header-fixed{height: 100px;background-image: linear-gradient(-270deg, #29D3FF 0%, #12A8FF 100%);}
+.hui-head{height: 44px;line-height: 44px;}
+.hui-head h1{text-align: center;font-size: 18px;color:#fff;font-weight: 400;}
+.hui-header-fixed #hui-back:before{color:#fff;}

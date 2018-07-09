@@ -3,42 +3,67 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-<title>答题卡</title>
+<title>测试报告</title>
 <link rel="stylesheet" type="text/css" href="css/hui.css" />
 <link rel="stylesheet" type="text/css" href="css/test.css" />
 </head>
 <body>
-<header class="hui-header">
-	<div id="hui-back"></div>
-	<h1>答题卡</h1>
+<header class="hui-header-fixed">
+	<div class="hui-head">
+		<div id="hui-back"></div>
+		<h1>测试报告</h1>
+	</div>
 </header>
 <div class="hui-wrap">
-	<div class="answer-card">
+	<div class="answer-card test-report-wrap">
+		<div class="baseinfo">
+			<div class="base">
+				<div class="photo">
+					<img src="./images/photo.png" alt=""/>
+				</div>
+				<div class="content">
+					<h2>程季唏</h2>
+					<span>已打卡15天</span>
+				</div>
+			</div>
+			<h3>2019考研特训入学测评政治</h3>
+			<p>2018-04-07  20:24:23</p>
+		</div>
+		<div class="report-box">
+			<div class="report">
+				<div class="scope">
+          <div id="circle"></div>
+          <span>25分</span>
+        </div>
+			</div>
+			<p>答题时间：用时5分12秒</p>
+		</div>
 		<div class="card-tip">
-			<span><i class="answer-icon"></i>已答（8）</span>
+			<span><i class="answer-icon success"></i>答对（8）</span>
+			<span><i class="answer-icon error"></i>答错（8）</span>
 			<span><i class="no-answer-icon"></i>未答（6）</span>
 		</div>
-		<div class="card-item">
+		<div class="card-item card-report">
 			<ul>
 				<li><span>1</span></li>
 				<li><span>2</span></li>
 				<li><span class="on">3</span></li>
-				<li><span>4</span></li>
+				<li><span class="error">4</span></li>
 				<li><span>5</span></li>
-				<li><span>6</span></li>
+				<li><span class="error">6</span></li>
 				<li><span>7</span></li>
-				<li><span>8</span></li>
+				<li><span class="error">8</span></li>
 				<li><span class="on">9</span></li>
 				<li><span>10</span></li>
-				<li><span>11</span></li>
-				<li><span>12</span></li>
+				<li><span class="error">11</span></li>
+				<li><span class="error">12</span></li>
 				<li><span class="on">13</span></li>
 				<li><span class="on">14</span></li>
-				<li><span>15</span></li>
+				<li><span class="error">15</span></li>
 				<li><span>16</span></li>
 				<li><span>17</span></li>
-				<li><span>18</span></li>
-				<li><span>19</span></li>
+				<li><span class="error">18</span></li>
+				<li><span class="error">19</span></li>
 				<li><span class="on">20</span></li>
 				<li><span>21</span></li>
 				<li><span>22</span></li>
@@ -46,12 +71,12 @@
 				<li><span class="on">24</span></li>
 				<li><span>25</span></li>
 				<li><span>26</span></li>
-				<li><span>27</span></li>
+				<li><span class="error">27</span></li>
 				<li><span>28</span></li>
 				<li><span>29</span></li>
 				<li><span>30</span></li>
 				<li><span>31</span></li>
-				<li><span>32</span></li>
+				<li><span class="error">32</span></li>
 				<li><span>33</span></li>
 				<li><span>34</span></li>
 				<li><span>35</span></li>
@@ -59,15 +84,15 @@
 				<li><span>37</span></li>
 				<li><span>38</span></li>
 				<li><span class="on">39</span></li>
-				<li><span>40</span></li>
+				<li><span class="error">40</span></li>
 				<li><span>41</span></li>
 				<li><span>42</span></li>
 				<li><span>43</span></li>
 				<li><span>44</span></li>
-				<li><span>45</span></li>
-				<li><span>46</span></li>
+				<li><span class="error">45</span></li>
+				<li><span class="error">46</span></li>
 				<li><span>47</span></li>
-				<li><span>48</span></li>
+				<li><span class="error">48</span></li>
 				<li><span>49</span></li>
 				<li><span>50</span></li>
 				<li><span>51</span></li>
@@ -82,17 +107,17 @@
 				<li><span>60</span></li>
 				<li><span>61</span></li>
 				<li><span>62</span></li>
-				<li><span>63</span></li>
-				<li><span>64</span></li>
+				<li><span class="error">63</span></li>
+				<li><span class="error">64</span></li>
 				<li><span>65</span></li>
 				<li><span>66</span></li>
 				<li><span>67</span></li>
-				<li><span>68</span></li>
+				<li><span class="error">68</span></li>
 				<li><span>69</span></li>
 				<li><span>70</span></li>
 				<li><span>71</span></li>
 				<li><span>72</span></li>
-				<li><span>73</span></li>
+				<li><span class="error">73</span></li>
 				<li><span>74</span></li>
 				<li><span>75</span></li>
 				<li><span>76</span></li>
@@ -101,11 +126,11 @@
 				<li><span class="on">79</span></li>
 				<li><span>80</span></li>
 				<li><span>81</span></li>
-				<li><span>82</span></li>
+				<li><span class="error">82</span></li>
 				<li><span>83</span></li>
 				<li><span>84</span></li>
-				<li><span>85</span></li>
-				<li><span>86</span></li>
+				<li><span class="error">85</span></li>
+				<li><span class="error">86</span></li>
 				<li><span>87</span></li>
 				<li><span>88</span></li>
 				<li><span>89</span></li>
@@ -116,8 +141,8 @@
 				<li><span>94</span></li>
 				<li><span class="on">95</span></li>
 				<li><span>96</span></li>
-				<li><span>97</span></li>
-				<li><span>98</span></li>
+				<li><span class="error">97</span></li>
+				<li><span class="error">98</span></li>
 				<li><span>99</span></li>
 				<li><span class="on">100</span></li>
 				</li>
@@ -125,32 +150,23 @@
 		</div>
 	</div>
 
-	<div class="submit-btnbox">
-		<a href="javascript:void(0);" class="submit">确认并提交</a>
-	</div>
-</div>
-
-<!-- 提交弹窗 -->
-<div class="model-mask">
-	<div class="modelbox">
-		<div class="model-body">
-			<h1>提交试卷</h1>
-			<span>您还有30道题没做完确定提交吗？</span>
-		</div>
-		<div class="model-footer">
-			<button>确定提交</button>
-			<button id="continue">继续做题</button>
-		</div>
+	<div class="submit-btnbox report-action">
+		<a href="#"><i class="icon1"></i>查看错题</a>
+		<a href="#"><i class="icon2"></i>解析课程</a>
 	</div>
 </div>
 <script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript">
-$('.submit').click(function(){
-	$('.model-mask').fadeIn()
-})
-$("#continue").click(function(){
-	$('.model-mask').fadeOut()
-})
+<script src="js/circle-progress.js"></script>
+<script>
+    $('#circle').circleProgress({
+      startAngle:-0.5*Math.PI,
+      thickness:15,
+      value: 0.25,
+      size: 110,
+      fill: {
+        gradient: ["#5ACCF6","#74D3F6"]
+      }
+    });
 </script>
 </body>
 </html>
