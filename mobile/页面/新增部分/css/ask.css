@@ -41,7 +41,7 @@ select.selectcss{appearance:none;-webkit-appearance:none;border: none;outline: n
   overflow-x: hidden;
 }
 .panel{width: 100%;max-width: 750px;margin: 0 auto;box-sizing: border-box;}
-.panel .panel-heading{font-size: 18px;line-height: 20px;padding: 15px;margin-bottom: 10px;color:#333;}
+.panel .panel-heading{font-size: 18px;line-height: 24px;padding: 15px;margin-bottom: 10px;color:#333;word-break: break-all;}
 .panel .panel-heading label,.cailiao-wrap label{display: inline-block;vertical-align: top;border: 1px solid #12A8FF;padding:0px 6px;border-radius: 5px;color:#12a8ff;margin-right:10px;font-size: 12px;line-height: 18px;margin-top: 2px;}
 .panel .panel-body li{padding: 10px 15px;font-size: 12px;display: flex;justify-content: flex-start;align-items: center;align-content: center;box-sizing: border-box;}
 .panel .panel-body li.currect{background-color: #f1faff;}
