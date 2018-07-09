@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html class="bg">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>我的错题</title>
+<link rel="stylesheet" type="text/css" href="css/hui.css" />
+<link rel="stylesheet" type="text/css" href="css/test.css" />
+</head>
+<body>
+<header class="hui-header">
+	<div id="hui-back"></div>
+	<h1>我的错题</h1>
+	<id id="toggle">学科切换</id>
+</header>
+<div class="hui-wrap error-wrap">
+	<div class="error-header">
+		<a href="#">
+			<i class="lianxi"></i>
+			<span>练习所有错题</span>
+		</a>
+		<div class="numberbox">
+			<div class="number-wrap">
+				<span>645</span>
+				<em>我的错题</em>
+			</div>
+		</div>
+		<a href="#">
+			<i class="view"></i>
+			<span>查看所有错题</span>
+		</a>
+	</div>
+
+	<div class="error-list">
+		<a href=""><span>英语单选题</span><em>1220</em></a>
+		<a href=""><span>英语多选题</span><em>1220</em></a>
+		<a href=""><span>英语填空题</span><em>1220</em></a>
+		<a href=""><span>英语判断题</span><em>1220</em></a>
+	</div>
+
+	<div class="set-error">
+		<span>正确后移除错题库</span>
+		<div class="toggle">
+			<div class="hui-switch hui-switch-on" id="switchBox"><span></span><div class="hui-switch-in"></div></div>
+		</div>
+	</div>
+</div>
+
+<div class="submit-btnbox">
+	<a href="javascript:void(0);" class="submit">清除所有错题</a>
+</div>
+<script type="text/javascript" src="js/hui.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript">
+hui('#switchBox').switchBox(['',''],function(res){
+	if(res){
+			hui.toast('开关打开');
+	}else{
+			hui.toast('开关关闭');
+	}
+}, true);
+</script>
+</body>
+</html>

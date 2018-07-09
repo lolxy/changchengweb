@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>我的测试卷</title>
+<link rel="stylesheet" type="text/css" href="css/hui.css" />
+<link rel="stylesheet" type="text/css" href="css/ask.css" />
+<link rel="stylesheet" type="text/css" href="css/test.css" />
+</head>
+<body>
+<header class="hui-header">
+	<div id="hui-back"></div>
+	<h1>我的测试卷</h1>
+</header>
+<div class="hui-wrap">
+    <div class="ask—wrapper">
+			<h2><span>分析题</span><span>12/15</span></h2>
+			<div class="panel panel-tiankong">
+				<div class="panel-heading">
+					 The extinction of large prehistoric animals is noted to suggest that ________.
+				</div>
+				<div class="panel-body">
+					<p>请在下方上传附件</p>
+					<div class="upload">
+						<button>
+							<i class="plus"></i>
+							<span>点此上传答案附件</span>
+						</button>
+					</div>
+					<p>请在下方添加补充</p>
+					<div class="textarea">
+						<textarea name="name"></textarea>
+					</div>
+					<div class="btn-box">
+						<button>确定</button>
+					</div>
+				</div>
+			</div>
+    </div>
+</div>
+<div class="wenjuan-footer">
+	<ul>
+		<li><a href=""><i class="icon1"></i></a></li>
+		<li><a href=""><i class="icon2"></i></a></li>
+		<li><a href="javascript:void(0);" onClick="play()"><i class="icon3"><span id="daytime">60:00</span></i></a></li>
+		<li><a href=""><i class="icon4"></i></a></li>
+	</ul>
+</div>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript">
+var flag = true;
+//定义变量 时 分 秒
+var  hh=0;
+var  mm=89;
+var  ss=59;
+//通过document将值赋给文本
+$("#daytime").text((parseInt(hh*60)+parseInt(mm))+""+":"+ss);
+//定义变量计算所要走的秒数
+var contest=5400;
+var vartime = null;
+function startTime(){
+	flag = false;
+	--contest;
+	if(contest==0){
+		//clearTimeout 关闭定时触发事件
+		clearTimeout(vartime);
+}else{
+	//计算秒减减
+	ss=--ss;
+	//取所要走的秒数的余数当时60的余数就说明所走时间为一秒
+	if(contest%60==0){
+		ss=60;
+	//当秒钟为0是分钟减1
+		mm=--mm;
+	//当分钟为0是小时减1
+		if(mm==-1){
+			hh=hh-1;
+			mm=59;
+		}
+	}
+$("#daytime").text((parseInt(hh*60)+parseInt(mm))+""+":"+ss);
+	//setTimeout 定时触发事件方法
+	vartime = setTimeout("startTime()", 1000);
+}
+}
+
+function play(){
+	if(flag){
+		startTime()
+	}
+}
+</script>
+</body>
+</html>
