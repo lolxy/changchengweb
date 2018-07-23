@@ -535,12 +535,12 @@ $(function(){
 	// 套餐弹窗切换
 	$(".tcbox").click(function(){
 		$(".tc-action-sheet").css({"transform":"translateY(0)"})
-		$('.detail-wrapper').css({"overflow-y":"hidden"})
+		$(window).css({"overflow-y":"hidden"})
 	})
 
 	$(".tc-action-sheet").click(function(){
 		$(this).css({"transform":"translateY(100%)"})
-		$('.detail-wrapper').css({"overflow-y":"auto"})
+		$(window).css({"overflow-y":"auto"})
 	})
 
 	$(".tc-sheet-content,.tc-sheet-footer").click(function(event){
@@ -559,10 +559,10 @@ swipe.run();
 
 // 滚动自动切换及面板tab切换
 var detailListTop = $('.detail-list').position().top - 32;
-$('.detail-wrapper').scroll(function(){
-	var scrollH = $('.detail-wrapper').scrollTop();
-	var tabListTop = $('.detail-list').offset().top;
-  if(tabListTop <= 100){
+$(window).scroll(function(){
+	var scrollH = $(window).scrollTop();
+	// var tabListTop = $('.detail-list').offset().top;
+  if(scrollH >= 552){
 		$(".tab-li").addClass("fixed")
 	}else{
 		$(".tab-li").removeClass("fixed")
@@ -577,7 +577,7 @@ $('.detail-wrapper').scroll(function(){
 $('.tab-li li').click(function(){
 	var index=$(this).index();
 	var oH=$(".tab-content .box").eq(index).position().top + detailListTop;
-	$('.detail-wrapper').animate({scrollTop:oH},300);
+	$('html,body').animate({scrollTop:oH},300);
 });
 
 $('.kcml-list li').click(function(){
